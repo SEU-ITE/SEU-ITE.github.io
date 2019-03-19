@@ -13,4 +13,4 @@ tags:
 - [社团平台](https://club.seu.services)
 - [校内论坛](https://bbs.seu.services)
 
-[I'm Susan](/img/Susan.png)
+![I'm Susan](/img/Susan.png)
