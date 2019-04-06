@@ -16,10 +16,10 @@ tags:
 
 # 联系我们
 
-你可以用邮件和我联系：encofcomic@outlook.com
-或者加入我们的QQ群: 677126518 
+你可以用邮件和我联系：[seuite@outlook.com](mailto:seuite@outlook.com)
+或者加入我们的QQ群: 974796440
 我还暂时没能拥有微信哦，希望日后有机会能和大家一起玩~
-我们还欢迎你到我们的团队看板来加上一笔！[SEUITE](https://cr.seu.services)
+我们还欢迎你到我们的团队看板来加上一笔！[SEUITE](https://www.seu.services)
 
 By the way，你甚至可以直接到宿舍和实验室来找我们玩！
 
