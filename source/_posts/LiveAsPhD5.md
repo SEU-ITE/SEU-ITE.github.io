@@ -1,5 +1,5 @@
 ---
-title: 研究生生存指南(5)
+title: 研究生生存指南(5)（完）
 date: 2019-04-09 16:06:04
 tags: 
  - 研究生生存指南
@@ -18,6 +18,7 @@ tags:
   - [结论](#%E7%BB%93%E8%AE%BA)
   - [相关指南及链接](#%E7%9B%B8%E5%85%B3%E6%8C%87%E5%8D%97%E5%8F%8A%E9%93%BE%E6%8E%A5)
   - [推荐阅读](#%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB)
+  - [作者照片](#%E4%BD%9C%E8%80%85%E7%85%A7%E7%89%87)
 
 如果你不知道怎么阅读，请从[研究生生存指南(1)](https://seuite.github.io/2019/04/05/LiveAsPhD1/)开始。
 
@@ -247,3 +248,6 @@ White, Pepper. The Idea Factory: Learning to Think at MIT. Plume (Penguin Books)
 Yate, Martin. Knock 'Em Dead: The Ultimate Job Seeker's Handbook. Bob Adams, Inc.
 
 >Good generic guide to job hunting and interviews, including a long section on interview questions.
+
+## 作者照片
+![Ronald Azuma](/img/ronald_azuma.jpg)
