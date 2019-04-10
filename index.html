@@ -290,7 +290,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/9102/10/10/about/">
+    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/10/MetaheuristicsForDataMining/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Susan">
@@ -310,7 +310,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/9102/10/10/about/" class="post-title-link" itemprop="url">认识一下</a>
+                <a href="/2019/04/10/MetaheuristicsForDataMining/" class="post-title-link" itemprop="url">每天一篇计算机 Paper(2019/4/10)</a>
               
             
           </h1>
@@ -335,24 +335,12 @@
                 
               
 
-              <time title="Created: 9102-10-10 00:00:00" itemprop="dateCreated datePublished" datetime="9102-10-10T00:00:00+08:00">9102-10-10</time>
+              <time title="Created: 2019-04-10 21:06:18 / Modified: 21:06:31" itemprop="dateCreated datePublished" datetime="2019-04-10T21:06:18+08:00">2019-04-10</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-07 18:44:22" itemprop="dateModified" datetime="2019-04-07T18:44:22+08:00">2019-04-07</time>
               
             
           </span>
@@ -388,15 +376,620 @@
       
         
           
-            <h1 id="Hey-Susan-Here"><a href="#Hey-Susan-Here" class="headerlink" title="Hey! Susan Here!"></a>Hey! Susan Here!</h1><p>你好呀，我是Susan，是东南大学网络技术和开放，开发，开团，开dflakjdgshd……开源技术协会的会长啦！<br>我们是一个非常非常小的组织（算上我也只有3个人），希望可以让大家的大学生活变得更加丰富多彩！<br>我们现在已经可以提供下列服务了哟~：</p>
+            <h1 id="用于数据挖掘的元启发式方法"><a href="#用于数据挖掘的元启发式方法" class="headerlink" title="用于数据挖掘的元启发式方法"></a>用于数据挖掘的元启发式方法</h1><blockquote>
+<p>Dhaenens, C. and L. Jourdan (2019). “Metaheuristics for data mining.” 4OR.</p>
 <ul>
-<li><a href="https://wiki.seu.services" target="_blank" rel="noopener">东大Wiki</a></li>
-<li><a href="https://club.seu.services" target="_blank" rel="noopener">社团平台</a></li>
-<li><a href="https://bbs.seu.services" target="_blank" rel="noopener">校内论坛</a><br><img src="/img/Susan.png" alt="I&#39;m Susan"></li>
+<li>译者：陈思源</li>
 </ul>
-<h1 id="联系我们"><a href="#联系我们" class="headerlink" title="联系我们"></a>联系我们</h1><p>你可以用邮件和我联系：<a href="mailto:seuite@outlook.com" target="_blank" rel="noopener">seuite@outlook.com</a><br>或者加入我们的QQ群: 974796440<br>我还暂时没能拥有微信哦，希望日后有机会能和大家一起玩~<br>我们还欢迎你到我们的团队看板来加上一笔！<a href="https://www.seu.services" target="_blank" rel="noopener">SEUITE</a></p>
-<p>By the way，你甚至可以直接到宿舍和实验室来找我们玩！</p>
-<h1 id="加入我们"><a href="#加入我们" class="headerlink" title="加入我们"></a>加入我们</h1><p>我们急缺 <strong>前端，内容管理和美工</strong> 各一名 ，有兴趣的同学快到碗里来！</p>
+</blockquote>
+<p>本文隶属于”每天一篇计算机 Paper”系列博客，更多内容请点击这个链接。</p>
+<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><p>大数据的概念为所有类型的数据分析方法都提供了巨大的机遇和挑战。特别是对大型问题优化的方法非常适合分析这些数据。实际上，正如将要展示的，许多数据挖掘任务可以被建模为组合优化问题。本文的目的是展示数据挖掘和优化之间的联系，并介绍一些最近在这个主题上进行的，特别是使用元启发式的工作。本文将提供足够的信息来向读者介绍这些方法。本文是在2016年出版的关于这一主题的书（Dhaenens and Jourdan 2016）的后续。我们推荐那些希望在本文后面获得更深入信息的读者阅读本书。但是，我们在此提供更新的参考资料和对当前趋势的分析。</p>
+<p>The concept of big data offers great opportunities and challenges for all types of data analysis approaches. In particular, optimization approaches that can handle large problems are well suited to analyze such data. Indeed, as it will be shown, many data mining tasks may be modeled as combinatorial optimization problems. The aim of this article is to demonstrate the links between data mining and optimization, and to present some of the recent works that have been conducted on this subject, especially using metaheuristics. This article will provide enough information to educate a reader on such approaches. This article follows the publication of a book in 2016 concerning this subject (Dhaenens and Jourdan 2016). We refer readers who wish to gain deeper information subsequently to this book. However, we herein offer updated references and an analysis of the current trends.</p>
+<h3 id="1-1-Big-data-context"><a href="#1-1-Big-data-context" class="headerlink" title="1.1 Big data context"></a>1.1 Big data context</h3><p>有很多对大数据这个术语提出的定义。最常用的是基于 3V（或 5V）的定义：规模（Volume），多样性（Variety）和速度（Velocity），以及准确性（Veracity）和价值特征（Value characteristics）。在大数据处理的不同阶段，产生了大量新的技术挑战（Laney 2001; Nunez和Attoh-Okine 2014）。我们不会在此考虑数据生成和采集阶段所带来的挑战，也不会考虑存储和为准备要分析的数据而做的数据预处理，例如删除异常值，或替换丢失的数据等。但是，我们将重点关注提取知识的数据分析阶段。</p>
+<p>Many definitions can be proposed for the term big data. The most commonly used are based on the three (or five) Vs definition: Volume, Variety, and Velocity, as well as Veracity and Value characteristics. Big data offers plenty of new technical challenges at different phases of the big data process (Laney 2001; Nunez and Attoh-Okine 2014). We will not consider herein the challenges resulting from the data generation and the acquisition phase, nor the storage or the data preprocessing that may remove outliers, replace missing data, for example, in order to prepare data to be analyzed. However, we will focus on the data analysis phase that aims at extracting knowledge. </p>
+<p>数据库中的知识发现（Knowledge Discovery in Databases, KDD）是从大型数据集当中识别有效，新颖，有用且易于理解的模式的过程。数据挖掘是 KDD 过程的数学核心，涉及推断算法，探索数据，开发数学模型，和找出显著模式（隐式或显式），这是有价值知识的本质（Maimon和Rokach 2010）。</p>
+<p>Knowledge Discovery in Databases (KDD) is the process of identifying valid, novel, useful, and understandable patterns from large datasets. Data mining is the mathematical core of the KDD process, involving the inferring algorithms that explore the data, develop mathematical models, and discover significant patterns (implicit or explicit), which are the essence of valuable knowledge (Maimon and Rokach 2010).</p>
+<p>与传统数据相比，大数据在 5V 方面有所不同。使用传统的数据分析工具分析大数据会变得很困难，并引入了大数据挖掘这一术语（Che et al.2013）。</p>
+<p>In contrast to traditional data, big data varies in terms of the five V’s. It becomes difficult to analyze big data with traditional data analytics tools, and the term big data mining has been introduced (Che et al. 2013). </p>
+<p>诸如 Hadoop 和 MapReduce 等技术改进已经使得大数据的开发，以及大数据的元启发式算法（Barba-Gonzaléz等, 2017）变得可行。Hadoop 是一个开源框架，依赖于 Java 并支持分布式计算环境中的大数据处理（Shvachko等人，2010）。MapReduce 是一种编程模型，是处理和生成适用于各种实际任务的大型数据集的相关实现。用户根据 map 和 reduce 函数指定计算，底层运行时系统自动在大型机器集群中并行化计算（Dean和Ghemawat 2008）。</p>
+<p>Technological improvements such as Hadoop and MapReduce have allowed the development of big data, as well as metaheuristics for big data (Barba-Gonzaléz et al. 2017). Hadoop is an open-source framework that relies on Java and supports large data processing in distributed computing environments (Shvachko et al. 2010). MapReduce is a programming model and an associated implementation for processing and generating large datasets that is amenable to a broad variety of real-world tasks. Users specify the computation in terms of a map and a reduce function, and the underlying runtime system automatically parallelizes the computation across large-scale clusters of machines (Dean and Ghemawat 2008).</p>
+<h3 id="1-2-Primary-data-mining-tasks"><a href="#1-2-Primary-data-mining-tasks" class="headerlink" title="1.2 Primary data mining tasks"></a>1.2 Primary data mining tasks</h3><p>如前所述，数据挖掘是 KDD 过程的数学核心。数据挖掘任务可以分为两类：预测（或监督）和描述（或无监督）任务。受监督的任务学习可用数据以预测新数据，而无监督任务提供数据和现有关系的描述。主要的数据挖掘任务，如图1所示，见下：</p>
+<p>As indicated before, data mining is the mathematical core of the KDD process. Data mining tasks can be classified into two categories: predictive (or supervised) and descriptive (or unsupervised) tasks. The supervised tasks learn on available data to predict for new data, whereas unsupervised tasks provide a description of the data and existing relationships. Primary data mining tasks, as depicted in Fig. 1, are as follows: </p>
+<p><img src="/../img/MetaheuristicsForDataMiningFig1.jpg" alt="Fig.1"></p>
+<ul>
+<li>聚类（也称为无监督分类）：将数据集分解或分组为组，使得组中的元素彼此相似，并且尽可能与其他组的元素不同</li>
+<li>关联规则挖掘：提取描述不同元素的特征之间的关系（译者注：可以将关联规则理解为通过量化的方法描述元素 A 的特征 a 对元素 B 的特征 b 有多大的影响）</li>
+<li>（监督）分类：构建模型，根据其他特征的已知值来预测目标特征（类）的未知值</li>
+<li><p>特征选择：通过选择有意义的特征来减小数据集的大小</p>
+</li>
+<li><p>Clustering (also called unsupervised classification)—to decompose or partition a dataset into groups such that elements in a group are similar to each other, and are as different as possible from elements of other groups.</p>
+</li>
+<li>Association rule mining—to extract relationships between features describing different elements.</li>
+<li>(supervised) Classification—to build a model to predict the unknown value of a target feature (the class) from the known values of other features.</li>
+<li>Feature selection—to reduce the size of the dataset by selecting meaningful features.</li>
+</ul>
+<h3 id="1-3-Some-optimization-problems"><a href="#1-3-Some-optimization-problems" class="headerlink" title="1.3 Some optimization problems"></a>1.3 Some optimization problems</h3><p>如上所述，数据挖掘任务适用于诸如将元素分配到类，元素分组和特征选择之类的操作。一旦可以定义优化的标准，所有这些问题可以被表述为组合优化问题。因此，已经提出了许多使用优化方法来解决数据挖掘问题的工作，如以下评论中所述（Olafsson等人2008; Meisel和Mattfeld 2010; Corne等人2012）。</p>
+<p>As explained above, datamining tasks accommodate operations such as the assignment of an element to a class, the grouping of elements, and the selection of features. All of these problems may be formulated as combinatorial optimization problems, as soon as an optimization criterion may be defined. Hence, numerous works using optimization methods to solve data mining problems have been proposed, as described in the following reviews (Olafsson et al. 2008; Meisel and Mattfeld 2010; Corne et al. 2012).</p>
+<h3 id="1-4-Metaheuristics"><a href="#1-4-Metaheuristics" class="headerlink" title="1.4 Metaheuristics"></a>1.4 Metaheuristics</h3><p>但是，大数据的情况下，使用精确的方法难以解决这些问题。因此，元启发式算法提供了一个有趣的选择。在他们的书中，Maimon 等人专注于软计算以进行知识发现（Maimon和Rokach 2007）。不同的章节提出了不同的方法，其中很大一部分涉及元启发式，特别是进化算法和群体智能。在他的书中，Freitas 专注于使用进化算法进行数据挖掘和知识发现，这些算法代表了元启发式的一部分（Freitas 2008,2013）。特别是，这些书籍描述了如何使用进化算法进行数据准备，规则发现（包括模糊规则）或聚类。让我们注意专门用于扩展此类算法以适应大型数据集的一章。最近，我们在大数据背景下推出了一本致力于元启发式的书（Dhaenens和Jourdan 2016）。</p>
+<p>However, the context of big data makes it difficult to solve those problems using exact approaches. Hence, metaheuristics provide an interesting option. In their book, Maimon et al. focused on soft computing for knowledge discovery (Maimon and Rokach 2007). Different chapters present different approaches, and a large part pertains to metaheuristics, in particular, evolutionary algorithms and swarm intelligence. In his books, Freitas focused on data mining and knowledge discovery with evolutionary algorithms, which represent one part of metaheuristics (Freitas 2008, 2013). In particular, these books describe how evolutionary algorithms may be used as well for data preparation, rule discovery (including fuzzy rules), or clustering. Let us remark that one chapter is dedicated to the scaling of such algorithms to accommodate large datasets. More recently, we proposed a book dedicated to metaheuristics in the context of big data (Dhaenens and Jourdan 2016). </p>
+<p>因此，本文的其余部分将针对上面提出的四个主要数据挖掘任务（聚类，关联规则，分类和特征选择），如何使用元启发式而特别关注大数据。因此，对于每个数据挖掘任务，将首先给出描述。随后，描述了作为组合优化问题的问题的表达。最后，将介绍为此任务提出的主要元启发式的概述。每个部分最后将简要介绍当前的趋势。</p>
+<p>Hence, the remainder of this article will present, for the four primary data mining tasks presented above (clustering, association rules, classification, and feature selec-tion), how metaheuristics have been used with a particular focus on big data. Thus, for each data mining task, a description will be given first. Subsequently, the expression of the problem as a combinatorial optimization problem is described. Finally, an overview of the primary metaheuristics proposed for this task will be presented. Each part will end with a brief conclusion on the current trends.</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/09/LiveAsPhD5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Susan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SEUITE">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/09/LiveAsPhD5/" class="post-title-link" itemprop="url">研究生生存指南(5)（完）</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-09 16:06:04" itemprop="dateCreated datePublished" datetime="2019-04-09T16:06:04+08:00">2019-04-09</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="再见，多谢博士生涯！（5）"><a href="#再见，多谢博士生涯！（5）" class="headerlink" title="再见，多谢博士生涯！（5）"></a>再见，多谢博士生涯！（5）</h1><p>又名</p>
+<h2 id="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"><a href="#“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”" class="headerlink" title="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"></a>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”<!-- omit in toc --></h2><ul>
+<li><a href="#%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF5">再见，多谢博士生涯！（5）</a><ul>
+<li><a href="#%E5%8D%9A%E5%A3%AB%E7%94%9F-%E6%89%BE%E5%B7%A5%E4%BD%9C%E7%BB%AD">博士生 找工作（续）</a><ul>
+<li><a href="#%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8">初创公司</a></li>
+<li><a href="#%E5%95%86%E4%B8%9A%E4%BC%81%E4%B8%9A">商业企业</a></li>
+<li><a href="#%E5%B7%A5%E4%B8%9A%E6%88%96%E6%94%BF%E5%BA%9C%E7%A0%94%E7%A9%B6%E5%AE%9E%E9%AA%8C%E5%AE%A4">工业或政府研究实验室</a></li>
+<li><a href="#%E5%AD%A6%E6%9C%AF%E7%95%8C">学术界</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E6%8F%90%E7%A4%BA">其他提示</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BB%93%E8%AE%BA">结论</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E6%8C%87%E5%8D%97%E5%8F%8A%E9%93%BE%E6%8E%A5">相关指南及链接</a></li>
+<li><a href="#%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB">推荐阅读</a></li>
+<li><a href="#%E4%BD%9C%E8%80%85%E7%85%A7%E7%89%87">作者照片</a></li>
+</ul>
+</li>
+</ul>
+<p>如果你不知道怎么阅读，请从<a href="https://seuite.github.io/2019/04/05/LiveAsPhD1/">研究生生存指南(1)</a>开始。</p>
+<h2 id="博士生-找工作（续）"><a href="#博士生-找工作（续）" class="headerlink" title="博士生 找工作（续）"></a>博士生 找工作（续）</h2><p>对于计算机科学博士来说，有四大类雇主：</p>
+<ul>
+<li>初创公司（包括创办自己的公司或咨询）</li>
+<li>商业企业</li>
+<li>工业或政府研究实验室</li>
+<li>学术界 </li>
+</ul>
+<h3 id="初创公司"><a href="#初创公司" class="headerlink" title="初创公司"></a>初创公司</h3><p>加入创业公司或创办自己的公司，可能是最有利可图的途径，也是风险最大的。大多数初创公司的薪酬都低于市场薪酬，并且不能提供谷歌等大公司可以带来的好处，但可能会提供股权，提供在大公司不可能获得的”本垒打”的机会。大多数创业公司最终都失败了。总的来说，”本垒打”很少，但确实发生过。例如，我知道有些人在 Oculus 被 Facebook 收购之前就加入了。初创公司是一个与已建立的大公司截然不同的工作环境。它们通常很小，非正式，敏捷，缺乏资源。他们在工作环境中可能比大多数财富500强公司更灵活。但他们也不太可能拥有知识渊博的人力资源人员，以确保遵守法律。财富500强企业的薪水不太可能反复波动。初创公司往往会快速烧钱，也更可能倒闭。</p>
+<p>创业公司只有有限的时间和资源来完善资源链或成为被收购的目标。这意味着无论创始人怎么说，它都不是一个进行长期研究的地方。我听到的最好的比喻：加入一家创业公司就像是决定与其他一些人合伙跳下悬崖，相信能够在撞上地表之前成功造出一对有用的翅膀并飙升。如果你这样做，你不会想花时间和精力去做与造翅膀没有直接关系的东西！你也可以事先检查下悬崖底下那儿有多少尸体。</p>
+<p>初创公司通常不会注意平衡工作与生活。由于资源有限，比起更成熟的公司，创业公司不得不要求成员做出更多的牺牲。</p>
+<p>在创业公司工作，你可能会与你所在领域的研究团队脱节，失去对领域最前沿的知识的了解——那些你为了博士毕业而奋力学到的东西。从研究机构转到创业或商业机构比从另一个方向容易得多。</p>
+<p>虽然有些过时，但如果你想在创业公司工作，本文末尾列出的川崎（Kawasaki）和 Bell 的参考资料可能会对你有用。</p>
+<p>Matt Cutts 是 UNC 的研究生。我们有同一个顾问。与我不同，马特没有完成他的博士学位。相反，他退学了，加入一个当时少于 100 人的创业公司。你可能听说过这个创业公司，它称作 Google。</p>
+<p>如果你买到了像 Matt Cutts 这样的创业彩票，他在 <a href="http://mattcutts.com/blog/investing-reading-list/" target="_blank" rel="noopener">这里</a> 和 <a href="https://www.mattcutts.com/blog/make-money-investing-tips/" target="_blank" rel="noopener">这里</a> 提供了一些建议。我也喜欢 <a href="http://www.modernluxury.com/san-francisco/story/the-best-investment-advice-youll-never-get" target="_blank" rel="noopener">Google在首次公开募股之前招募员工</a>。</p>
+<p>对于初创公司的两种不同观点，请阅读 <a href="https://www.amazon.com/Disrupted-My-Misadventure-Start-Up-Bubble/dp/0316306088/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1486345803&amp;sr=1-1&amp;keywords=disrupted+my+misadventure+in+the+start-up+bubble" target="_blank" rel="noopener">“Disrupted: My Misadventure in the Start-Up Bubble”</a> ，了解老员工的观点以及他为什么不适合一家创业公司，还可以阅读 <a href="https://www.amazon.com/Founders-Dilemmas-Anticipating-Foundation-Entrepreneurship/dp/0691158304/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1486346008&amp;sr=1-1&amp;keywords=the+founders+dilemma" target="_blank" rel="noopener">“The Founder’s Dilemmas”</a> ，它阐述了创始人在创办自己的公司时所面临的挑战和关键决策。</p>
+<h3 id="商业企业"><a href="#商业企业" class="headerlink" title="商业企业"></a>商业企业</h3><p>普通的，专注于支持或开发新产品的开发或生产工作，代表了绝大多数的就业机会。但是，作为一名博士毕业生，对于大部分这些工作，你都大材小用了。博士生涯是为学生的学术生涯做好准备，而非商业职业。大多数博士研究生都在寻找与普通商业工作不同的工作。但是，如果你的兴趣在于商业而不是研究，那么这可能是最佳的选择。有不少博士生成为了副总裁兼 CEO。高级开发工作可能很有趣且具有挑战性，它们可以让你满意地看到你的工作对产品或公司产生了影响。</p>
+<h3 id="工业或政府研究实验室"><a href="#工业或政府研究实验室" class="headerlink" title="工业或政府研究实验室"></a>工业或政府研究实验室</h3><p>这些工作位于正常的商业工作和学术界之间。通常，比起普通工作，它们能让你做一些具有更长远意义的工作，发表论文，参加会议等。但是，这些都是在管理环境之下的，因此你的研究工作必须与公司业务或实验室的使命相关联。重组和优先级的变化也常有发生，你必须跨越这些变化以保持就业和灵活性。工业研究中的薪水会很不错，通常比政府职位或学术界好得多。但是，就像商业工作或初创公司一样，你随时都可能会被裁员。我曾在一个实验室工作，有一天，没有任何警告，经理出现了，并告诉我们公司正在关闭我们的实验室，几乎每个人都会被解雇，包括我。你也没有创业公司的”本垒打”的可能。</p>
+<p>如果你从事工业研究，那么你应该通过将研究转化为直接有助于你公司未来的产品或流程来对公司产生影响。如果你的主要目标是发表论文，推进该领域并为自己立名，并且你并不非常关心收入和商业方面，那么学术界是更好的选择。但是，即使你专注于对你的公司进行重要的研究，也可以获得别人的认可。例如，尽管我的整个职业生涯都在工业研究中度过，我最近当选了 IEEE FELLOW。在这个角色中，你应该雄心勃勃地去做一些事情而不是雄心勃勃地让自己成名。</p>
+<p>完全由商业公司拥有的实验室或已获得政府资助的实验室通常拥有更稳定的资金流（直到高管或政客决定改变事物）。其他实验室必须依靠赢得其他公司或政府的合同。这可能是一种不稳定的，令人沮丧的工作方式。你的团队能否继续工作取决于赢得下一份合同，知道这点可能会让你感到压力。在以前的工作中，我有时觉得我们花了 100％ 的时间来争取资金，所以我们可以再花 100％ 的时间来完成一些研究。（译者注：指时间都花在争取资金没时间做研究）</p>
+<h3 id="学术界"><a href="#学术界" class="headerlink" title="学术界"></a>学术界</h3><p>在大学工作是博士学位的传统职业道路。终身教授是最安全，最稳定的研究职位，也是最自由的研究职位。教授可以选择他们想要的工作。如果你专注于出版并希望确保没有人能告诉你该做什么，那么就成为终身教授。如果你的主要动机是成为一名非常著名的研究员，那么就成为终身教授。</p>
+<p>但是，tenure 不容易得到。获得终身职位也很困难。你必须很强，也许还要靠运气才能得到一个。正如我之前提到的，博士后经验正成为几乎必修的先决条件。读读 Feibelman 和 Ralston 的参考资料，了解有关博士后的提示。此外，获得终身职位还要和时间赛跑，以发布足够多的令人印象深刻的研究成果，来让你的部门决定授予你终身职位而不是扫地出门。正如 Randy Pausch 所说，任期是一个竞争过程，你需要与其他助理教授和已经任职的教授进行比较。如果他们每周工作70小时用了六年才能获得终身职位，那么不要指望你每周工作40小时就可以了。</p>
+<p>终身职位对那些想要建立家庭的人来说并不友好。即使你在完成学士学位后直接开始研究生学习，你可能会在 28、9 岁才完成博士学位。在30岁过半才获得终身职位。<a href="http://www.scientificamerican.com/article/motherhood-not-discrimination-gender-gap-tenure-science-jobs/" target="_blank" rel="noopener">生物钟的现实往往与实现任期的要求相冲突。</a></p>
+<p>教授的工作往往集中在研究或教学上。较小的学院和大学更倾向于关注教学，教授的评估方式也是如此。大型学府中，教学职位的薪酬通常低于研究职位，其中教授主要对他们的研究进行评估——通过发表论文杀死了多少棵树，以及他们的教学状况是否足以不让院长听到投诉。</p>
+<p>学术界也有”soft money”职位，这些教授和工作人员是教通过合同和补助金而不是终身职位获得报酬的。这些职位都缺乏保障，你很难靠这种资金活下去。大多数合同和补助金的目的是为研究生提供资金并支付一两个月的教授工资，而不是为了支付全职工作人员的工资。</p>
+<p>我对工业或政府研究实验室筹款的评论也适用于学术职位。我在美国担任教授的大多数朋友都不得不将过多的时间用于撰写提案，获奖者的百分比似乎一直在下降。如果你有终身职位，那么你的工作不依赖于获奖提案，但如果没有外部资金，你将无法招募研究生或额外的员工，因此你的影响力将受到限制。</p>
+<p>我看到”Computing Research News”的一篇文章估计，助理教授和副教授的总薪酬比工业同行要少25％。与硅谷相比，我估计差异在50％左右。</p>
+<p>如果你想获得终身职位，请阅读 <a href="http://www.amazon.com/Professor-Essential-Guide-Turning-Ph-D/dp/0553419420/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1462665057&amp;sr=1-1&amp;keywords=the+professor+is+in" target="_blank" rel="noopener">The Professor Is In</a>，这本书详细介绍了如何获得终身职位。作者还运营博客和服务，以帮助学生成为教授。请记住，作者具有人文学科的背景，所以如果你是计算机博士，你必须考虑到计算机与人文科学博士学位之间的差异。例如，计算机博士学生通常能获得经济收入，因此积累大笔债务不是问题。在计算机中，某些会议的出版物很有价值，而在人文学科中，会议出版物可能并不重要。</p>
+<h3 id="其他提示"><a href="#其他提示" class="headerlink" title="其他提示"></a>其他提示</h3><p>当我不得不在2012年寻找工作时，我做的对我的求职最有帮助的一件事就是创建我自己的网站。简历是一个非常干燥，难以阅读的文件。我的网站作为简历的可视化版本，提供图像，视频和我工作的项目的详细描述。这是一种更有说服力的沟通方式，可以告诉别人我是谁，也可以提供什么。作为一名招聘经理，当候选人拥有关于自己的好网站时，我发现这非常有用。LinkedIn足以满足许多求职者的需求，但对于拥有博士学位的人来说，我强烈建议你创建并维护自己的网站。它的成本并不高，值得付出努力。</p>
+<p>文章 <a href="https://cacm.acm.org/magazines/2018/10/231370-the-secret-formula-for-choosing-the-right-next-role/abstract" target="_blank" rel="noopener">The Secret Formula for Choosing the Right Next Role</a>（需要 ACM 数字图书馆订阅）表明，在选择工作时，你应该更多地关注你将获得的技能，你可以在那里完成什么以及你将与谁合作，而不是专注于你职称，薪水和初始项目。</p>
+<p>无论你毕业后去哪里，都要与母校保持联系。你可以换工作并从一个地方搬到另一个地方，但你总要获得你大学的学位。如果你与你的大学和你以前的同学保持良好关系，那么这将成为你人脉网络的绝佳基地。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><blockquote>
+<p>- “论文没有完成; 他们被遗弃了。”</p>
+<ul>
+<li>Frederick P. Brooks，Jr。</li>
+</ul>
+</blockquote>
+<p>下面的故事，名为”黑带的寓言”，摘自James C. Collins 和 Jerry I. Porras的 《Built to Last: Successful Habits of Visionary Companies》</p>
+<blockquote>
+<p>想象一位武术家在仪式上跪在他的老师面前，接受来之不易的黑带。经过多年的不懈训练，学生终于达到了这个领域的巅峰。</p>
+<p>“在绶带之前，你必须再通过一次测试，”老师说。</p>
+<p>“我准备好了，”学生回应道，等待着最后一轮的试炼。</p>
+<p>“你必须回答这个基本问题：黑带的真正含义是什么？”</p>
+<p>“我的旅程结束了。”学生说，”对我所有的努力工作，当之无愧的奖励。”</p>
+<p>老师等待着更多的回答。显然，他不满意。最后，老师说：”你尚未准备好接受黑带。一年后再来吧。”</p>
+<p>一年后，学生再次在老师面前跪下。</p>
+<p>“黑带的真正含义是什么？”老师问道。</p>
+<p>“这是我们艺术中的卓越和最高成就的象征，”学生说。</p>
+<p>老师在很长时间内没有说什么，等待。显然，他不满意。最后，他说话。”你还没有为黑带做好准备。一年后再来吧。”</p>
+<p>一年后，学生再次在老师面前跪下。老师再次问道：”黑带的真正含义是什么？”</p>
+<p>“黑带代表着一个开始 - 一个永无止境的自律，工作和追求更高标准的旅程的开始，”学生说。</p>
+<p>“是。你现在已经准备好接受黑带并开始你的工作了。”</p>
+</blockquote>
+<p>对我来说，这个故事有两个教训。</p>
+<ol>
+<li><p>博士学位是你事业的开始，而不是高潮。不要想着把它变成你的代表作。快点出去，而不是呆着不走。</p>
+</li>
+<li><p>如果你愿意和那些已经完成这个过程的人交谈并向他们学习，你可能会提前两年毕业。</p>
+</li>
+</ol>
+<p><strong>祝好运。</strong></p>
+<h2 id="相关指南及链接"><a href="#相关指南及链接" class="headerlink" title="相关指南及链接"></a>相关指南及链接</h2><ul>
+<li>Prof. HT Kung from Harvard provides <a href="https://www.eecs.harvard.edu/htk/phdadvice/" target="_blank" rel="noopener">advice about the Ph.D., particularly a Ph.D in systems.</a></li>
+<li>Matt Might is a professor who offers a <a href="http://matt.might.net/articles" target="_blank" rel="noopener">large number of articles about graduate school and other topics.</a> Scroll down to the section on Graduate School to find his articles.</li>
+<li><a href="http://phdcomics.com/" target="_blank" rel="noopener">Ph.D. Comics.</a> Dilbert meets graduate school. It is hilarious because too much of this is true. However, if you want to finish your Ph.D., read this only in small doses at a time or you will get too depressed to finish.</li>
+<li><a href="https://tomprof.stanford.edu/" target="_blank" rel="noopener">Tomorrow’s Professor</a>, a collection of interesting articles for current graduate students and those seeking academic positions after graduation.</li>
+<li>The superb <a href="http://www-personal.umich.edu/%7Edanhorn/graduate.html" target="_blank" rel="noopener">Graduate Student Resources on the Web!</a> at U. Michigan</li>
+<li><a href="http://www.cs.umd.edu/%7Ehollings/track.html" target="_blank" rel="noopener">Jeff Hollingsworth’s guides</a> on job hunting</li>
+<li><a href="http://www.cs.umd.edu/%7Ehollings/track.html" target="_blank" rel="noopener">Improving the Graduate School Environment for Women in Computer Science</a></li>
+<li><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mleone/web/how-to.html" target="_blank" rel="noopener">Advice on Research and Writing</a></li>
+<li><a href="http://www.cs.indiana.edu/how.2b/how.2b.html" target="_blank" rel="noopener">Marie des Jardin’s “How to be a Good Graduate Student”</a></li>
+<li><a href="http://faculty.washington.edu/wpratt/survive.htm" target="_blank" rel="noopener">Wanda Pratt’s Graduate Student Survival Guide</a></li>
+<li><a href="https://ronaldazuma.com/grad.day" target="_blank" rel="noopener">(Humor) A Day in the Life of a Grad Student</a></li>
+<li><a href="https://ronaldazuma.com/phd.vs.lotto.html" target="_blank" rel="noopener">(Humor) The Ph.D. vs. the Lotto</a></li>
+<li><a href="http://www.nagps.org/" target="_blank" rel="noopener">The National Association of Graduate-Professional Students</a></li>
+<li><a href="http://eaton.math.rpi.edu/Graduate/guide.html" target="_blank" rel="noopener">RPI’s Grad Student Survival Guide in Math Sciences</a></li>
+<li><a href="http://www.cs.purdue.edu/homes/dec/" target="_blank" rel="noopener">Douglas Comer’s essays on computer science and the Ph.D.</a></li>
+<li><a href="http://danny.oz.au/danny/humour/phd_lotr.html" target="_blank" rel="noopener">(Humor) Lord of the Rings as an allegory for getting the Ph.D.</a></li>
+<li><a href="http://www.cse.buffalo.edu/~rapaport/501/501gradschool.html" target="_blank" rel="noopener">Buffalo page of information about graduate school</a></li>
+<li><a href="http://dspace.mit.edu/handle/1721.1/41487#files-area" target="_blank" rel="noopener">How to do research at the MIT AI Lab</a></li>
+</ul>
+<h2 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h2><p>Adams, Scott. How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life. Portfolio Hardcover, 2013.</p>
+<blockquote>
+<p>An interesting description of systems and skills that correlate with success in life.</p>
+</blockquote>
+<p>Allen, David. Getting Things Done: The Art of Stress-Free Productivity. Penguin Books, 2002.</p>
+<blockquote>
+<p>David Allen describes his methods to stay organized and productive.</p>
+</blockquote>
+<p>Bell, C. Gordon and John McNamara. High-Tech Ventures: The Guide for Entrepreneurial Success. Addison-Wesley, 1991. ISBN 0-201-56321-5.</p>
+<blockquote>
+<p>Dated, but still recommended reading if you want to work for a startup.</p>
+</blockquote>
+<p>Bronson, Po. The Nudist on the Late Shift. Random House, 1999. ISBN 0375502777.</p>
+<blockquote>
+<p>A fun read, giving the flavor of what working in the Silicon Valley is like. Many of the chapters previously appeared as articles in Wired. A snapshot of the culture before the tech bubble burst in 2000.</p>
+</blockquote>
+<p>Covey, Stephen R. The 7 Habits of Highly Effective People. Fireside Simon and Schuster, 1989. ISBN 0-671-70863-5.</p>
+<blockquote>
+<p>Excellent overall, with sections on time management, guiding principles and interpersonal skills.</p>
+</blockquote>
+<p>EE Times Salary Survey Issue.</p>
+<blockquote>
+<p>EE Times produces an annual survey and commentary about industrial salaries.</p>
+</blockquote>
+<p>Feibelman, Peter J. A Ph.D. is Not Enough! A Guide to Survival in Science. Addison-Wesley, 1993. ISBN 0-201-62663-2.</p>
+<blockquote>
+<p>Good discussion of research career paths. A must read if you choose to take a postdoc.</p>
+</blockquote>
+<p>Heath, Chip and Dan Heath. Made to Stick: Why Some Ideas Survive and Others Die. Random House, 2007.</p>
+<blockquote>
+<p>A good reference on how to craft a message so that it is remembered.</p>
+</blockquote>
+<p>Hong, Jason. Ph.D. Students Must Break Away From Undergraduate Mentality. Communications of the ACM 56, 7 (July 2013), 10-11.</p>
+<blockquote>
+<p>Jason’s article provides more evidence of how graduate school is a different ballgame than undergraduate education.</p>
+</blockquote>
+<p>Jones, Anita. The Explosive Growth of Postdocs in Computer Science. Communications of the ACM 56, 2 (February 2013), 37-39.</p>
+<blockquote>
+<p>Postdocs are becoming almost mandatory prior to getting a tenure track position in computer science. This is not good.</p>
+</blockquote>
+<p>Kawasaki, Guy. The Macintosh Way: The Art of Guerrilla Management. Harper Perennial, 1990. ISBN 0-06-097338-2.</p>
+<blockquote>
+<p>Describing the situation in the early days of Apple, this book shows the energy and chutzpah required to survive in a startup.</p>
+</blockquote>
+<p>Kelley, Robert E. How to be a star engineer. IEEE Spectrum (October 1999), 51-58.</p>
+<blockquote>
+<p>Good description of the skills that are needed to excel at work, which go beyond sheer technical skills.</p>
+</blockquote>
+<p>Kelsky, Karen. The Professor Is In. Three Rivers Press, 2015. ISBN 978-0-553-41942-9.</p>
+<blockquote>
+<p>Read this if you want a tenure-track position at a university.</p>
+</blockquote>
+<p>Kroeger, Otto and Janet M. Thuesen. Type Talk: The 16 Personality Types that Determine How We Live, Love and Work. Tilden Press, 1988. ISBN 0-385-29828-5.</p>
+<blockquote>
+<p>Introduction to the Myers-Briggs type indicators, useful for understanding different personality traits.</p>
+</blockquote>
+<p>Lyons, Dan. Disrupted: My Misadventures in the Start-Up Bubble. Hachette Books, 2016.</p>
+<blockquote>
+<p>One person’s negative experiences working at a startup company, particularly coming in as an older employee.</p>
+</blockquote>
+<p>Maisel, Herbert and Catherine Gaddy. Employment and Salaries of Recent Doctorates in Computer Science. Communications of the ACM 40, 9 (September 1997), 90-93.</p>
+<p>Maisel, Herbert and Catherine Gaddy. Employment and Salaries of Recent Doctorates. Communications of the ACM 41, 11 (November 1998), 99-101.</p>
+<blockquote>
+<p>Two surveys about new C.S. Ph.D. graduates that include both industry and academic numbers. The low sample size is a problem, however. This is also old data.</p>
+</blockquote>
+<p>Matsudaira, Kate. The Secret Formula for Choosing the Right Next Role. Communications of the ACM 61, 10 (October 2018), 44-46.</p>
+<blockquote>
+<p>When choosing jobs, focus more on the team and the skills you can acquire and what you can accomplish, rather than the project, your job title and your paycheck.</p>
+</blockquote>
+<p>Pascarelli, Emil and Deborah Quilter. Repetitive Strain Injury: A Complete User’s Guide. John Wiley and Sons, 1994. ISBN 0-471-59532-2.</p>
+<blockquote>
+<p>A good introduction to RSI injuries and avoiding them.</p>
+</blockquote>
+<p>Pastore, Robert R. Stock Options: An Authoritative Guide to Incentive and Nonqualified Stock Options, 2nd edition. (printed Dec. 1999). ISBN 0966889924. PCM Capital Publishing.</p>
+<blockquote>
+<p>This is an excellent reference for those of you fortunate enough to have a bundle of stock options. Give me a few options as a tip for finding this book, ok? :-) The book covers tax and legal issues and gives advice on when to keep or exercise your options.</p>
+</blockquote>
+<p>Ralston, Anthony. The Demographics of Candidates for Faculty Positions in Computer Science. Communications of the ACM 39, 3 (March 1996), 78-84.</p>
+<blockquote>
+<p>A must read if you are looking for tenure track positions. The author is a former CS professor who led a faculty search, so if you don’t believe what I say, then listen to him.</p>
+</blockquote>
+<p>Wasserman, Noah. The Founder’s Dilemmas. Princeton University Press, 2012.</p>
+<blockquote>
+<p>This book details key decisions and pitfalls in starting your own company.</p>
+</blockquote>
+<p>Weinstein, Bob. Résumés Don’t Get Jobs: The Realities and Myths of Job Hunting. McGraw-Hill, 1993. ISBN 0-07-069144-4.</p>
+<blockquote>
+<p>Gritty, realistic job hunting guide for today’s market.</p>
+</blockquote>
+<p>White, Pepper. The Idea Factory: Learning to Think at MIT. Plume (Penguin Books), 1992. ISBN 0-452-26841-9.</p>
+<blockquote>
+<p>While this is not about C.S., it does dispel the notion of graduate school as an ivory tower environment.</p>
+</blockquote>
+<p>Yate, Martin. Knock ‘Em Dead: The Ultimate Job Seeker’s Handbook. Bob Adams, Inc.</p>
+<blockquote>
+<p>Good generic guide to job hunting and interviews, including a long section on interview questions.</p>
+</blockquote>
+<h2 id="作者照片"><a href="#作者照片" class="headerlink" title="作者照片"></a>作者照片</h2><p><img src="/img/ronald_azuma.jpg" alt="Ronald Azuma"></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/08/LiveAsPhD4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Susan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SEUITE">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/08/LiveAsPhD4/" class="post-title-link" itemprop="url">研究生生存指南(4)</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-08 11:20:30" itemprop="dateCreated datePublished" datetime="2019-04-08T11:20:30+08:00">2019-04-08</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="再见，多谢博士生涯！（4）"><a href="#再见，多谢博士生涯！（4）" class="headerlink" title="再见，多谢博士生涯！（4）"></a>再见，多谢博士生涯！（4）</h1><p>又名</p>
+<h2 id="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"><a href="#“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”" class="headerlink" title="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"></a>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”<!-- omit in toc --></h2><ul>
+<li><a href="#%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF4">再见，多谢博士生涯！（4）</a><ul>
+<li><a href="#%E5%B9%B3%E8%A1%A1%E4%B8%8E%E5%88%A4%E6%96%AD">平衡与判断</a></li>
+<li><a href="#%E5%8D%9A%E5%A3%AB%E7%94%9F-%E6%89%BE%E5%B7%A5%E4%BD%9C">博士生 找工作</a></li>
+</ul>
+</li>
+</ul>
+<p>如果你不知道怎么阅读，请从<a href="https://seuite.github.io/2019/04/05/LiveAsPhD1/">研究生生存指南(1)</a>开始。</p>
+<h2 id="平衡与判断"><a href="#平衡与判断" class="headerlink" title="平衡与判断"></a>平衡与判断</h2><blockquote>
+<p>- “生活如此之快，如果你不停下来环顾四周，你可能会错过它。”</p>
+<ul>
+<li>来自电影《Ferris Bueller’s Day Off》</li>
+</ul>
+<p>- “一般来说，人们为他们的汽车提供比自己的身体更好的维护。”</p>
+<ul>
+<li>Scott Adams, 《The Dilbert Future》</li>
+</ul>
+</blockquote>
+<p>当我在研究生院时，我的首要任务对我来说非常清楚：以博士的身份离开这里。其他人形容我在这个目标上”像激光束一样聚焦”。回想起来，我可能过于专注。生活远比研究生的工作更丰富。保持健康和理智对于实现毕业的主要目标至关重要。</p>
+<p><a href="http://en.wikipedia.org/wiki/Repetitive_strain_injury" target="_blank" rel="noopener">重复性劳损（RSI）</a>是我们行业的主要职业病。腕管综合症只是 RSI 的一种。如果你不知道如何设置工作区以获得良好的人体工程学效果时，请立即学习！Pascarelli 是一本关于这一主题的好书（参考文献中列出）。我的十几个朋友和同事已经受到了这个问题的困扰。在严重的情况下，RSI 可能会导致职业生涯的结束。如果你不能打字，那么写论文，编程，和制作 PPT 等是相当困难的。不要让这件事发生在你身上！预防是应该去做的事情。作为额外的预防措施，我会在举重时加强锻炼我的肩膀和手腕。</p>
+<p>进修博士学位就像一场马拉松。如果你想到达终点线，你必须学会找到​​自己节奏并照顾好自己的身体。不幸的是，学生们常常像短跑运动员一样参加马拉松比赛。它们在一段时间内非常高效，但随后又被淘汰，因为它们没有正确进食，锻炼，抽出时间为自己充电等等。通过正视其他方面，你可以最大限度地提高你的长期生产力。在我读研究生的时候，我会抽出时间沿着东海岸从波士顿到奥兰多旅游。这是减压和充电的重要部分。我还做了一些运动和循环训练（译者注：指轮番作不同的体育运动，每种只做很短时间）。在小憩一会儿的时候，我在一个安装在图形实验室的小框上玩 nerf 篮球，还在办公室里放了一把吉他。</p>
+<p><strong>找出适合你的方法。</strong></p>
+<p>在研究生院里，很容易失去自己的判断力。你被许多其他聪明，勤劳的人所包围，很容易感到自卑，失去自尊和自信。但是如果没有完成论文所需的信心，那么当情况变得艰难时，你就很容易选择辍学而不是坚持下去。我发现与”真实世界”保持联系很有用，提醒自己研究生群体不是一般人，从而保持我的判断力。你进入研究生院是因为你已经向你的教授们证明了你的潜力和技能，这在大多数大学生中都是特别的，更不用说大多数人了 - 别忘了这点。</p>
+<p>我坦率地承认，这部分反映了我个人的偏见，即生活中的平衡很重要。对于一些人来说，他们实现卓越的方法在于：专注工作，排除几乎所有其他事物。Jim Lipscomb 是在我之前 UNC 的一名研究生，他描述了<a href="http://wlipscomb.tripod.com/wnl_life.html" target="_blank" rel="noopener">是什么使他的父亲威廉·利普斯科姆（William Lipscomb）获得了诺贝尔奖</a>。但是，我选择了一组不同的优先事项，并从来不后悔这个选择。为你自己决定生活中最重要的事情。</p>
+<h2 id="博士生-找工作"><a href="#博士生-找工作" class="headerlink" title="博士生 找工作"></a>博士生 找工作</h2><blockquote>
+<p>- 简历：”一个人最完美的时候是他填写工作申请表的时候。”</p>
+<ul>
+<li>Stanley Randall</li>
+</ul>
+<p>- 真实世界，n.：计算机科学专业的学生毕业后去的地方; 贬义（”可怜的糊涂虫，他获得了学位，不得不走进真实的世界。”）。在程序员中，讨论住校生与讨论死者并无二致。</p>
+<ul>
+<li>the fortune program</li>
+</ul>
+<p>- “永远不要忘记这个原则：研究生院不是你的工作; 研究生院是你得到工作的一种手段。不要像刨花中挖洞的小仓鼠一样住在你的研究生部门。随时保持警惕，随时准备迎接下一次机会，无论什么机会：发表论文，参加会议，与你所在领域的学者会面，建立联系，获得专业技能。”</p>
+<ul>
+<li>Karen Kelsky 博士</li>
+</ul>
+<p>- “初创公司是用其他人的钱进行的商业实验。”</p>
+<ul>
+<li>Antonio Garcia Martinez, 《Chaos Monkeys》</li>
+</ul>
+</blockquote>
+<p>理想情况下，在毕业几年前，你就会开始找工作。网络非常重要：当你处于研究生阶段的中后阶段时，尽量让其他地方的教授和业界人士注意到。一种方法是尝试去那边讨论你的工作。这并不难，因为大多数研究所都喜欢举办研讨会并带来新鲜的想法。参加夏季会议或在别处工作也可以获得曝光。与其他学校的研究生和人员交朋友。制作并携带自己的名片。在实地考察期间与重要访客进行交流。大约两年，我在 UNC 举办了非正式的”图形学午餐”研讨会。这意味着我是许多访问 UNC 的发言人的联系人，他们帮助我建立了很多联系。有一个”明星”系统。某些优秀的研究生可以被他们的教授称为”明星”，这对于在 CMU 或其他著名机构进行面试非常有帮助。如果你能踏上这条道路，那太好了，但不应依赖它！</p>
+<p>网络很重要，因为许多工作都是以这种方式招聘的。我在 <a href="www.hrl.com">HRL</a>（译者注：一所美国实验室） 获得了我的职位，部分原因是我在自己开始找工作的两年前自费前往那里。这意味着当我投递简历时，我对他们而言不只是一张纸。你可以在主要期刊，会议，网站和你的联系人中寻找招聘启事。</p>
+<p>在大多数公司中，招聘权属于拥有工作职位的经理，而不是人力资源部门。人力资源部门可以拒绝候选人，但他们不能雇用候选人。作为招聘经理，我的工作是只与最有资格担任该职位的候选人直接对话。作为候选人，你的工作是找到能够直接雇用和处理该人员的个人，而不是仅仅与人力资源部门合作。</p>
+<p>你什么时候开始申请面试？当你能够谈论你的论文时，你就可以开始了。不要太早或太晚，因为每个地方都只有一次机会。学术职位通常有一个特殊的”季节”（很像入学），从秋季开始，到4月左右结束；工业岗位通常不遵循这一点。求职和面试过程可能需要数月；将这些因素加入你的时间安排。</p>
+<p>工作供求情况可能会在几年内发生巨大变化，我在这里所说的关于今天就业市场的任何内容都可能在你阅读本文时已经过时。例如，在我最初找工作期间（1994年底至1995年初）期间，好工作是很难找的。如果我每个告诉我”我们没有永久职位，但你愿意成为博士后吗？”的研究所都会给我一美元，那我可以买很多午餐了。然而，在1997年左右，图形工作市场变得非常巨大，许多人获得了好几个高薪 offer。对于寻求终身图形学教师职位的人来说，1998年是非常好的一年。我认识很多朋友，他们在那一年找到了很好的终身职位。因此，当我在2000年修订本指南时，我说就业市场强劲，需求量很大。当然，从那时起科技行业开始走下坡路了。因此，我不再谈论就业市场的强弱程度。</p>
+<p>相反，这是自毕业以来我观察到的两个一致但不幸的趋势：</p>
+<ul>
+<li>终身职位越来越多地要求候选人做一个或多个博士后：<a href="http://en.wikipedia.org/wiki/Anita_K._Jones" target="_blank" rel="noopener">Anita Jones</a> 在<a href="http://dl.acm.org/citation.cfm?id=2408801" target="_blank" rel="noopener">《计算机科学博士后爆炸式增长》</a>（需要 ACM 数字图书馆订阅）一文中记录了这一趋势。自2007年以来，学术界的博士生越来越多地只能得到博士后职位，而不是终身职位。任期轨道位置的要求似乎已被重新定义，以使一个或多个博士后几乎是强制性的。长期以来，其他学科就是这种情况，但对计算机科学而言则相对较新。这延误了博士的职业生涯，并迫使那些想成为教授的人们忍受多年的低工资和地位。</li>
+<li>工业研究职位很难找到：总的来说，大多数企业都把重点放在短期项目。因此，削减或关闭工业研究实验室是大势所趋。大公司越来越多地依赖让初创公司尝试某种创新，然后与之合作或获取这些创新。公司还通过与传统研究实验室不同的高级开发团队来追寻创新。</li>
+</ul>
+<p>在开始寻找工作之前，请事先确定你的目标和参数，以及你将自己推销的”角度”。例如，我的力量在于系统工程，所以我选择在我的求职信中强调这一点。如果时间允许，对每个机构都定制化一套方法。你为自我介绍所做的事讲决定对方会或是不会了解你。尝试获得至少一个大学以外的参考。</p>
+<p>本指南不会涵盖面试的基础知识；你可以从很多书中得到它（例如参考文献中列出的 Martin Yate 和 Bob Weinstein 的书）。但是，我会给一些提示。</p>
+<ul>
+<li>不要在抵达当天面试，并尽量避免星期一和星期五。</li>
+<li>为困难或非常规的问题做好准备，通过找到解决潜在问题的礼貌方式，。</li>
+<li><strong>在面试之前做好功课！</strong>我总会被在对想加入的机构毫无了解的情况下去参加面试的人们震惊到。如果目标是一家大公司的研究实验室，你可以轻松找到华尔街日报的文章，年度报告和股票经纪人报告。如果你的目标是学术职位，请查看 <a href="https://tomprof.stanford.edu/" target="_blank" rel="noopener">Tomorrow’s Professor site</a>和 <a href="http://theprofessorisin.com/" target="_blank" rel="noopener">The Professor Is In</a> 以寻求指导。如果你在大学面试，请获取他们的课程目录并使用他们的编号方案来描述你可以教授的课程。</li>
+<li>面试是为了了解更多关于他们的信息，而不仅仅是为了推销自己。</li>
+<li>你的45-60分钟研究报告至关重要，确保你彻底练习了它</li>
+<li>面试会创造面试。也就是说，如果你已经在其他地方进行了很多面试，这会让你看起来更有吸引力，因为说明还有其他人想要你，这使你更容易收到更多的面试邀请。通过在你的网页上保留你的面试时间表来传播这一事实。有一个轶事是关于一个学生从很多不同的机构收到面试的提议，但只在斯坦福面试过他之后！</li>
+<li>记录与你交谈的对象，你所谈论的内容以及何时进行。这使得在同时面对几个不同提案时更容易保持正确。</li>
+<li>你所在领域的主要会议是安排初步面试的好地方，因为它对公司或大学来说很便宜。你需要见面的人已经在那里，这样他们就可以节省你不得不把你赶出去并在机构中安置你的费用。</li>
+</ul>
+<p>Offer 是一场等待游戏。为很多挫折做好准备。你需要一个书面的 offer，其它东西都算不得数；你也应该以书面形式接受或拒绝。谈判，但要注意你的立场的或弱点。我还建议只做一轮谈判（即你对条款提出反对，组织对此做出回应，然后就做出决定）。作为一名招聘经理，我可以告诉你，当候选人试图长时间谈判时，是非常令人沮丧的，这可能会让雇主感到不安，甚至可能会撤销这个 offer。纵览全局。起薪可能不如工作类型，环境，福利，增长潜力和公私平衡一样重要。药物测试和其他因素正变得越来越普遍；你必须决定如何回应这些。</p>
+<p>啊，是的，工资。每个人都想知道。对于学术（终身职位）薪水，你可以从 <a href="http://cra.org/resources/taulbee/" target="_blank" rel="noopener">the annual Taulbee surveys</a> 中获得发表在计算研究新闻通讯和ACM通讯上的典型数字。例如，2015年 Taulbee 调查中列出的工资中位数接近114,000美元。注意这是9个月的工资。你是否需要资金来支付2个月或3个月的暑期薪水，会对你的底线产生重大影响。此外，教授可以通过咨询赚钱，尽管这在已经成为教授的人中更为常见。根据咨询和客户的类型，费率最高可达每天4000美元或更多。工业薪资的数字更难获得。Maisel 和 Gaddy 的参考文献是我发现的唯一一个专门调查年轻博士薪水的人，这些数字现在已经很过时了。工资在很大程度上取决于地理位置。例如，硅谷和旧金山的薪水很高。但在你决定搬到 Palo Alto （译者注：斯坦福大学和惠普总部所在城市）之前，请记住那里的生活成本也在平流层上。当我第一次写这本指南（1997年）时，硅谷的好房子价格在五十万美元以上。2017年，那些相同的房子可能已经到了125万美元到150万美元或更多。更一般的计算机科学薪资调查由 IEEE 和 <a href="http://www.eetimes.com/" target="_blank" rel="noopener">EE Times</a> 进行</p>
+<p>作为招聘经理，我提醒你不要相信 Glassdoor 等网站（译者注：类似国内智联无忧、 Boss 直聘等网站）自己的数据。我的经验是，那些都是不准确的，通常会夸大薪水数字。他们还经常将基本工资与包括奖金，股票和其他福利在内的总薪酬混为一谈。</p>
+<p>利用你的网络自行获取工资信息。不要直接去问某人的工资，除非这是你认识的人，即使那样也要非常小心。相反，给他们一个数字，看看他们如何回应。他们认为你提到的数字是高，低还是差不多？通过了解人们的反应，你就可以了解市场范围。</p>
+<p>将福利和预期工作量纳入薪酬评估中。如果你必须在这个位置上工作 80 小时，那么高额补偿的报价可能看起来不太有吸引力。你可能不得不做一些侦探工作来确定真相。一家公司可能会说他们重视工作与生活的平衡，而既定的文化告诉你一个不同的故事：人们必须每周工作80小时才能获得晋升或者甚至才能获得期望薪水和项目期限。对于许多职位，特别是在硅谷，可变薪酬（现金奖励，限制性股票单位和股票期权）构成了薪酬总额的重要组成部分，同时也带来了更多的收益。</p>
+<p>（未完待续）</p>
 
           
         
@@ -498,12 +1091,24 @@
                 
               
 
-              <time title="Created: 2019-04-07 18:42:46 / Modified: 19:37:16" itemprop="dateCreated datePublished" datetime="2019-04-07T18:42:46+08:00">2019-04-07</time>
+              <time title="Created: 2019-04-07 18:42:46" itemprop="dateCreated datePublished" datetime="2019-04-07T18:42:46+08:00">2019-04-07</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
               
             
           </span>
@@ -549,6 +1154,7 @@
 </ul>
 </li>
 </ul>
+<p>如果你不知道怎么阅读，请从<a href="https://seuite.github.io/2019/04/05/LiveAsPhD1/">研究生生存指南(1)</a>开始。</p>
 <h2 id="规划能力"><a href="#规划能力" class="headerlink" title="规划能力"></a>规划能力</h2><blockquote>
 <p>“没有计划就是计划失败。”</p>
 </blockquote>
@@ -742,7 +1348,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-04-07 18:44:22" itemprop="dateModified" datetime="2019-04-07T18:44:22+08:00">2019-04-07</time>
+                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
               
             
           </span>
@@ -789,6 +1395,7 @@
 </ul>
 </li>
 </ul>
+<p>如果你不知道怎么阅读，请从<a href="https://seuite.github.io/2019/04/05/LiveAsPhD1/">研究生生存指南(1)</a>开始。</p>
 <h2 id="研究生院是一个不同的游戏"><a href="#研究生院是一个不同的游戏" class="headerlink" title="研究生院是一个不同的游戏"></a>研究生院是一个不同的游戏</h2><blockquote>
 <p>- “不要让学校妨碍你的教育。” </p>
 <ul>
@@ -1003,7 +1610,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-04-06 22:38:25" itemprop="dateModified" datetime="2019-04-06T22:38:25+08:00">2019-04-06</time>
+                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
               
             
           </span>
@@ -1234,7 +1841,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-04-06 22:22:43" itemprop="dateModified" datetime="2019-04-06T22:22:43+08:00">2019-04-06</time>
+                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
               
             
           </span>
@@ -1278,8 +1885,8 @@
 <h2 id="一、论文的要求"><a href="#一、论文的要求" class="headerlink" title="一、论文的要求"></a>一、论文的要求</h2><p>一篇硕士论文的基本要求是：
 　</p>
 <ol>
-<li>论文的主要内容，是叙述一套方法在一个特定场合中的应用。
-　</li>
+<li><p>论文的主要内容，是叙述一套方法在一个特定场合中的应用</p>
+</li>
 <li><p>找到与此方法相关的学术文献（尤其是学术期刊论文）是作者的责任而非审稿人/读者的责任</p>
 </li>
 <li><p>因此，在论文中，必须要有足够的证据来向读者证明：针对这个应用场合，该方法确实有比一切既有文献中的方法更优越之处。</p>
@@ -1511,6 +2118,169 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/03/01/about/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Susan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SEUITE">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/01/about/" class="post-title-link" itemprop="url">认识一下</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-01 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-01T00:00:00+08:00">2019-03-01</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Hey-Susan-Here"><a href="#Hey-Susan-Here" class="headerlink" title="Hey! Susan Here!"></a>Hey! Susan Here!</h1><p>你好呀，我是Susan，是东南大学网络技术和开放，开发，开团，开dflakjdgshd……开源技术协会的会长啦！<br>我们是一个非常非常小的组织（算上我也只有3个人），希望可以让大家的大学生活变得更加丰富多彩！<br>我们现在已经可以提供下列服务了哟~：</p>
+<ul>
+<li><a href="https://wiki.seu.services" target="_blank" rel="noopener">东大Wiki</a></li>
+<li><a href="https://club.seu.services" target="_blank" rel="noopener">社团平台</a></li>
+<li><a href="https://bbs.seu.services" target="_blank" rel="noopener">校内论坛</a><br><img src="/img/Susan.png" alt="I&#39;m Susan"></li>
+</ul>
+<h1 id="联系我们"><a href="#联系我们" class="headerlink" title="联系我们"></a>联系我们</h1><p>你可以用邮件和我联系：<a href="mailto:seuite@outlook.com" target="_blank" rel="noopener">seuite@outlook.com</a><br>或者加入我们的QQ群: 974796440<br>我还暂时没能拥有微信哦，希望日后有机会能和大家一起玩~<br>我们还欢迎你到我们的团队看板来加上一笔！<a href="https://www.seu.services" target="_blank" rel="noopener">SEUITE</a></p>
+<p>By the way，你甚至可以直接到宿舍和实验室来找我们玩！</p>
+<h1 id="加入我们"><a href="#加入我们" class="headerlink" title="加入我们"></a>加入我们</h1><p>我们急缺 <strong>前端，内容管理和美工</strong> 各一名 ，有兴趣的同学快到碗里来！</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
@@ -1553,7 +2323,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1576,7 +2346,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">tags</span>
                   
                 </div>
