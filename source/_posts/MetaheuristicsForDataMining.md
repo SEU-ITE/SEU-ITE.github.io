@@ -11,7 +11,7 @@ tags:
 > Dhaenens, C. and L. Jourdan (2019). "Metaheuristics for data mining." 4OR.
 - 译者：陈思源
 
-本文隶属于"每天一篇计算机 Paper"系列博客，更多内容请点击这个链接。
+本文隶属于"每天一篇计算机 Paper"系列博客，更多内容请点击[这个链接](https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/)。
 
 ## 1. Introduction
 
