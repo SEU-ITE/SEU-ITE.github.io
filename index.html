@@ -335,7 +335,7 @@
                 
               
 
-              <time title="Created: 2019-04-10 21:06:18 / Modified: 21:06:31" itemprop="dateCreated datePublished" datetime="2019-04-10T21:06:18+08:00">2019-04-10</time>
+              <time title="Created: 2019-04-10 21:06:18 / Modified: 21:11:22" itemprop="dateCreated datePublished" datetime="2019-04-10T21:06:18+08:00">2019-04-10</time>
             
 
             
@@ -383,7 +383,7 @@
 </ul>
 </blockquote>
 <p>本文隶属于”每天一篇计算机 Paper”系列博客，更多内容请点击这个链接。</p>
-<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><p>大数据的概念为所有类型的数据分析方法都提供了巨大的机遇和挑战。特别是对大型问题优化的方法非常适合分析这些数据。实际上，正如将要展示的，许多数据挖掘任务可以被建模为组合优化问题。本文的目的是展示数据挖掘和优化之间的联系，并介绍一些最近在这个主题上进行的，特别是使用元启发式的工作。本文将提供足够的信息来向读者介绍这些方法。本文是在2016年出版的关于这一主题的书（Dhaenens and Jourdan 2016）的后续。我们推荐那些希望在本文后面获得更深入信息的读者阅读本书。但是，我们在此提供更新的参考资料和对当前趋势的分析。</p>
+<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><p>大数据的概念为所有类型的数据分析方法都提供了巨大的机遇和挑战。特别是对大型问题优化的方法非常适合分析这些数据。实际上，正如将要展示的，许多数据挖掘任务可以被建模为组合优化问题。本文的目的是展示数据挖掘和优化之间的联系，并介绍一些最近在这个主题上进行的，特别是使用元启发式的工作。本文将提供足够的信息来向读者介绍这些方法。本文是在2016年出版的关于这一主题的书（Dhaenenssand Jourdan 2016）的后续。我们推荐那些希望在本文后面获得更深入信息的读者阅读本书。但是，我们在此提供更新的参考资料和对当前趋势的分析。</p>
 <p>The concept of big data offers great opportunities and challenges for all types of data analysis approaches. In particular, optimization approaches that can handle large problems are well suited to analyze such data. Indeed, as it will be shown, many data mining tasks may be modeled as combinatorial optimization problems. The aim of this article is to demonstrate the links between data mining and optimization, and to present some of the recent works that have been conducted on this subject, especially using metaheuristics. This article will provide enough information to educate a reader on such approaches. This article follows the publication of a book in 2016 concerning this subject (Dhaenens and Jourdan 2016). We refer readers who wish to gain deeper information subsequently to this book. However, we herein offer updated references and an analysis of the current trends.</p>
 <h3 id="1-1-Big-data-context"><a href="#1-1-Big-data-context" class="headerlink" title="1.1 Big data context"></a>1.1 Big data context</h3><p>有很多对大数据这个术语提出的定义。最常用的是基于 3V（或 5V）的定义：规模（Volume），多样性（Variety）和速度（Velocity），以及准确性（Veracity）和价值特征（Value characteristics）。在大数据处理的不同阶段，产生了大量新的技术挑战（Laney 2001; Nunez和Attoh-Okine 2014）。我们不会在此考虑数据生成和采集阶段所带来的挑战，也不会考虑存储和为准备要分析的数据而做的数据预处理，例如删除异常值，或替换丢失的数据等。但是，我们将重点关注提取知识的数据分析阶段。</p>
 <p>Many definitions can be proposed for the term big data. The most commonly used are based on the three (or five) Vs definition: Volume, Variety, and Velocity, as well as Veracity and Value characteristics. Big data offers plenty of new technical challenges at different phases of the big data process (Laney 2001; Nunez and Attoh-Okine 2014). We will not consider herein the challenges resulting from the data generation and the acquisition phase, nor the storage or the data preprocessing that may remove outliers, replace missing data, for example, in order to prepare data to be analyzed. However, we will focus on the data analysis phase that aims at extracting knowledge. </p>
