@@ -27,13 +27,13 @@ them through this difficult period, we list some suggested actions to take:
 
 							Ron
 
-"Can you operate 
- it, Spock?"
-		"Well, Jim, this computer was designed and constructed 300 
-		 million years ago by a totally alien race of methane-breathing,
-		 squidlike beings who built it using technologies unknown to 
-		 us and used it for purposes we cannot conceive of and then 
-		 mysteriously vanished, leaving no shred of documentation as
-		 to its operation.  It may take a few moments."
+"Can you operate it, Spock?"
+
+"Well, Jim, this computer was designed and constructed 300 
+million years ago by a totally alien race of methane-breathing,
+squidlike beings who built it using technologies unknown to 
+us and used it for purposes we cannot conceive of and then 
+mysteriously vanished, leaving no shred of documentation as
+to its operation.  It may take a few moments."
 
 - Mr. Spock, computer genius and current DWE record-holder (94% overall right)
