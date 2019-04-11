@@ -6,7 +6,7 @@ tags:
  - 研究生
 ---
 
-# 关于偏好的任务分配的小数0-1程序。
+# 关于偏好的任务分配的分式 0-1 规划
 
 >Güngör, M. (2019). "A fractional 0–1 program for task assignment with respect to preferences." Computers & Industrial Engineering 131: 263-268.
 - 译者：陈思源
