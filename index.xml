@@ -17,7 +17,7 @@
       <pubDate>Fri, 12 Apr 2019 20:00:00 +0800</pubDate>
       
       <guid>https://seuite.github.io/report/week7report/</guid>
-      <description>SEUITE 第7周报告 总体进展 本周依然在更新 SEUITE 博客，重写了社团主页，做了非常多的测试demo。 详细进展 SEUITE 博客 链接地址 每天发布一篇博客（每篇字数约7k） 本周主题为 前沿计算机领域 paper 纵览 依旧使用 hexo 生成静态网页，主题为 NeXT 测试平台 链接地址 作为主服务器的测试服务器使用 无法使用域名访问，需使用ip地址访问，因此做反代的时候需要注意迁移至生产环境时的改写 不会将文档站和公共文件站转移上去 社团主页 链接地址 重写了主页 更新了 fav</description>
+      <description>这周摸的快乐！</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@
       <pubDate>Fri, 05 Apr 2019 20:29:37 +0800</pubDate>
       
       <guid>https://seuite.github.io/report/week6report/</guid>
-      <description>总体进展 本周开始更新 SEUITE 博客，上线公共文件站，维护测试平台。 详细进展 SEUITE 博客 链接地址 每天发布一篇博客（每篇字数约5k） 内容为有关计算机/学习的内容 使用 hexo 生成静态网页，主题为 NeXT 公共文件站 链接地址 提供公共资源下载 内容为 SEUITE 相关文档/代码资源 使用 H5ai 静态代理在测试平台上，文件备份到 GitHub 上 测试平台 链接地址 作为主服务器的测试服务器使用 保持基本环境于主服务器同步的情况下进行开发 托管在阿里云，可能将文档站和公共文件站转移</description>
+      <description>这周没有摸鱼！</description>
     </item>
     
     <item>
