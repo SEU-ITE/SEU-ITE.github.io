@@ -4,6 +4,7 @@ draft = false
 title = "SEUITE第7周报告"
 categories = ["周报"]
 tags = ["SEUITE", "周报"]
+summary= "这周摸的快乐！"
 +++
 
 # SEUITE 第7周报告

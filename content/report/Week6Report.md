@@ -4,6 +4,7 @@ draft = false
 title = "SEUITE第6周报告"
 categories = ["周报"]
 tags = ["SEUITE", "周报"]
+summary= "这周没有摸鱼！"
 +++
 
 ## 总体进展

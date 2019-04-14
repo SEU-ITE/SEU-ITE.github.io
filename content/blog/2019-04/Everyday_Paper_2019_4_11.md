@@ -3,16 +3,14 @@ date: "2019-04-11T09:23:41+08:00"
 publishdate: "2019-04-11+08:00"
 lastmod: "2019-04-11+08:00"
 draft: false
-title: "每天一篇计算机 Paper (2019/4/11)"
+title: "关于偏好的任务分配的分式 0-1 规划"
 tags: ["每日 Paper", "计算机", "blog"]
 series: ["前沿进展"]
 categories: ["每日 Paper"]
 img: "https://i.loli.net/2019/04/06/5ca87b7dac457.jpg"
 toc: false
-summary: "关于偏好的任务分配的分式 0-1 规划"
+summary: "每天一篇计算机 Paper (2019/4/11)"
 ---
-
-# 关于偏好的任务分配的分式 0-1 规划
 
 >Güngör, M. (2019). "A fractional 0–1 program for task assignment with respect to preferences." Computers & Industrial Engineering 131: 263-268.
 - 译者：陈思源

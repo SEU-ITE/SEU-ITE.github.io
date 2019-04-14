@@ -3,16 +3,14 @@ date: "2019-04-10T18:42:14+08:00"
 publishdate: "2019-04-10+08:00"
 lastmod: "2019-04-10+08:00"
 draft: false
-title: "每天一篇计算机 Paper (2019/4/10)"
+title: "用于数据挖掘的元启发式方法"
 tags: ["每日 Paper", "计算机", "blog"]
 series: ["前沿进展"]
 categories: ["每日 Paper"]
 img: "https://i.loli.net/2019/04/06/5ca87b7dac457.jpg"
 toc: true
-summary: "用于数据挖掘的元启发式方法"
+summary: "每天一篇计算机 Paper (2019/4/10)"
 ---
-
-# 用于数据挖掘的元启发式方法
 
 > Dhaenens, C. and L. Jourdan (2019). "Metaheuristics for data mining." 4OR.
 - 译者：陈思源
