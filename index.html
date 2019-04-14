@@ -1,2733 +1,1217 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
+<html lang="zn-Hans">
+  <head>
+	<meta name="generator" content="Hugo 0.55.1" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
+  <meta name="author" content="SEUITE">
+  <meta name="description" content="[东南大学网络技术和开源软件协会 ------------ 希望每个人都能够享受快乐的校园生活]">
   
+  <meta property="og:title" content="SEUITE 博客" />
+<meta property="og:description" content="[东南大学网络技术和开源软件协会 ------------ 希望每个人都能够享受快乐的校园生活]" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://seuite.github.io/" />
+
+<meta property="og:updated_time" content="2019-04-12T18:00:00&#43;00:00"/>
 
 
-<html class="theme-next muse use-motion" lang="en">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="/css/main.css?v=7.0.1">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '7.0.1',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false,"dimmer":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
+  <title>
   
-
-
-
-
-  <meta name="keywords" content="Southeast University">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SEUITE">
-<meta property="og:url" content="https://seuite.github.io/index.html">
-<meta property="og:site_name" content="SEUITE">
-<meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SEUITE">
-
-
-
-
-
+      SEUITE 博客
+  
+  </title>
 
   <link rel="canonical" href="https://seuite.github.io/">
 
-
-
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>SEUITE</title>
+  
   
 
+  
+  <link href="https://seuite.github.io/css/vendors-extensions/fontawesome/all.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">
+  <link href="https://seuite.github.io/css/font.css" rel="stylesheet"> 
+    
+  
+  <link href="https://seuite.github.io/css/vendors/bootstrap4/bootstrap.min.css" rel="stylesheet">
+  <link href="https://seuite.github.io/css/vendors-extensions/mdb/mdb.min.css" rel="stylesheet"> 
+  <link href="https://seuite.github.io/css/vendors/mdb/style.min.css" rel="stylesheet"> 
+  <link href="https://seuite.github.io/css/main.css" rel="stylesheet">
 
 
+  
+  <link rel="shortcut icon"
+  
+      href="https://seuite.github.io/img/favicon.png"
+  
+  >
 
 
+  
+  
 
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
+  <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
   </style>
-</noscript>
+
+
+  
+    
+    <link rel="stylesheet" href="https://seuite.github.io/js/vendors/katex/katex.min.css">
+  
+  
+
+  
+    
+    <link rel="stylesheet" href="https://seuite.github.io/css/vendors/highlight/github-gist.css">
+  
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
-
-  
+  <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
   
     
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
     
 
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">SEUITE</span>
-        <span class="logo-line-after"><i></i></span>
+     
+   
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="https://seuite.github.io">
+          
+        <img class="avatar" src="https://seuite.github.io/img/favicon.png" style="width: 40px!important;height: auto;"  class="d-inline-block align-top" alt="" >
+        
+        <strong> SEUITE</strong>
       </a>
+
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item  active ">
+            <a class="nav-link" href="https://seuite.github.io">Home <span class="sr-only">(current)</span></a>
+          </li>
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://seuite.github.io/blog/" >博客  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://seuite.github.io/report/" >周报  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://seuite.github.io/about/" >关于我们  </a>
+            </li>
+          
+          
+        </ul>
+
+      </div>
+
     </div>
-    
-      
-        <p class="site-subtitle">东南大学网络技术和开源软件同好会</p>
-      
-    
-    
-  </div>
-
-  <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-
-
-<nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home menu-item-active">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-    
-
-  
-
-  
-</nav>
-
-
-
-  
-
-
-
-</div>
-    </header>
-
-    
-
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/13/Worse_is_Better/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Susan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SEUITE">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/13/Worse_is_Better/" class="post-title-link" itemprop="url">Worse Is Better</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-13 17:03:53 / Modified: 17:50:35" itemprop="dateCreated datePublished" datetime="2019-04-13T17:03:53+08:00">2019-04-13</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="越糟糕越好：简单之美-Worse-Is-Better"><a href="#越糟糕越好：简单之美-Worse-Is-Better" class="headerlink" title="越糟糕越好：简单之美 (Worse Is Better)"></a>越糟糕越好：简单之美 (Worse Is Better)</h1><blockquote>
-<p>原作者：Richard P. Gabriel</p>
-<p>译者：陈思源</p>
-</blockquote>
-<p>被称为”worse is better”的概念地认为在软件制作中（也许在其他领域），最好从最小的创作开始并根据需要增长。Christopher Alexander 可能称之为零碎增长。这个故事是关于这个概念如何演变的。</p>
-<p>这是 Worse is better 的摘要：<a href="http://www.dreamsongs.com/RiseOfWorseIsBetter.html" target="_blank" rel="noopener">“Worse is Better”之后</a>。</p>
-<p>1984 年到 1994 年间，我经营了一家叫做 Lucid 的 Lisp 公司。（译者注：Lisp 是一门函数式编程语言，著名的 Hacknews 网站就是用它编写的）1989年，Lisp 的生意明显的不是很好，部分原因是很多 AI（译者注：Artificial Intelligence，人工智能）公司举步维艰，其他则是因为那些 AI 公司开始将他们的失败归咎于 Lisp 及其实现。1989年春的某天，我和一群黑客坐在 Lucid 的门廊处闲聊，有人问我为什么我认为人们相信 C 和 Unix 比 Lisp 更好，我开玩笑的说到：因为越糟糕的东西越好呀。大家哄堂大笑，同时我开始试着解释『为什么一些蹩脚的事情可能是更好的』。</p>
-<p>几个月后，1989年的夏天，可能是因为 Lucid 是一个优秀的Lisp公司，一个名为 EuroPAL 的小型 Lisp 会议（欧洲 Lisp 实际应用会议）邀请我发表主题演讲。我同意了，在讨论演讲主题的时候，我想详细阐释一下如何把我们开玩笑的时候说的” Worse is better” 的想法应用于 Lisp。在 Lucid，我们知道很多关于如何使用Lisp来实现我们眼中的现实业务，因此”Lisp Good News，Bad News，How to Win Big”出现了。 <a href="http://www.dreamsongs.com/WIB.html" target="_blank" rel="noopener">略有删节版本的html</a> 和 <a href="http://www.dreamsongs.com/Files/LispGoodNewsBadNews.pdf" target="_blank" rel="noopener">有关Treeshaker和Lisp应用程序交付的更多详细信息的pdf</a></p>
-<p>我于 1990 年 3 月在剑桥大学做了这个演讲。我从未去过剑桥（也没去过牛津大学），而且我对在牛顿所在的学校讲话感到非常紧张。在礼堂里大约有 500 人 -800 人，在我的演讲之前他们音响正播放 Notting Hillbillies——我以前从未听过这个乐队，事实上，这张专辑还没有在美国上映。音乐显得非常合适，因为我在演讲中决定使用非常口语化的美式写作。尽管是英国乐队，Notting Hillbillies 演奏的音乐风格深受传统美国音乐的影响。因为座无虚席，所以我演讲时有些畏惧，最后，沉默了很长一段时间的。第一个说出来的人是 Gerry Sussman，他对这个话题很是讥讽了一番，其次是 Carl Hewitt，他同样不太友好。我花了 30 分钟试图向他们解释我的演讲.他们绝不想听到这样的批评——也许他们更希望有一个啦啦队长那样的演讲。</p>
-<p>当然，我活了下来，然后回到了加利福尼亚州。那时候，互联网刚刚启动，所以可以预期没有太多人会听到有关这次谈话以及它引起的轩然大波。然而，当时在场的媒体在英国广泛地讨论了它。Headlines in computer rags 宣称”Lisp 已死，Gabriel 当立”(Lisp Dead, Gabriel States)。其中有一副 Bruce Springsteen 的画作，标题是『新泽西风格』(New Jersey Style)，指的是我对”worse is better”设计方法的昵称。然而，我躲开了这些话题，确信它很快就会平静下来。</p>
-<p>大约一年后，我们聘请了一位名叫 Jamie Zawinski 的匹兹堡小孩。他还不到20岁，并得到 Scott Fahlman 的高度赞扬（译者注：Scott Fahlman 是 Lucid 联合创始人，卡内基梅隆大学计算机科学家，Common Lisp 业内领袖）。我们称他为”The Kid”。让他加入我们是一件非常有趣的事情：作为一个黑客他做的不差，而且在 Lucid 没有多少这类人的情况下就更是如此了。他想了解公司里的人，特别是我，因为我是承担让他加入的风险的人，包括把他带到西海岸。他的寻找方式是查看我的计算机文件——它们都处于无保护状态。他找到了 EuroPAL 文件，并发现了 worse is better 的部分。他将这些想法与 Richard Stallman 的想法联系起来。自从多年前我担任自由编程联盟的发言人以来，我就非常了解 Richard Stallman。 JWZ摘录了 worse is better 那个部分并将它们发送给他在卡耐基梅隆大学的朋友，他们将它们发送给他们在贝尔实验室的朋友，他们又将它们发送给各地的朋友。</p>
-<p>不久后，我收到了十几封请求论文稿件的邮件。几家大公司的部门请我允许将这件作品用作他们20世纪90年代软件工程策略思想的一部分。我记得其中有 DEC，HP 和 IBM。 1991年6月，AI Expert 杂志重新出版了这篇论文，以在美国获得更大的读者群。</p>
-<p>然而，尽管世界其他地方表现出了明显的热情，但我对于 worse is better 概念开始感到不安，特别是与我的联系。在20世纪90年代早期，我为杂志和期刊撰写了大量的论文和专栏，多到我得为其中一些使用 <a href="http://www.dreamsongs.com/Nickieben.html" target="_blank" rel="noopener">Nickieben Bourbaki</a> 这个笔名。这个名字最初的想法是，我在 Lucid 的工作人员会参与写作，而用单个假名代表集体，就像20世纪30年代的法国数学家在重写他们那个数学领域的基础时，使用 Nicolas Bourbaki 作为他们的集体名称一样。但是之后，只有我在用这个名字写东西。</p>
-<p>在 1991-1992 的那个冬季，我用 Nickieben Bourbaki 的名字写了一篇名为 <a href="http://www.dreamsongs.com/Files/worse-is-worse.pdf" target="_blank" rel="noopener">“越糟糕越好糟糕透了”(Worse Is Better Is Worse)</a> 的文章。这篇文章是用来攻击 worse is better 的。在其中，小说的创作是 Nickieben 是 Richard P. Gabriel 的发小和同事，作为朋友，为了 Richard 好，Nickieben 在纠正 Richard 的信仰。</p>
-<p>在1992年秋天，我在面向对象程序设计期刊（JOOP）对”Worse Is Better Is Worse”发表了一篇反驳社论，叫做 <a href="http://www.dreamsongs.com/Files/IsWorseReallyBetter.pdf" target="_blank" rel="noopener">“Is Worse Really Better?”</a>。Lucid 的人开始有点担心，因为我会带他们检查（作为我）支持 worse is better 的论文草稿，然后我会带他们反对（作为Nickieben）自己。一个同事对我可能患有精神疾病非常忧虑。</p>
-<p>于是我阅读了很多经济学与生物学书籍，试着去理解经济系统中发生的进化。后来，将大部分学习到的这方面知识汇集到了一次 presentation 的 keynote 上，名字叫做：<a href="http://www.dreamsongs.com/Files/PatternsOfSoftware.pdf" target="_blank" rel="noopener">Software Acceptance：How Winners Win</a>。另外一部分则加到了我的论文书籍，<a href="http://www.dreamsongs.com/Files/PatternsOfSoftware.pdf" target="_blank" rel="noopener">Patterns of Software: Tales from the Software Community</a>，作为其中一个章节：<a href="http://www.dreamsongs.com/Files/Innovation.pdf" target="_blank" rel="noopener">Money Through Innovation Reconsiderd</a>。</p>
-<p>你可能会想，经过十年的思考与讲演，不断的推到重来不断的更新进化，我对 worse is better 的观点已经毋庸置疑了（译者注：这篇文章写作于 2000 年）。其实不然，在 2000 年的 OOPSLA（面向对象技术的高峰会议）年度会议上，我被安排在一个名为『Back to the Future： Is Worse (still) Better ?』的专门小组（panel），准备期间，小组的组织者 Martine Devos 让我起草一篇意见书（position paper），于是我写了一篇公然反对 worse is better 思想的短文：<a href="http://www.dreamsongs.com/Files/WorseIsBetterPositionPaper.pdf" target="_blank" rel="noopener">Back to the Future： Is Worse (still) Better?</a></p>
-<p>但是几个月后，我又写了一篇：<a href="http://www.dreamsongs.com/Files/ProWorseIsBetterPosition.pdf" target="_blank" rel="noopener">Back to the Future：Worse (still) is Better!</a> 用于支持 worse is better 的观点。是的，我仍无法决定。于是Martine把这两篇短文合成了一份，作为小组的意见书。按照例行，小组的讨论期间出席者通常会从 worse is better 的支持方转向会议桌的另一侧：反对方。那天早上我坐在观众席上，几乎也是声嘶力竭的和他们辩论。我想正是因为大家对于『Worse is Better』的冒险精神、开明以及反驳的态度，才使得优秀成为可能。如果有一种可能性，不仅仅只是技术意义上的，而是一种美学上的失败，那么天使也会邀请恶魔，即便他们每天都在彼此斗争。</p>
-<p>你自己决定吧！</p>
-<h2 id="摘自-Rise-of-Worse-is-Better-的部分："><a href="#摘自-Rise-of-Worse-is-Better-的部分：" class="headerlink" title="摘自 Rise of Worse is Better 的部分："></a>摘自 Rise of Worse is Better 的部分：</h2><p>Worse is Better，强调简单压倒一切，为了简单性，其他方便都可以做出牺牲，包含以下几点：</p>
-<ol>
-<li>简单性：设计必须简单，这既是对实现的要求，也是对接口的要求。实现的简单要比接口的简单更加重要。简单是设计中需要第一重视的因素。</li>
-<li>正确性：设计在任何值得注意的方面都要求正确。为了简单性，正确性可以做轻微的让步。</li>
-<li>一致性：设计不能过度不兼容一致。为了简单，一致性可以在某些方面做些牺牲，但与其允许设计中的这些处理不常见情况的部分去增加实现的复杂性和不一致性，不如丢掉它们。</li>
-<li>完整性：设计必须覆盖到实际应用的各种重要场景。所有可预料到的情况都应该覆盖到。为了保证其它几种特征的品质，完整性可以作出牺牲。事实上，一旦简单性受到危害，完整性必须做出牺牲。一致性可以为实现的完整性作出牺牲；最不重要的是接口上的一致性。</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/12/Week7Report/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Susan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SEUITE">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/12/Week7Report/" class="post-title-link" itemprop="url">第7周周报</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-12 18:00:00" itemprop="dateCreated datePublished" datetime="2019-04-12T18:00:00+08:00">2019-04-12</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-13 17:04:46" itemprop="dateModified" datetime="2019-04-13T17:04:46+08:00">2019-04-13</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="SEUITE-第7周报告"><a href="#SEUITE-第7周报告" class="headerlink" title="SEUITE 第7周报告"></a>SEUITE 第7周报告</h1><h2 id="总体进展"><a href="#总体进展" class="headerlink" title="总体进展"></a>总体进展</h2><p>本周依然在更新 SEUITE 博客，重写了社团主页，做了非常多的测试demo。</p>
-<h2 id="详细进展"><a href="#详细进展" class="headerlink" title="详细进展"></a>详细进展</h2><h3 id="SEUITE-博客"><a href="#SEUITE-博客" class="headerlink" title="SEUITE 博客"></a>SEUITE 博客</h3><blockquote>
-<p><a href="https://seuite.github.io">链接地址</a></p>
-</blockquote>
-<ul>
-<li>每天发布一篇博客（每篇字数约7k）</li>
-<li>本周主题为 前沿计算机领域 paper 纵览</li>
-<li>依旧使用 hexo 生成静态网页，主题为 NeXT</li>
-</ul>
-<h3 id="测试平台"><a href="#测试平台" class="headerlink" title="测试平台"></a>测试平台</h3><blockquote>
-<p><a href="https://test.seu.services" target="_blank" rel="noopener">链接地址</a></p>
-</blockquote>
-<ul>
-<li>作为主服务器的测试服务器使用</li>
-<li>无法使用域名访问，需使用ip地址访问，因此做反代的时候需要注意迁移至生产环境时的改写</li>
-<li>不会将文档站和公共文件站转移上去</li>
-</ul>
-<h3 id="社团主页"><a href="#社团主页" class="headerlink" title="社团主页"></a>社团主页</h3><blockquote>
-<p><a href="https://www.seu.services" target="_blank" rel="noopener">链接地址</a></p>
-</blockquote>
-<ul>
-<li>重写了主页</li>
-<li>更新了 favicon，即将更新 Susan 形象</li>
-<li>玩梗玩的很开心</li>
-</ul>
-<h3 id="其它事务"><a href="#其它事务" class="headerlink" title="其它事务"></a>其它事务</h3><ul>
-<li>写了很多网页，docker，和代理的 demo</li>
-<li>Susan 新形象接近定稿</li>
-</ul>
-<h2 id="下周主要工作"><a href="#下周主要工作" class="headerlink" title="下周主要工作"></a>下周主要工作</h2><ol>
-<li>继续更新 Blog，主题为 计算机领域的经典 Paper</li>
-<li>计划更换 Blog 主题为 Aria 或迁移至 Hugo</li>
-<li>计划重写 CR 主页，使用 React 或 Hexo 生成</li>
-<li>摸一套团队办公整合的系统出来</li>
-<li>公共文件站上线</li>
-</ol>
-<h2 id="祝大家能够享受快乐的校园生活"><a href="#祝大家能够享受快乐的校园生活" class="headerlink" title="祝大家能够享受快乐的校园生活"></a>祝大家能够享受快乐的校园生活</h2><blockquote>
-<p>One man’s constant is another man’s variable.</p>
-<p>一个人的常量是另一个人的变量。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/12/Everyday_Paper_2019_4_12/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Susan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SEUITE">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/12/Everyday_Paper_2019_4_12/" class="post-title-link" itemprop="url">每天一篇计算机 Paper (2019/4/12)</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-12 09:21:18" itemprop="dateCreated datePublished" datetime="2019-04-12T09:21:18+08:00">2019-04-12</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-13 17:04:46" itemprop="dateModified" datetime="2019-04-13T17:04:46+08:00">2019-04-13</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="双目标进化优化中的生殖偏差，连锁学习和多样性保持"><a href="#双目标进化优化中的生殖偏差，连锁学习和多样性保持" class="headerlink" title="双目标进化优化中的生殖偏差，连锁学习和多样性保持"></a>双目标进化优化中的生殖偏差，连锁学习和多样性保持</h1><blockquote>
-<p>Martins, J. P. and A. C. B. Delbem (2019). “Reproductive bias, linkage learning and diversity preservation in bi-objective evolutionary optimization.” Swarm and Evolutionary Computation.</p>
-<ul>
-<li>译者：陈思源</li>
-</ul>
-</blockquote>
-<p>本文隶属于”每天一篇计算机 Paper”系列博客，更多内容请点击<a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/">这个链接</a>。</p>
-<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>最成功的多样性保存机制提供了从多个解决方案中选择代表整个帕累托前沿的子集的方法。（译者注：帕累托前沿，又称帕累托最优，指资源分配的一种理想状态，假定固有的一群人和可分配的资源，从一种分配状态到另一种状态的变化中，在没有使任何人境况变坏的前提下，使得至少一个人变得更好。）通常，为了实现该目标，例如通过使用拥挤距离或超体积测量[1,2,3]来评估其目标向量的隔离程度。通过这些测量，可以为非主导解决方案分配更高的准确度，其目标向量位于目标空间的人口较少的区域，有利于再生产生这些区域的后代。由于非主导排序遗传算法II（NSGA-II）[11]等算法的成功，多样性保存机制和繁殖作为独立组件的使用变得无处不在，即使在最近的方法中它的影响仍然很明显[4]。</p>
-<p>Most successful diversity preservation mechanisms pro vide ways to select, from a multiset of solutions, a subset that is representative of the whole Pareto front. Usually, to achieve this goal, solutions are evaluated on how isolated their objective vectors are, e.g., by using crowding distance or hypervolume measures [1, 2, 3]. From such measures it is possible to assign higher ﬁtness to non-dominated solutions whose objective vectors are in less populated regions of the objective-space, favoring reproduction to generate offspring in those regions. Motivated by the success of algorithms such as the Non-dominated Sorting Genetic Algorithm II (NSGA-II) [1], the use of diversity preservation mechanisms and reproduction as separate components became pervasive and its impact is evident even in more recent approaches [4].</p>
-<p>在本文中，我们分析了繁殖操作者对多样性保存的有效性的影响。通过对p均匀和n点交叉的分析，我们评估了这些算子的假设，这些假设有助于降低客观空间的多样性（它们是有偏见的）。由于有偏见的操作者会妨碍更好的多样性保存，因此本研究可以更好地理解多目标繁殖算子。</p>
-<p>In this paper, we analyze the inﬂuence of reproduction operators on the effectiveness of diversity preservation. Through the analysis of p-uniform and n-point cross over we evaluate the hypothesis of these operators contributing to the decreasing of diversity in objective-space (they are biased). Since biased operators would impede better diversity preservation, this study enables a better understanding of multiobjective reproduction operators.</p>
-<p>从这个意义上讲，我们研究了 ρMNK 模型的双目标实例中的生殖偏差以及连锁学习对规避它的作用。结果表明，高度破坏性的交叉算子，即那些经常破坏先前构建解的算子，产生了一种平均效应的平均效应，它将它们的目标向量偏向目标空间的中心区域。</p>
-<p>In this sense, we investigate reproductive bias in bi-objective instances of the ρMNK-model and the role of linkage learning on circumventing it. The results indicated that highly disruptive crossover operators, i.e., those that frequently destroy previously build solutions, produce a kind of averaging effect on the quality of the offspring that bias their objective vectors towards the central region of the objective space.</p>
-<p>另一方面，使用连锁引导的交叉通过允许更好地保留父母的有用特征来修正这种偏差。当繁殖不是太具有破坏性时，后代往往与至少一个父母的品质相似。因此，解决方案覆盖的客观空间区域可能会继续被下一代的子孙覆盖，这是多样性保护的一个基本特征。</p>
-<p>The use of a linkage-guided crossover, on the other hand, amended such bias by allowing better preservation of useful features from the parents. When reproduction is not too disruptive, offspring tend to be of similar quality to at least one of the parents. As a result, regions in objective-space covered by solutions are likely to continue being covered by offspring in the next generations, an essential characteristic for diversity preservation.</p>
-<p>第2节回顾了从生殖角度提出的改善多样性保护的许多机制。第3节分析了p均匀和n点交叉的决策空间中的偏差。第3节展示了这种偏差如何影响目标向量的定位。第5节定义了我们对双目标进化优化的无偏复制的想法。第6节分析了不同操作者的生殖偏差，突出了这种偏见的联系学习的影响。</p>
-<p>Section 2 reviews many mechanisms proposed to improve diversity preservation from the perspective of reproduction. Section 3 analyzes the bias in decision space of p-uniform and n-point crossover. Section 3 demonstrates how such bias might impact the positioning of the objective vectors. Section 5 deﬁnes our idea of unbiased reproduction for bi-objective evolutionary optimization. Section 6 analyzes the reproductive bias of different operators, high lighting the inﬂuence of linkage learning on such bias.</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>多样性保持问题一直是多目标进化优化中的一个问题。然而，解决这个问题的大多数早期提议都认为它是进化算法中的一个独立组件。因此，众所周知的算法，如NSGA-II及其同时代的那些，首先工作，产生一个子代，然后指定一个适应的精度，以表明解决方案对于多样性保存有多么有趣。在本文中，我们发现这样的策略可能会受到常用复制算子的影响，因为在它们的标准设置中，它们会产生偏向于目标空间某些区域的子代。从这个意义上说，无偏见的再现算子可以通过避免这种冲突来显着改善多样性保存，并且应该是通用多目标再现算子的要求。</p>
-<p>The diversity preservation problem has always been a concern in multiobjective evolutionary optimization. However, most of the early proposals to solve this problem have considered it an independent component within evolutionary algorithms. As a result, well-known algorithms such as NSGA-II and its contemporaries, worked by ﬁrst, generating an offspring, and then assigning an adapted ﬁtness to indicate how interesting a solution is regarding diversity preservation. In this paper, we showed that such strategies might have their eﬃcacy hampered by commonly used reproduction operators since in, their standard settings, they produce offspring that are biased to some areas of the objective-space. In this sense, unbiased reproduction operators can considerably improve diversity preservation by avoiding such a conﬂict and should be a requirement for a general purpose multiobjective reproduction operator.</p>
-<p>首先，我们分析了传统的再生算子，例如p均匀和n点交叉，并证明了由于它们的高破坏性，它们产生的后代（对于p = 0.5和任何n）会偏向于客观中心。 我们认为这种偏见是对父母质量的平均影响的结果。 因此，我们证实了通过减少破坏性，可以减少生殖偏差并产生更好分布的后代。</p>
-<p>At first, we analyzed traditional reproduction operators, such as p-uniform and n-point crossover, and demonstrated that, due to their high disruptiveness, the offspring they produce (for p = 0.5 and any n) were biased towards the center of the objective-space. We argued that such bias was the result of an averaging effect on the quality of the parents. Therefore, we veriﬁed that by decreasing disruptiveness it is possible to decrease the reproductive bias and produce a more well-distributed offspring.</p>
-<p>但是，如何减少繁殖操作者的破坏性？ 我们验证了两种选择：（1）使用小p进行均匀交叉（2）使用联动引导交叉。p &lt;0.5688 的均匀交叉在父母之间交换较少的遗传物质，因此它具有较小的破坏性。另一方面，联动引导的交叉将避免破坏父母的有价值的子结构，减少破坏性。我们对 ρMNK 模型的实例进行了实验，结果证实了这一假设，即随着操作者的破坏性降低，生殖偏差减小。</p>
-<p>However, how to decrease the disruptiveness of reproduction operators? We validated two alternatives: (1) the use of a small p for uniform crossover (2) the use of a linkage-guided crossover. A uniform crossover with p &lt; 0.5688 exchanges less genetic material between the parents, therefore, it is less disruptive. A linkage-guided crossover, on the other hand, will avoid destroying valuable substructures of the parents, being less disruptive. We performed experiments on instances of the ρMNK-model, and the results corroborated the hypothesis, i.e., the reproductive bias decreases as the disruptiveness of the operators decrease.</p>
-<p>此外，我们证明了所识别的连锁集可能代表关于多个目标的相关决策变量，即对目标达成一致或完全不同意的决策变量。我们的结果证实了Sastry等人的观点。[27]的论点，通过表明在双目标情景中从个体目标函数中学习信息确实是困难的。然而，该分析还表明，另一种类型的信息（来自不同目标函数的相关决策变量）仍然是可检测的并且对于再现操作者是有用的。这个事实可以解释Shah和Reed [40]的良好结果并调解两种解释。本文从众所周知的交叉算子和链接学习的角度分析了生殖对多样性保存的影响。我们的结论表明，在双目标 ρMNK 实例的背景下，即使单个连锁模型也可以促进多样性保存并提高整体优化的有效性。我们相信这里讨论的结果提高了我们对多目标再生算子的基本原理及其与分布算法估计的相互作用的理解。</p>
-<p>Additionally, we showed evidence that the linkage sets identiﬁed might represent correlated decision variables regarding the multiple objectives, i.e., decision variables that agree or completely disagree over the objectives. Our results corroborate Sastry et al. [27]’s arguments, by showing that it is indeed diﬃculty to learn information from the individual objective functions in a bi-objective scenario. However, the analysis also shows that another type of information (the correlated decision variables from different objective functions) is still detectable and useful for reproduction operators. A fact that could explain Shah and Reed [40]’s good results and conciliate both interpretations. This paper analyzed the inﬂuence of reproduction on708 diversity preservation from the perspective of well-known crossover operators and linkage learning. Our conclusions suggest that, in the context of bi-objective ρMNK instances, even single linkage models can facilitate diversity preservation and improve the effectiveness of optimization as a whole. We believe the results here discussed improves our understanding on the fundamentals of multiobjective reproduction operators and their interaction with estimation of distribution algorithms.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/11/Everyday_Paper_2019_4_11/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Susan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SEUITE">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/11/Everyday_Paper_2019_4_11/" class="post-title-link" itemprop="url">每天一篇计算机 Paper (2019/4/11)</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-11 09:21:18" itemprop="dateCreated datePublished" datetime="2019-04-11T09:21:18+08:00">2019-04-11</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-13 17:04:46" itemprop="dateModified" datetime="2019-04-13T17:04:46+08:00">2019-04-13</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="关于偏好的任务分配的分式-0-1-规划"><a href="#关于偏好的任务分配的分式-0-1-规划" class="headerlink" title="关于偏好的任务分配的分式 0-1 规划"></a>关于偏好的任务分配的分式 0-1 规划</h1><blockquote>
-<p>Güngör, M. (2019). “A fractional 0–1 program for task assignment with respect to preferences.” Computers &amp; Industrial Engineering 131: 263-268.</p>
-<ul>
-<li>译者：陈思源</li>
-</ul>
-</blockquote>
-<p>本文隶属于”每天一篇计算机 Paper”系列博客，更多内容请点击<a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/">这个链接</a>。</p>
-<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><p>我们考虑一个分配问题，其中每个任务必须分配给一个独特的人，负载分配必须公平; 更确切地说，任何人的负载都可能偏离平均值超过指定的常数。假设每个人都为每项任务指定一个偏好级别。对于给定的任务，我们将满意度定义为这些水平相对于负荷的加权平均值。例如，如果有人用负载 3 和 12 执行任务 A 和 B，并且如果他们对这些任务的偏好等级分别为 1 和 10，那么他的满意度就是 $ \frac{(3×1)+(12×10)}{3+12} = 8.2 $。我们希望在总加权满意度最大化的意义上找到最佳分配。我们的动机来自教学辅助任务分配问题。</p>
-<p>We consider an assignment problem where each task must be assigned to a unique person, and load distribution must be fair; more precisely, nobody’s load can deviate from the average more than a specified constant. Every person is assumed to designate a preference level for each task. For a given assignment, we define satisfaction as the weighted average of these levels with respect to loads. For instance, if somebody undertakes tasks A and B with loads 3 and 12, and if his preference levels for these tasks are 1 and 10, respectively, then his satisfaction is (3×1)+(12×10) 3+12 = 8.2. We want to find the best assignment in the sense that total weighted satisfaction is maximized. Our motivation comes from the teaching assistant-task assignment problem. </p>
-<p>因为满意度被定义为两个线性函数的比率，数学模型是一个多比率，约束的 0-1 分式规划。在最近的一项讨论中，Borrero等人（2016b）概述了关于分式 0-1 程序（通常也称为双曲 0-1 程序）的文献，包括它们的应用，相关的计算复杂性和解决方法。可以将分式 0-1 程序重新表示为等效的混合整数线性程序。Li（1994）提出了这种方法，Wu（1997）进一步讨论了这种方法。Tawarmalani等（2002）开发了八种不同的混合整数凸规划重构，与 Li 相比，它具有更好的松弛界限。Borrero等（2016a）提出了一种改进线性化配方的简单技术。关键思想是利用 0-1 决策变量的某些特定线性组合的二进制表示。</p>
-<p>The mathematical model turns out to be a multiple-ratio, constrained, fractional 0-1 program since satisfaction is defined as a ratio of two linear functions. In a recent survey, Borrero et al. (2016b) overview the literature on fractional 0-1 programs (also, often referred to as hyperbolic 0-1 programs) including their applications, related computational complexity, and solution methods. It is possible to reformulate fractional 0-1 programs as equivalent mixed-integer linear programs. Li (1994) propose such an approach that is further discussed by Wu (1997). Tawarmalani et al. (2002) develop eight different mixed-integer convex programming reformulations which have superior relaxation bounds compared to Li’s. Borrero et al. (2016a) suggest a simple technique to improve linearized formulations. The key idea is to exploit binary representations of certain linear combinations of the 0-1 decision variables. </p>
-<p>Pentico（2007）提出了一项关于过去五十年来文献中出现的任务问题变化的考察。我们考虑的问题与那里提到的分式分配问题的不同之处在于，在我们的案例中，可以将多个任务分配给同一个对象。广义赋值问题具有这种特点，但其目标函数是线性的，并且其对象的负载没有下限（仅上限）。Krumke和Thielen（2013）探讨了广义赋值的变体，特别是包含了下界假设的研讨会赋值的问题; 但是，它们允许了对象完全闲置的可能性。</p>
-<p>Pentico (2007) presents a survey of the variations of the assignment problem that have appeared in the literature over the past fifty years. The problem we consider differs from the fractional assignment problem mentioned there in that multiple tasks may be assigned to the same agent in our case. The generalized assignment problem enjoys this property, but its objective function is linear, and there is no lower bound on agents’ loads (only upper bounds). Krumke and Thielen (2013) investigate a variation of generalized assignment, particularly the seminar assignment, that assume lower bounds; however, they allow for the possibility that an agent be left completely idle. </p>
-<p>许多分配模型都考虑了偏好。在兼职人员安排的背景下有一些例子（Mohan，2008; Akbari等，2013; Ruiz-Torres等，2015），大学时间表（Daskalaki等，2004）及其子问题 学院-课程分配问题（Ozdemir和Gasimov，2004; Ismayilova等，2007; Al-Yakoob和Sherali，2015），助教-作业分配问题（G¨uler等，2015），和研讨会主题-学生分配问题（Geiger和温格，2010）。大多数情况下，满意度直接表示为线性函数而不是线性函数的比率，并与其他几个目标一起并入模型中。Ozdemir和Gasimov（2004）和Ruiz-Torres等人（2015）是少数在定义中使用比率的人之一。Ruiz-Torres等人（2015）没有提供数学模型，但提出了启发式算法。Ozdemir和Gasimov（2004）考虑了多个目标，其中之一是平均满意度的优化。他们通过分析层次过程将这些目标转化为单一目标，将问题重新表述为非线性非凸性程序，并使用Gasimov（2002）中描述的修改后的次梯度方法来解决它。</p>
-<p>Many assignment models take preferences into account. There are examples in the contexts of part-time personnel scheduling (Mohan, 2008; Akbari et al., 2013; Ruiz-Torres et al., 2015), university timetabling (Daskalaki et al., 2004) and its subproblem of faculty-course assignment (Ozdemir and Gasimov, 2004; Ismayilova et al., 2007; Al-Yakoob and Sherali, 2015), teaching assistant-task assignment (G¨uler et al., 2015), and seminar topic-student assignment (Geiger and Wenger, 2010). Most often satisfactions are expressed directly as linear functions rather than ratios of linear functions, and incorporated into the model together with several other objectives. Ozdemir and Gasimov (2004) and Ruiz-Torres et al. (2015) are among those few who use ratios in their definitions. Ruiz-Torres et al. (2015) do not provide a mathematical program, but propose heuristics. Ozdemir and Gasimov (2004) consider multiple objectives, one of them being the optimization of average satisfaction level. They transform these objectives into a single objective by means of the analytic hierarchy process, reformulate the problem as a nonlinear nonconvex program, and use the modified subgradient method described in Gasimov (2002) to solve it. </p>
-<p>本文的贡献是双重的。一方面，我们提供了一个新的分式 0-1 应用：关于偏好的任务分配（参见Borrero等，2016b）。另一方面，我们建议对 Ozdemir 和 Gasimov（2004）中类似问题采用替代解决方案，将其视为非线性非凸性程序。也就是说，我们建议将问题线性化，然后通过现成的求解器求解等效的混合整数模型。</p>
-<p>The contribution of this paper is twofold. On the one hand, we provide a new application of fractional 0-1 programming: task assignment with respect to preferences (cf. Borrero et al., 2016b). On the other hand, we suggest an alternative solution approach for the similar problem in Ozdemir and Gasimov (2004) treated as a nonlinear nonconvex program. Namely, we propose to linearize the problem and then solve an equivalent mixed-integer model by an off-the-shelf solver. </p>
-<p>在精确的定义之后，我们在 §2.1 中展示问题的计算复杂度，并在 §2.2 给出三种等效混合整数线性公式。接下来，我们在 §3 中讨论一些实际问题，并在 §4 中引入启发式。然后我们在 §5 中提供计算研究。最后在 §6 中，我们总结了主要结果，并提到了进一步研究的一些机会。</p>
-<p>After a precise definition, we show the problem’s computational complexity in §2.1, and givethree equivalent mixed-integer linear formulations in §2.2. Next, we discuss some practical issues in §3, and introduce a heuristic in §4. Then we provide a computational study in §5. Finally, we make a summary of main results and mention a few opportunities for further research in §6.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/10/Everyday_Paper_2019_4_10/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Susan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SEUITE">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/10/Everyday_Paper_2019_4_10/" class="post-title-link" itemprop="url">每天一篇计算机 Paper (2019/4/10)</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-10 21:06:18" itemprop="dateCreated datePublished" datetime="2019-04-10T21:06:18+08:00">2019-04-10</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-13 17:04:46" itemprop="dateModified" datetime="2019-04-13T17:04:46+08:00">2019-04-13</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="用于数据挖掘的元启发式方法"><a href="#用于数据挖掘的元启发式方法" class="headerlink" title="用于数据挖掘的元启发式方法"></a>用于数据挖掘的元启发式方法</h1><blockquote>
-<p>Dhaenens, C. and L. Jourdan (2019). “Metaheuristics for data mining.” 4OR.</p>
-<ul>
-<li>译者：陈思源</li>
-</ul>
-</blockquote>
-<p>本文隶属于”每天一篇计算机 Paper”系列博客，更多内容请点击<a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/">这个链接</a>。</p>
-<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><p>大数据的概念为所有类型的数据分析方法都提供了巨大的机遇和挑战。特别是对大型问题优化的方法非常适合分析这些数据。实际上，正如将要展示的，许多数据挖掘任务可以被建模为组合优化问题。本文的目的是展示数据挖掘和优化之间的联系，并介绍一些最近在这个主题上进行的，特别是使用元启发式的工作。本文将提供足够的信息来向读者介绍这些方法。本文是在2016年出版的关于这一主题的书（Dhaenens and Jourdan 2016）的后续。我们推荐那些希望在本文后面获得更深入信息的读者阅读本书。但是，我们在此提供更新的参考资料和对当前趋势的分析。</p>
-<p>The concept of big data offers great opportunities and challenges for all types of data analysis approaches. In particular, optimization approaches that can handle large problems are well suited to analyze such data. Indeed, as it will be shown, many data mining tasks may be modeled as combinatorial optimization problems. The aim of this article is to demonstrate the links between data mining and optimization, and to present some of the recent works that have been conducted on this subject, especially using metaheuristics. This article will provide enough information to educate a reader on such approaches. This article follows the publication of a book in 2016 concerning this subject (Dhaenens and Jourdan 2016). We refer readers who wish to gain deeper information subsequently to this book. However, we herein offer updated references and an analysis of the current trends.</p>
-<h3 id="1-1-Big-data-context"><a href="#1-1-Big-data-context" class="headerlink" title="1.1 Big data context"></a>1.1 Big data context</h3><p>有很多对大数据这个术语提出的定义。最常用的是基于 3V（或 5V）的定义：规模（Volume），多样性（Variety）和速度（Velocity），以及准确性（Veracity）和价值特征（Value characteristics）。在大数据处理的不同阶段，产生了大量新的技术挑战（Laney 2001; Nunez和Attoh-Okine 2014）。我们不会在此考虑数据生成和采集阶段所带来的挑战，也不会考虑存储和为准备要分析的数据而做的数据预处理，例如删除异常值，或替换丢失的数据等。但是，我们将重点关注提取知识的数据分析阶段。</p>
-<p>Many definitions can be proposed for the term big data. The most commonly used are based on the three (or five) Vs definition: Volume, Variety, and Velocity, as well as Veracity and Value characteristics. Big data offers plenty of new technical challenges at different phases of the big data process (Laney 2001; Nunez and Attoh-Okine 2014). We will not consider herein the challenges resulting from the data generation and the acquisition phase, nor the storage or the data preprocessing that may remove outliers, replace missing data, for example, in order to prepare data to be analyzed. However, we will focus on the data analysis phase that aims at extracting knowledge. </p>
-<p>数据库中的知识发现（Knowledge Discovery in Databases, KDD）是从大型数据集当中识别有效，新颖，有用且易于理解的模式的过程。数据挖掘是 KDD 过程的数学核心，涉及推断算法，探索数据，开发数学模型，和找出显著模式（隐式或显式），这是有价值知识的本质（Maimon和Rokach 2010）。</p>
-<p>Knowledge Discovery in Databases (KDD) is the process of identifying valid, novel, useful, and understandable patterns from large datasets. Data mining is the mathematical core of the KDD process, involving the inferring algorithms that explore the data, develop mathematical models, and discover significant patterns (implicit or explicit), which are the essence of valuable knowledge (Maimon and Rokach 2010).</p>
-<p>与传统数据相比，大数据在 5V 方面有所不同。使用传统的数据分析工具分析大数据会变得很困难，并引入了大数据挖掘这一术语（Che et al.2013）。</p>
-<p>In contrast to traditional data, big data varies in terms of the five V’s. It becomes difficult to analyze big data with traditional data analytics tools, and the term big data mining has been introduced (Che et al. 2013). </p>
-<p>诸如 Hadoop 和 MapReduce 等技术改进已经使得大数据的开发，以及大数据的元启发式算法（Barba-Gonzaléz等, 2017）变得可行。Hadoop 是一个开源框架，依赖于 Java 并支持分布式计算环境中的大数据处理（Shvachko等人，2010）。MapReduce 是一种编程模型，是处理和生成适用于各种实际任务的大型数据集的相关实现。用户根据 map 和 reduce 函数指定计算，底层运行时系统自动在大型机器集群中并行化计算（Dean和Ghemawat 2008）。</p>
-<p>Technological improvements such as Hadoop and MapReduce have allowed the development of big data, as well as metaheuristics for big data (Barba-Gonzaléz et al. 2017). Hadoop is an open-source framework that relies on Java and supports large data processing in distributed computing environments (Shvachko et al. 2010). MapReduce is a programming model and an associated implementation for processing and generating large datasets that is amenable to a broad variety of real-world tasks. Users specify the computation in terms of a map and a reduce function, and the underlying runtime system automatically parallelizes the computation across large-scale clusters of machines (Dean and Ghemawat 2008).</p>
-<h3 id="1-2-Primary-data-mining-tasks"><a href="#1-2-Primary-data-mining-tasks" class="headerlink" title="1.2 Primary data mining tasks"></a>1.2 Primary data mining tasks</h3><p>如前所述，数据挖掘是 KDD 过程的数学核心。数据挖掘任务可以分为两类：预测（或监督）和描述（或无监督）任务。受监督的任务学习可用数据以预测新数据，而无监督任务提供数据和现有关系的描述。主要的数据挖掘任务，如图1所示，见下：</p>
-<p>As indicated before, data mining is the mathematical core of the KDD process. Data mining tasks can be classified into two categories: predictive (or supervised) and descriptive (or unsupervised) tasks. The supervised tasks learn on available data to predict for new data, whereas unsupervised tasks provide a description of the data and existing relationships. Primary data mining tasks, as depicted in Fig. 1, are as follows: </p>
-<p><img src="/../img/MetaheuristicsForDataMiningFig1.jpg" alt="Fig.1"></p>
-<ul>
-<li>聚类（也称为无监督分类）：将数据集分解或分组为组，使得组中的元素彼此相似，并且尽可能与其他组的元素不同</li>
-<li>关联规则挖掘：提取描述不同元素的特征之间的关系（译者注：可以将关联规则理解为通过量化的方法描述元素 A 的特征 a 对元素 B 的特征 b 有多大的影响）</li>
-<li>（监督）分类：构建模型，根据其他特征的已知值来预测目标特征（类）的未知值</li>
-<li><p>特征选择：通过选择有意义的特征来减小数据集的大小</p>
-</li>
-<li><p>Clustering (also called unsupervised classification)—to decompose or partition a dataset into groups such that elements in a group are similar to each other, and are as different as possible from elements of other groups.</p>
-</li>
-<li>Association rule mining—to extract relationships between features describing different elements.</li>
-<li>(supervised) Classification—to build a model to predict the unknown value of a target feature (the class) from the known values of other features.</li>
-<li>Feature selection—to reduce the size of the dataset by selecting meaningful features.</li>
-</ul>
-<h3 id="1-3-Some-optimization-problems"><a href="#1-3-Some-optimization-problems" class="headerlink" title="1.3 Some optimization problems"></a>1.3 Some optimization problems</h3><p>如上所述，数据挖掘任务适用于诸如将元素分配到类，元素分组和特征选择之类的操作。一旦可以定义优化的标准，所有这些问题可以被表述为组合优化问题。因此，已经提出了许多使用优化方法来解决数据挖掘问题的工作，如以下评论中所述（Olafsson等人2008; Meisel和Mattfeld 2010; Corne等人2012）。</p>
-<p>As explained above, datamining tasks accommodate operations such as the assignment of an element to a class, the grouping of elements, and the selection of features. All of these problems may be formulated as combinatorial optimization problems, as soon as an optimization criterion may be defined. Hence, numerous works using optimization methods to solve data mining problems have been proposed, as described in the following reviews (Olafsson et al. 2008; Meisel and Mattfeld 2010; Corne et al. 2012).</p>
-<h3 id="1-4-Metaheuristics"><a href="#1-4-Metaheuristics" class="headerlink" title="1.4 Metaheuristics"></a>1.4 Metaheuristics</h3><p>但是，大数据的情况下，使用精确的方法难以解决这些问题。因此，元启发式算法提供了一个有趣的选择。在他们的书中，Maimon 等人专注于软计算以进行知识发现（Maimon和Rokach 2007）。不同的章节提出了不同的方法，其中很大一部分涉及元启发式，特别是进化算法和群体智能。在他的书中，Freitas 专注于使用进化算法进行数据挖掘和知识发现，这些算法代表了元启发式的一部分（Freitas 2008,2013）。特别是，这些书籍描述了如何使用进化算法进行数据准备，规则发现（包括模糊规则）或聚类。让我们注意专门用于扩展此类算法以适应大型数据集的一章。最近，我们在大数据背景下推出了一本致力于元启发式的书（Dhaenens和Jourdan 2016）。</p>
-<p>However, the context of big data makes it difficult to solve those problems using exact approaches. Hence, metaheuristics provide an interesting option. In their book, Maimon et al. focused on soft computing for knowledge discovery (Maimon and Rokach 2007). Different chapters present different approaches, and a large part pertains to metaheuristics, in particular, evolutionary algorithms and swarm intelligence. In his books, Freitas focused on data mining and knowledge discovery with evolutionary algorithms, which represent one part of metaheuristics (Freitas 2008, 2013). In particular, these books describe how evolutionary algorithms may be used as well for data preparation, rule discovery (including fuzzy rules), or clustering. Let us remark that one chapter is dedicated to the scaling of such algorithms to accommodate large datasets. More recently, we proposed a book dedicated to metaheuristics in the context of big data (Dhaenens and Jourdan 2016). </p>
-<p>因此，本文的其余部分将针对上面提出的四个主要数据挖掘任务（聚类，关联规则，分类和特征选择），如何使用元启发式而特别关注大数据。因此，对于每个数据挖掘任务，将首先给出描述。随后，描述了作为组合优化问题的问题的表达。最后，将介绍为此任务提出的主要元启发式的概述。每个部分最后将简要介绍当前的趋势。</p>
-<p>Hence, the remainder of this article will present, for the four primary data mining tasks presented above (clustering, association rules, classification, and feature selec-tion), how metaheuristics have been used with a particular focus on big data. Thus, for each data mining task, a description will be given first. Subsequently, the expression of the problem as a combinatorial optimization problem is described. Finally, an overview of the primary metaheuristics proposed for this task will be presented. Each part will end with a brief conclusion on the current trends.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/09/LiveAsPhD5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Susan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SEUITE">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/09/LiveAsPhD5/" class="post-title-link" itemprop="url">研究生生存指南(5)（完）</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-09 16:06:04" itemprop="dateCreated datePublished" datetime="2019-04-09T16:06:04+08:00">2019-04-09</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="再见，多谢博士生涯！（5）"><a href="#再见，多谢博士生涯！（5）" class="headerlink" title="再见，多谢博士生涯！（5）"></a>再见，多谢博士生涯！（5）</h1><p>又名</p>
-<h2 id="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"><a href="#“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”" class="headerlink" title="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"></a>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”<!-- omit in toc --></h2><ul>
-<li><a href="#%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF5">再见，多谢博士生涯！（5）</a><ul>
-<li><a href="#%E5%8D%9A%E5%A3%AB%E7%94%9F-%E6%89%BE%E5%B7%A5%E4%BD%9C%E7%BB%AD">博士生 找工作（续）</a><ul>
-<li><a href="#%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8">初创公司</a></li>
-<li><a href="#%E5%95%86%E4%B8%9A%E4%BC%81%E4%B8%9A">商业企业</a></li>
-<li><a href="#%E5%B7%A5%E4%B8%9A%E6%88%96%E6%94%BF%E5%BA%9C%E7%A0%94%E7%A9%B6%E5%AE%9E%E9%AA%8C%E5%AE%A4">工业或政府研究实验室</a></li>
-<li><a href="#%E5%AD%A6%E6%9C%AF%E7%95%8C">学术界</a></li>
-<li><a href="#%E5%85%B6%E4%BB%96%E6%8F%90%E7%A4%BA">其他提示</a></li>
-</ul>
-</li>
-<li><a href="#%E7%BB%93%E8%AE%BA">结论</a></li>
-<li><a href="#%E7%9B%B8%E5%85%B3%E6%8C%87%E5%8D%97%E5%8F%8A%E9%93%BE%E6%8E%A5">相关指南及链接</a></li>
-<li><a href="#%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB">推荐阅读</a></li>
-<li><a href="#%E4%BD%9C%E8%80%85%E7%85%A7%E7%89%87">作者照片</a></li>
-</ul>
-</li>
-</ul>
-<p>如果你不知道怎么阅读，请从<a href="https://seuite.github.io/2019/04/05/LiveAsPhD1/">研究生生存指南(1)</a>开始。</p>
-<h2 id="博士生-找工作（续）"><a href="#博士生-找工作（续）" class="headerlink" title="博士生 找工作（续）"></a>博士生 找工作（续）</h2><p>对于计算机科学博士来说，有四大类雇主：</p>
-<ul>
-<li>初创公司（包括创办自己的公司或咨询）</li>
-<li>商业企业</li>
-<li>工业或政府研究实验室</li>
-<li>学术界 </li>
-</ul>
-<h3 id="初创公司"><a href="#初创公司" class="headerlink" title="初创公司"></a>初创公司</h3><p>加入创业公司或创办自己的公司，可能是最有利可图的途径，也是风险最大的。大多数初创公司的薪酬都低于市场薪酬，并且不能提供谷歌等大公司可以带来的好处，但可能会提供股权，提供在大公司不可能获得的”本垒打”的机会。大多数创业公司最终都失败了。总的来说，”本垒打”很少，但确实发生过。例如，我知道有些人在 Oculus 被 Facebook 收购之前就加入了。初创公司是一个与已建立的大公司截然不同的工作环境。它们通常很小，非正式，敏捷，缺乏资源。他们在工作环境中可能比大多数财富500强公司更灵活。但他们也不太可能拥有知识渊博的人力资源人员，以确保遵守法律。财富500强企业的薪水不太可能反复波动。初创公司往往会快速烧钱，也更可能倒闭。</p>
-<p>创业公司只有有限的时间和资源来完善资源链或成为被收购的目标。这意味着无论创始人怎么说，它都不是一个进行长期研究的地方。我听到的最好的比喻：加入一家创业公司就像是决定与其他一些人合伙跳下悬崖，相信能够在撞上地表之前成功造出一对有用的翅膀并飙升。如果你这样做，你不会想花时间和精力去做与造翅膀没有直接关系的东西！你也可以事先检查下悬崖底下那儿有多少尸体。</p>
-<p>初创公司通常不会注意平衡工作与生活。由于资源有限，比起更成熟的公司，创业公司不得不要求成员做出更多的牺牲。</p>
-<p>在创业公司工作，你可能会与你所在领域的研究团队脱节，失去对领域最前沿的知识的了解——那些你为了博士毕业而奋力学到的东西。从研究机构转到创业或商业机构比从另一个方向容易得多。</p>
-<p>虽然有些过时，但如果你想在创业公司工作，本文末尾列出的川崎（Kawasaki）和 Bell 的参考资料可能会对你有用。</p>
-<p>Matt Cutts 是 UNC 的研究生。我们有同一个顾问。与我不同，马特没有完成他的博士学位。相反，他退学了，加入一个当时少于 100 人的创业公司。你可能听说过这个创业公司，它称作 Google。</p>
-<p>如果你买到了像 Matt Cutts 这样的创业彩票，他在 <a href="http://mattcutts.com/blog/investing-reading-list/" target="_blank" rel="noopener">这里</a> 和 <a href="https://www.mattcutts.com/blog/make-money-investing-tips/" target="_blank" rel="noopener">这里</a> 提供了一些建议。我也喜欢 <a href="http://www.modernluxury.com/san-francisco/story/the-best-investment-advice-youll-never-get" target="_blank" rel="noopener">Google在首次公开募股之前招募员工</a>。</p>
-<p>对于初创公司的两种不同观点，请阅读 <a href="https://www.amazon.com/Disrupted-My-Misadventure-Start-Up-Bubble/dp/0316306088/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1486345803&amp;sr=1-1&amp;keywords=disrupted+my+misadventure+in+the+start-up+bubble" target="_blank" rel="noopener">“Disrupted: My Misadventure in the Start-Up Bubble”</a> ，了解老员工的观点以及他为什么不适合一家创业公司，还可以阅读 <a href="https://www.amazon.com/Founders-Dilemmas-Anticipating-Foundation-Entrepreneurship/dp/0691158304/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1486346008&amp;sr=1-1&amp;keywords=the+founders+dilemma" target="_blank" rel="noopener">“The Founder’s Dilemmas”</a> ，它阐述了创始人在创办自己的公司时所面临的挑战和关键决策。</p>
-<h3 id="商业企业"><a href="#商业企业" class="headerlink" title="商业企业"></a>商业企业</h3><p>普通的，专注于支持或开发新产品的开发或生产工作，代表了绝大多数的就业机会。但是，作为一名博士毕业生，对于大部分这些工作，你都大材小用了。博士生涯是为学生的学术生涯做好准备，而非商业职业。大多数博士研究生都在寻找与普通商业工作不同的工作。但是，如果你的兴趣在于商业而不是研究，那么这可能是最佳的选择。有不少博士生成为了副总裁兼 CEO。高级开发工作可能很有趣且具有挑战性，它们可以让你满意地看到你的工作对产品或公司产生了影响。</p>
-<h3 id="工业或政府研究实验室"><a href="#工业或政府研究实验室" class="headerlink" title="工业或政府研究实验室"></a>工业或政府研究实验室</h3><p>这些工作位于正常的商业工作和学术界之间。通常，比起普通工作，它们能让你做一些具有更长远意义的工作，发表论文，参加会议等。但是，这些都是在管理环境之下的，因此你的研究工作必须与公司业务或实验室的使命相关联。重组和优先级的变化也常有发生，你必须跨越这些变化以保持就业和灵活性。工业研究中的薪水会很不错，通常比政府职位或学术界好得多。但是，就像商业工作或初创公司一样，你随时都可能会被裁员。我曾在一个实验室工作，有一天，没有任何警告，经理出现了，并告诉我们公司正在关闭我们的实验室，几乎每个人都会被解雇，包括我。你也没有创业公司的”本垒打”的可能。</p>
-<p>如果你从事工业研究，那么你应该通过将研究转化为直接有助于你公司未来的产品或流程来对公司产生影响。如果你的主要目标是发表论文，推进该领域并为自己立名，并且你并不非常关心收入和商业方面，那么学术界是更好的选择。但是，即使你专注于对你的公司进行重要的研究，也可以获得别人的认可。例如，尽管我的整个职业生涯都在工业研究中度过，我最近当选了 IEEE FELLOW。在这个角色中，你应该雄心勃勃地去做一些事情而不是雄心勃勃地让自己成名。</p>
-<p>完全由商业公司拥有的实验室或已获得政府资助的实验室通常拥有更稳定的资金流（直到高管或政客决定改变事物）。其他实验室必须依靠赢得其他公司或政府的合同。这可能是一种不稳定的，令人沮丧的工作方式。你的团队能否继续工作取决于赢得下一份合同，知道这点可能会让你感到压力。在以前的工作中，我有时觉得我们花了 100％ 的时间来争取资金，所以我们可以再花 100％ 的时间来完成一些研究。（译者注：指时间都花在争取资金没时间做研究）</p>
-<h3 id="学术界"><a href="#学术界" class="headerlink" title="学术界"></a>学术界</h3><p>在大学工作是博士学位的传统职业道路。终身教授是最安全，最稳定的研究职位，也是最自由的研究职位。教授可以选择他们想要的工作。如果你专注于出版并希望确保没有人能告诉你该做什么，那么就成为终身教授。如果你的主要动机是成为一名非常著名的研究员，那么就成为终身教授。</p>
-<p>但是，tenure 不容易得到。获得终身职位也很困难。你必须很强，也许还要靠运气才能得到一个。正如我之前提到的，博士后经验正成为几乎必修的先决条件。读读 Feibelman 和 Ralston 的参考资料，了解有关博士后的提示。此外，获得终身职位还要和时间赛跑，以发布足够多的令人印象深刻的研究成果，来让你的部门决定授予你终身职位而不是扫地出门。正如 Randy Pausch 所说，任期是一个竞争过程，你需要与其他助理教授和已经任职的教授进行比较。如果他们每周工作70小时用了六年才能获得终身职位，那么不要指望你每周工作40小时就可以了。</p>
-<p>终身职位对那些想要建立家庭的人来说并不友好。即使你在完成学士学位后直接开始研究生学习，你可能会在 28、9 岁才完成博士学位。在30岁过半才获得终身职位。<a href="http://www.scientificamerican.com/article/motherhood-not-discrimination-gender-gap-tenure-science-jobs/" target="_blank" rel="noopener">生物钟的现实往往与实现任期的要求相冲突。</a></p>
-<p>教授的工作往往集中在研究或教学上。较小的学院和大学更倾向于关注教学，教授的评估方式也是如此。大型学府中，教学职位的薪酬通常低于研究职位，其中教授主要对他们的研究进行评估——通过发表论文杀死了多少棵树，以及他们的教学状况是否足以不让院长听到投诉。</p>
-<p>学术界也有”soft money”职位，这些教授和工作人员是教通过合同和补助金而不是终身职位获得报酬的。这些职位都缺乏保障，你很难靠这种资金活下去。大多数合同和补助金的目的是为研究生提供资金并支付一两个月的教授工资，而不是为了支付全职工作人员的工资。</p>
-<p>我对工业或政府研究实验室筹款的评论也适用于学术职位。我在美国担任教授的大多数朋友都不得不将过多的时间用于撰写提案，获奖者的百分比似乎一直在下降。如果你有终身职位，那么你的工作不依赖于获奖提案，但如果没有外部资金，你将无法招募研究生或额外的员工，因此你的影响力将受到限制。</p>
-<p>我看到”Computing Research News”的一篇文章估计，助理教授和副教授的总薪酬比工业同行要少25％。与硅谷相比，我估计差异在50％左右。</p>
-<p>如果你想获得终身职位，请阅读 <a href="http://www.amazon.com/Professor-Essential-Guide-Turning-Ph-D/dp/0553419420/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1462665057&amp;sr=1-1&amp;keywords=the+professor+is+in" target="_blank" rel="noopener">The Professor Is In</a>，这本书详细介绍了如何获得终身职位。作者还运营博客和服务，以帮助学生成为教授。请记住，作者具有人文学科的背景，所以如果你是计算机博士，你必须考虑到计算机与人文科学博士学位之间的差异。例如，计算机博士学生通常能获得经济收入，因此积累大笔债务不是问题。在计算机中，某些会议的出版物很有价值，而在人文学科中，会议出版物可能并不重要。</p>
-<h3 id="其他提示"><a href="#其他提示" class="headerlink" title="其他提示"></a>其他提示</h3><p>当我不得不在2012年寻找工作时，我做的对我的求职最有帮助的一件事就是创建我自己的网站。简历是一个非常干燥，难以阅读的文件。我的网站作为简历的可视化版本，提供图像，视频和我工作的项目的详细描述。这是一种更有说服力的沟通方式，可以告诉别人我是谁，也可以提供什么。作为一名招聘经理，当候选人拥有关于自己的好网站时，我发现这非常有用。LinkedIn足以满足许多求职者的需求，但对于拥有博士学位的人来说，我强烈建议你创建并维护自己的网站。它的成本并不高，值得付出努力。</p>
-<p>文章 <a href="https://cacm.acm.org/magazines/2018/10/231370-the-secret-formula-for-choosing-the-right-next-role/abstract" target="_blank" rel="noopener">The Secret Formula for Choosing the Right Next Role</a>（需要 ACM 数字图书馆订阅）表明，在选择工作时，你应该更多地关注你将获得的技能，你可以在那里完成什么以及你将与谁合作，而不是专注于你职称，薪水和初始项目。</p>
-<p>无论你毕业后去哪里，都要与母校保持联系。你可以换工作并从一个地方搬到另一个地方，但你总要获得你大学的学位。如果你与你的大学和你以前的同学保持良好关系，那么这将成为你人脉网络的绝佳基地。</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><blockquote>
-<p>- “论文没有完成; 他们被遗弃了。”</p>
-<ul>
-<li>Frederick P. Brooks，Jr。</li>
-</ul>
-</blockquote>
-<p>下面的故事，名为”黑带的寓言”，摘自James C. Collins 和 Jerry I. Porras的 《Built to Last: Successful Habits of Visionary Companies》</p>
-<blockquote>
-<p>想象一位武术家在仪式上跪在他的老师面前，接受来之不易的黑带。经过多年的不懈训练，学生终于达到了这个领域的巅峰。</p>
-<p>“在绶带之前，你必须再通过一次测试，”老师说。</p>
-<p>“我准备好了，”学生回应道，等待着最后一轮的试炼。</p>
-<p>“你必须回答这个基本问题：黑带的真正含义是什么？”</p>
-<p>“我的旅程结束了。”学生说，”对我所有的努力工作，当之无愧的奖励。”</p>
-<p>老师等待着更多的回答。显然，他不满意。最后，老师说：”你尚未准备好接受黑带。一年后再来吧。”</p>
-<p>一年后，学生再次在老师面前跪下。</p>
-<p>“黑带的真正含义是什么？”老师问道。</p>
-<p>“这是我们艺术中的卓越和最高成就的象征，”学生说。</p>
-<p>老师在很长时间内没有说什么，等待。显然，他不满意。最后，他说话。”你还没有为黑带做好准备。一年后再来吧。”</p>
-<p>一年后，学生再次在老师面前跪下。老师再次问道：”黑带的真正含义是什么？”</p>
-<p>“黑带代表着一个开始 - 一个永无止境的自律，工作和追求更高标准的旅程的开始，”学生说。</p>
-<p>“是。你现在已经准备好接受黑带并开始你的工作了。”</p>
-</blockquote>
-<p>对我来说，这个故事有两个教训。</p>
-<ol>
-<li><p>博士学位是你事业的开始，而不是高潮。不要想着把它变成你的代表作。快点出去，而不是呆着不走。</p>
-</li>
-<li><p>如果你愿意和那些已经完成这个过程的人交谈并向他们学习，你可能会提前两年毕业。</p>
-</li>
-</ol>
-<p><strong>祝好运。</strong></p>
-<h2 id="相关指南及链接"><a href="#相关指南及链接" class="headerlink" title="相关指南及链接"></a>相关指南及链接</h2><ul>
-<li>Prof. HT Kung from Harvard provides <a href="https://www.eecs.harvard.edu/htk/phdadvice/" target="_blank" rel="noopener">advice about the Ph.D., particularly a Ph.D in systems.</a></li>
-<li>Matt Might is a professor who offers a <a href="http://matt.might.net/articles" target="_blank" rel="noopener">large number of articles about graduate school and other topics.</a> Scroll down to the section on Graduate School to find his articles.</li>
-<li><a href="http://phdcomics.com/" target="_blank" rel="noopener">Ph.D. Comics.</a> Dilbert meets graduate school. It is hilarious because too much of this is true. However, if you want to finish your Ph.D., read this only in small doses at a time or you will get too depressed to finish.</li>
-<li><a href="https://tomprof.stanford.edu/" target="_blank" rel="noopener">Tomorrow’s Professor</a>, a collection of interesting articles for current graduate students and those seeking academic positions after graduation.</li>
-<li>The superb <a href="http://www-personal.umich.edu/%7Edanhorn/graduate.html" target="_blank" rel="noopener">Graduate Student Resources on the Web!</a> at U. Michigan</li>
-<li><a href="http://www.cs.umd.edu/%7Ehollings/track.html" target="_blank" rel="noopener">Jeff Hollingsworth’s guides</a> on job hunting</li>
-<li><a href="http://www.cs.umd.edu/%7Ehollings/track.html" target="_blank" rel="noopener">Improving the Graduate School Environment for Women in Computer Science</a></li>
-<li><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mleone/web/how-to.html" target="_blank" rel="noopener">Advice on Research and Writing</a></li>
-<li><a href="http://www.cs.indiana.edu/how.2b/how.2b.html" target="_blank" rel="noopener">Marie des Jardin’s “How to be a Good Graduate Student”</a></li>
-<li><a href="http://faculty.washington.edu/wpratt/survive.htm" target="_blank" rel="noopener">Wanda Pratt’s Graduate Student Survival Guide</a></li>
-<li><a href="https://ronaldazuma.com/grad.day" target="_blank" rel="noopener">(Humor) A Day in the Life of a Grad Student</a></li>
-<li><a href="https://ronaldazuma.com/phd.vs.lotto.html" target="_blank" rel="noopener">(Humor) The Ph.D. vs. the Lotto</a></li>
-<li><a href="http://www.nagps.org/" target="_blank" rel="noopener">The National Association of Graduate-Professional Students</a></li>
-<li><a href="http://eaton.math.rpi.edu/Graduate/guide.html" target="_blank" rel="noopener">RPI’s Grad Student Survival Guide in Math Sciences</a></li>
-<li><a href="http://www.cs.purdue.edu/homes/dec/" target="_blank" rel="noopener">Douglas Comer’s essays on computer science and the Ph.D.</a></li>
-<li><a href="http://danny.oz.au/danny/humour/phd_lotr.html" target="_blank" rel="noopener">(Humor) Lord of the Rings as an allegory for getting the Ph.D.</a></li>
-<li><a href="http://www.cse.buffalo.edu/~rapaport/501/501gradschool.html" target="_blank" rel="noopener">Buffalo page of information about graduate school</a></li>
-<li><a href="http://dspace.mit.edu/handle/1721.1/41487#files-area" target="_blank" rel="noopener">How to do research at the MIT AI Lab</a></li>
-</ul>
-<h2 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h2><p>Adams, Scott. How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life. Portfolio Hardcover, 2013.</p>
-<blockquote>
-<p>An interesting description of systems and skills that correlate with success in life.</p>
-</blockquote>
-<p>Allen, David. Getting Things Done: The Art of Stress-Free Productivity. Penguin Books, 2002.</p>
-<blockquote>
-<p>David Allen describes his methods to stay organized and productive.</p>
-</blockquote>
-<p>Bell, C. Gordon and John McNamara. High-Tech Ventures: The Guide for Entrepreneurial Success. Addison-Wesley, 1991. ISBN 0-201-56321-5.</p>
-<blockquote>
-<p>Dated, but still recommended reading if you want to work for a startup.</p>
-</blockquote>
-<p>Bronson, Po. The Nudist on the Late Shift. Random House, 1999. ISBN 0375502777.</p>
-<blockquote>
-<p>A fun read, giving the flavor of what working in the Silicon Valley is like. Many of the chapters previously appeared as articles in Wired. A snapshot of the culture before the tech bubble burst in 2000.</p>
-</blockquote>
-<p>Covey, Stephen R. The 7 Habits of Highly Effective People. Fireside Simon and Schuster, 1989. ISBN 0-671-70863-5.</p>
-<blockquote>
-<p>Excellent overall, with sections on time management, guiding principles and interpersonal skills.</p>
-</blockquote>
-<p>EE Times Salary Survey Issue.</p>
-<blockquote>
-<p>EE Times produces an annual survey and commentary about industrial salaries.</p>
-</blockquote>
-<p>Feibelman, Peter J. A Ph.D. is Not Enough! A Guide to Survival in Science. Addison-Wesley, 1993. ISBN 0-201-62663-2.</p>
-<blockquote>
-<p>Good discussion of research career paths. A must read if you choose to take a postdoc.</p>
-</blockquote>
-<p>Heath, Chip and Dan Heath. Made to Stick: Why Some Ideas Survive and Others Die. Random House, 2007.</p>
-<blockquote>
-<p>A good reference on how to craft a message so that it is remembered.</p>
-</blockquote>
-<p>Hong, Jason. Ph.D. Students Must Break Away From Undergraduate Mentality. Communications of the ACM 56, 7 (July 2013), 10-11.</p>
-<blockquote>
-<p>Jason’s article provides more evidence of how graduate school is a different ballgame than undergraduate education.</p>
-</blockquote>
-<p>Jones, Anita. The Explosive Growth of Postdocs in Computer Science. Communications of the ACM 56, 2 (February 2013), 37-39.</p>
-<blockquote>
-<p>Postdocs are becoming almost mandatory prior to getting a tenure track position in computer science. This is not good.</p>
-</blockquote>
-<p>Kawasaki, Guy. The Macintosh Way: The Art of Guerrilla Management. Harper Perennial, 1990. ISBN 0-06-097338-2.</p>
-<blockquote>
-<p>Describing the situation in the early days of Apple, this book shows the energy and chutzpah required to survive in a startup.</p>
-</blockquote>
-<p>Kelley, Robert E. How to be a star engineer. IEEE Spectrum (October 1999), 51-58.</p>
-<blockquote>
-<p>Good description of the skills that are needed to excel at work, which go beyond sheer technical skills.</p>
-</blockquote>
-<p>Kelsky, Karen. The Professor Is In. Three Rivers Press, 2015. ISBN 978-0-553-41942-9.</p>
-<blockquote>
-<p>Read this if you want a tenure-track position at a university.</p>
-</blockquote>
-<p>Kroeger, Otto and Janet M. Thuesen. Type Talk: The 16 Personality Types that Determine How We Live, Love and Work. Tilden Press, 1988. ISBN 0-385-29828-5.</p>
-<blockquote>
-<p>Introduction to the Myers-Briggs type indicators, useful for understanding different personality traits.</p>
-</blockquote>
-<p>Lyons, Dan. Disrupted: My Misadventures in the Start-Up Bubble. Hachette Books, 2016.</p>
-<blockquote>
-<p>One person’s negative experiences working at a startup company, particularly coming in as an older employee.</p>
-</blockquote>
-<p>Maisel, Herbert and Catherine Gaddy. Employment and Salaries of Recent Doctorates in Computer Science. Communications of the ACM 40, 9 (September 1997), 90-93.</p>
-<p>Maisel, Herbert and Catherine Gaddy. Employment and Salaries of Recent Doctorates. Communications of the ACM 41, 11 (November 1998), 99-101.</p>
-<blockquote>
-<p>Two surveys about new C.S. Ph.D. graduates that include both industry and academic numbers. The low sample size is a problem, however. This is also old data.</p>
-</blockquote>
-<p>Matsudaira, Kate. The Secret Formula for Choosing the Right Next Role. Communications of the ACM 61, 10 (October 2018), 44-46.</p>
-<blockquote>
-<p>When choosing jobs, focus more on the team and the skills you can acquire and what you can accomplish, rather than the project, your job title and your paycheck.</p>
-</blockquote>
-<p>Pascarelli, Emil and Deborah Quilter. Repetitive Strain Injury: A Complete User’s Guide. John Wiley and Sons, 1994. ISBN 0-471-59532-2.</p>
-<blockquote>
-<p>A good introduction to RSI injuries and avoiding them.</p>
-</blockquote>
-<p>Pastore, Robert R. Stock Options: An Authoritative Guide to Incentive and Nonqualified Stock Options, 2nd edition. (printed Dec. 1999). ISBN 0966889924. PCM Capital Publishing.</p>
-<blockquote>
-<p>This is an excellent reference for those of you fortunate enough to have a bundle of stock options. Give me a few options as a tip for finding this book, ok? :-) The book covers tax and legal issues and gives advice on when to keep or exercise your options.</p>
-</blockquote>
-<p>Ralston, Anthony. The Demographics of Candidates for Faculty Positions in Computer Science. Communications of the ACM 39, 3 (March 1996), 78-84.</p>
-<blockquote>
-<p>A must read if you are looking for tenure track positions. The author is a former CS professor who led a faculty search, so if you don’t believe what I say, then listen to him.</p>
-</blockquote>
-<p>Wasserman, Noah. The Founder’s Dilemmas. Princeton University Press, 2012.</p>
-<blockquote>
-<p>This book details key decisions and pitfalls in starting your own company.</p>
-</blockquote>
-<p>Weinstein, Bob. Résumés Don’t Get Jobs: The Realities and Myths of Job Hunting. McGraw-Hill, 1993. ISBN 0-07-069144-4.</p>
-<blockquote>
-<p>Gritty, realistic job hunting guide for today’s market.</p>
-</blockquote>
-<p>White, Pepper. The Idea Factory: Learning to Think at MIT. Plume (Penguin Books), 1992. ISBN 0-452-26841-9.</p>
-<blockquote>
-<p>While this is not about C.S., it does dispel the notion of graduate school as an ivory tower environment.</p>
-</blockquote>
-<p>Yate, Martin. Knock ‘Em Dead: The Ultimate Job Seeker’s Handbook. Bob Adams, Inc.</p>
-<blockquote>
-<p>Good generic guide to job hunting and interviews, including a long section on interview questions.</p>
-</blockquote>
-<h2 id="作者照片"><a href="#作者照片" class="headerlink" title="作者照片"></a>作者照片</h2><p><img src="/img/ronald_azuma.jpg" alt="Ronald Azuma"></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/08/LiveAsPhD4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Susan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SEUITE">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/08/LiveAsPhD4/" class="post-title-link" itemprop="url">研究生生存指南(4)</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-08 11:20:30" itemprop="dateCreated datePublished" datetime="2019-04-08T11:20:30+08:00">2019-04-08</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="再见，多谢博士生涯！（4）"><a href="#再见，多谢博士生涯！（4）" class="headerlink" title="再见，多谢博士生涯！（4）"></a>再见，多谢博士生涯！（4）</h1><p>又名</p>
-<h2 id="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"><a href="#“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”" class="headerlink" title="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"></a>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”<!-- omit in toc --></h2><ul>
-<li><a href="#%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF4">再见，多谢博士生涯！（4）</a><ul>
-<li><a href="#%E5%B9%B3%E8%A1%A1%E4%B8%8E%E5%88%A4%E6%96%AD">平衡与判断</a></li>
-<li><a href="#%E5%8D%9A%E5%A3%AB%E7%94%9F-%E6%89%BE%E5%B7%A5%E4%BD%9C">博士生 找工作</a></li>
-</ul>
-</li>
-</ul>
-<p>如果你不知道怎么阅读，请从<a href="https://seuite.github.io/2019/04/05/LiveAsPhD1/">研究生生存指南(1)</a>开始。</p>
-<h2 id="平衡与判断"><a href="#平衡与判断" class="headerlink" title="平衡与判断"></a>平衡与判断</h2><blockquote>
-<p>- “生活如此之快，如果你不停下来环顾四周，你可能会错过它。”</p>
-<ul>
-<li>来自电影《Ferris Bueller’s Day Off》</li>
-</ul>
-<p>- “一般来说，人们为他们的汽车提供比自己的身体更好的维护。”</p>
-<ul>
-<li>Scott Adams, 《The Dilbert Future》</li>
-</ul>
-</blockquote>
-<p>当我在研究生院时，我的首要任务对我来说非常清楚：以博士的身份离开这里。其他人形容我在这个目标上”像激光束一样聚焦”。回想起来，我可能过于专注。生活远比研究生的工作更丰富。保持健康和理智对于实现毕业的主要目标至关重要。</p>
-<p><a href="http://en.wikipedia.org/wiki/Repetitive_strain_injury" target="_blank" rel="noopener">重复性劳损（RSI）</a>是我们行业的主要职业病。腕管综合症只是 RSI 的一种。如果你不知道如何设置工作区以获得良好的人体工程学效果时，请立即学习！Pascarelli 是一本关于这一主题的好书（参考文献中列出）。我的十几个朋友和同事已经受到了这个问题的困扰。在严重的情况下，RSI 可能会导致职业生涯的结束。如果你不能打字，那么写论文，编程，和制作 PPT 等是相当困难的。不要让这件事发生在你身上！预防是应该去做的事情。作为额外的预防措施，我会在举重时加强锻炼我的肩膀和手腕。</p>
-<p>进修博士学位就像一场马拉松。如果你想到达终点线，你必须学会找到​​自己节奏并照顾好自己的身体。不幸的是，学生们常常像短跑运动员一样参加马拉松比赛。它们在一段时间内非常高效，但随后又被淘汰，因为它们没有正确进食，锻炼，抽出时间为自己充电等等。通过正视其他方面，你可以最大限度地提高你的长期生产力。在我读研究生的时候，我会抽出时间沿着东海岸从波士顿到奥兰多旅游。这是减压和充电的重要部分。我还做了一些运动和循环训练（译者注：指轮番作不同的体育运动，每种只做很短时间）。在小憩一会儿的时候，我在一个安装在图形实验室的小框上玩 nerf 篮球，还在办公室里放了一把吉他。</p>
-<p><strong>找出适合你的方法。</strong></p>
-<p>在研究生院里，很容易失去自己的判断力。你被许多其他聪明，勤劳的人所包围，很容易感到自卑，失去自尊和自信。但是如果没有完成论文所需的信心，那么当情况变得艰难时，你就很容易选择辍学而不是坚持下去。我发现与”真实世界”保持联系很有用，提醒自己研究生群体不是一般人，从而保持我的判断力。你进入研究生院是因为你已经向你的教授们证明了你的潜力和技能，这在大多数大学生中都是特别的，更不用说大多数人了 - 别忘了这点。</p>
-<p>我坦率地承认，这部分反映了我个人的偏见，即生活中的平衡很重要。对于一些人来说，他们实现卓越的方法在于：专注工作，排除几乎所有其他事物。Jim Lipscomb 是在我之前 UNC 的一名研究生，他描述了<a href="http://wlipscomb.tripod.com/wnl_life.html" target="_blank" rel="noopener">是什么使他的父亲威廉·利普斯科姆（William Lipscomb）获得了诺贝尔奖</a>。但是，我选择了一组不同的优先事项，并从来不后悔这个选择。为你自己决定生活中最重要的事情。</p>
-<h2 id="博士生-找工作"><a href="#博士生-找工作" class="headerlink" title="博士生 找工作"></a>博士生 找工作</h2><blockquote>
-<p>- 简历：”一个人最完美的时候是他填写工作申请表的时候。”</p>
-<ul>
-<li>Stanley Randall</li>
-</ul>
-<p>- 真实世界，n.：计算机科学专业的学生毕业后去的地方; 贬义（”可怜的糊涂虫，他获得了学位，不得不走进真实的世界。”）。在程序员中，讨论住校生与讨论死者并无二致。</p>
-<ul>
-<li>the fortune program</li>
-</ul>
-<p>- “永远不要忘记这个原则：研究生院不是你的工作; 研究生院是你得到工作的一种手段。不要像刨花中挖洞的小仓鼠一样住在你的研究生部门。随时保持警惕，随时准备迎接下一次机会，无论什么机会：发表论文，参加会议，与你所在领域的学者会面，建立联系，获得专业技能。”</p>
-<ul>
-<li>Karen Kelsky 博士</li>
-</ul>
-<p>- “初创公司是用其他人的钱进行的商业实验。”</p>
-<ul>
-<li>Antonio Garcia Martinez, 《Chaos Monkeys》</li>
-</ul>
-</blockquote>
-<p>理想情况下，在毕业几年前，你就会开始找工作。网络非常重要：当你处于研究生阶段的中后阶段时，尽量让其他地方的教授和业界人士注意到。一种方法是尝试去那边讨论你的工作。这并不难，因为大多数研究所都喜欢举办研讨会并带来新鲜的想法。参加夏季会议或在别处工作也可以获得曝光。与其他学校的研究生和人员交朋友。制作并携带自己的名片。在实地考察期间与重要访客进行交流。大约两年，我在 UNC 举办了非正式的”图形学午餐”研讨会。这意味着我是许多访问 UNC 的发言人的联系人，他们帮助我建立了很多联系。有一个”明星”系统。某些优秀的研究生可以被他们的教授称为”明星”，这对于在 CMU 或其他著名机构进行面试非常有帮助。如果你能踏上这条道路，那太好了，但不应依赖它！</p>
-<p>网络很重要，因为许多工作都是以这种方式招聘的。我在 <a href="www.hrl.com">HRL</a>（译者注：一所美国实验室） 获得了我的职位，部分原因是我在自己开始找工作的两年前自费前往那里。这意味着当我投递简历时，我对他们而言不只是一张纸。你可以在主要期刊，会议，网站和你的联系人中寻找招聘启事。</p>
-<p>在大多数公司中，招聘权属于拥有工作职位的经理，而不是人力资源部门。人力资源部门可以拒绝候选人，但他们不能雇用候选人。作为招聘经理，我的工作是只与最有资格担任该职位的候选人直接对话。作为候选人，你的工作是找到能够直接雇用和处理该人员的个人，而不是仅仅与人力资源部门合作。</p>
-<p>你什么时候开始申请面试？当你能够谈论你的论文时，你就可以开始了。不要太早或太晚，因为每个地方都只有一次机会。学术职位通常有一个特殊的”季节”（很像入学），从秋季开始，到4月左右结束；工业岗位通常不遵循这一点。求职和面试过程可能需要数月；将这些因素加入你的时间安排。</p>
-<p>工作供求情况可能会在几年内发生巨大变化，我在这里所说的关于今天就业市场的任何内容都可能在你阅读本文时已经过时。例如，在我最初找工作期间（1994年底至1995年初）期间，好工作是很难找的。如果我每个告诉我”我们没有永久职位，但你愿意成为博士后吗？”的研究所都会给我一美元，那我可以买很多午餐了。然而，在1997年左右，图形工作市场变得非常巨大，许多人获得了好几个高薪 offer。对于寻求终身图形学教师职位的人来说，1998年是非常好的一年。我认识很多朋友，他们在那一年找到了很好的终身职位。因此，当我在2000年修订本指南时，我说就业市场强劲，需求量很大。当然，从那时起科技行业开始走下坡路了。因此，我不再谈论就业市场的强弱程度。</p>
-<p>相反，这是自毕业以来我观察到的两个一致但不幸的趋势：</p>
-<ul>
-<li>终身职位越来越多地要求候选人做一个或多个博士后：<a href="http://en.wikipedia.org/wiki/Anita_K._Jones" target="_blank" rel="noopener">Anita Jones</a> 在<a href="http://dl.acm.org/citation.cfm?id=2408801" target="_blank" rel="noopener">《计算机科学博士后爆炸式增长》</a>（需要 ACM 数字图书馆订阅）一文中记录了这一趋势。自2007年以来，学术界的博士生越来越多地只能得到博士后职位，而不是终身职位。任期轨道位置的要求似乎已被重新定义，以使一个或多个博士后几乎是强制性的。长期以来，其他学科就是这种情况，但对计算机科学而言则相对较新。这延误了博士的职业生涯，并迫使那些想成为教授的人们忍受多年的低工资和地位。</li>
-<li>工业研究职位很难找到：总的来说，大多数企业都把重点放在短期项目。因此，削减或关闭工业研究实验室是大势所趋。大公司越来越多地依赖让初创公司尝试某种创新，然后与之合作或获取这些创新。公司还通过与传统研究实验室不同的高级开发团队来追寻创新。</li>
-</ul>
-<p>在开始寻找工作之前，请事先确定你的目标和参数，以及你将自己推销的”角度”。例如，我的力量在于系统工程，所以我选择在我的求职信中强调这一点。如果时间允许，对每个机构都定制化一套方法。你为自我介绍所做的事讲决定对方会或是不会了解你。尝试获得至少一个大学以外的参考。</p>
-<p>本指南不会涵盖面试的基础知识；你可以从很多书中得到它（例如参考文献中列出的 Martin Yate 和 Bob Weinstein 的书）。但是，我会给一些提示。</p>
-<ul>
-<li>不要在抵达当天面试，并尽量避免星期一和星期五。</li>
-<li>为困难或非常规的问题做好准备，通过找到解决潜在问题的礼貌方式，。</li>
-<li><strong>在面试之前做好功课！</strong>我总会被在对想加入的机构毫无了解的情况下去参加面试的人们震惊到。如果目标是一家大公司的研究实验室，你可以轻松找到华尔街日报的文章，年度报告和股票经纪人报告。如果你的目标是学术职位，请查看 <a href="https://tomprof.stanford.edu/" target="_blank" rel="noopener">Tomorrow’s Professor site</a>和 <a href="http://theprofessorisin.com/" target="_blank" rel="noopener">The Professor Is In</a> 以寻求指导。如果你在大学面试，请获取他们的课程目录并使用他们的编号方案来描述你可以教授的课程。</li>
-<li>面试是为了了解更多关于他们的信息，而不仅仅是为了推销自己。</li>
-<li>你的45-60分钟研究报告至关重要，确保你彻底练习了它</li>
-<li>面试会创造面试。也就是说，如果你已经在其他地方进行了很多面试，这会让你看起来更有吸引力，因为说明还有其他人想要你，这使你更容易收到更多的面试邀请。通过在你的网页上保留你的面试时间表来传播这一事实。有一个轶事是关于一个学生从很多不同的机构收到面试的提议，但只在斯坦福面试过他之后！</li>
-<li>记录与你交谈的对象，你所谈论的内容以及何时进行。这使得在同时面对几个不同提案时更容易保持正确。</li>
-<li>你所在领域的主要会议是安排初步面试的好地方，因为它对公司或大学来说很便宜。你需要见面的人已经在那里，这样他们就可以节省你不得不把你赶出去并在机构中安置你的费用。</li>
-</ul>
-<p>Offer 是一场等待游戏。为很多挫折做好准备。你需要一个书面的 offer，其它东西都算不得数；你也应该以书面形式接受或拒绝。谈判，但要注意你的立场的或弱点。我还建议只做一轮谈判（即你对条款提出反对，组织对此做出回应，然后就做出决定）。作为一名招聘经理，我可以告诉你，当候选人试图长时间谈判时，是非常令人沮丧的，这可能会让雇主感到不安，甚至可能会撤销这个 offer。纵览全局。起薪可能不如工作类型，环境，福利，增长潜力和公私平衡一样重要。药物测试和其他因素正变得越来越普遍；你必须决定如何回应这些。</p>
-<p>啊，是的，工资。每个人都想知道。对于学术（终身职位）薪水，你可以从 <a href="http://cra.org/resources/taulbee/" target="_blank" rel="noopener">the annual Taulbee surveys</a> 中获得发表在计算研究新闻通讯和ACM通讯上的典型数字。例如，2015年 Taulbee 调查中列出的工资中位数接近114,000美元。注意这是9个月的工资。你是否需要资金来支付2个月或3个月的暑期薪水，会对你的底线产生重大影响。此外，教授可以通过咨询赚钱，尽管这在已经成为教授的人中更为常见。根据咨询和客户的类型，费率最高可达每天4000美元或更多。工业薪资的数字更难获得。Maisel 和 Gaddy 的参考文献是我发现的唯一一个专门调查年轻博士薪水的人，这些数字现在已经很过时了。工资在很大程度上取决于地理位置。例如，硅谷和旧金山的薪水很高。但在你决定搬到 Palo Alto （译者注：斯坦福大学和惠普总部所在城市）之前，请记住那里的生活成本也在平流层上。当我第一次写这本指南（1997年）时，硅谷的好房子价格在五十万美元以上。2017年，那些相同的房子可能已经到了125万美元到150万美元或更多。更一般的计算机科学薪资调查由 IEEE 和 <a href="http://www.eetimes.com/" target="_blank" rel="noopener">EE Times</a> 进行</p>
-<p>作为招聘经理，我提醒你不要相信 Glassdoor 等网站（译者注：类似国内智联无忧、 Boss 直聘等网站）自己的数据。我的经验是，那些都是不准确的，通常会夸大薪水数字。他们还经常将基本工资与包括奖金，股票和其他福利在内的总薪酬混为一谈。</p>
-<p>利用你的网络自行获取工资信息。不要直接去问某人的工资，除非这是你认识的人，即使那样也要非常小心。相反，给他们一个数字，看看他们如何回应。他们认为你提到的数字是高，低还是差不多？通过了解人们的反应，你就可以了解市场范围。</p>
-<p>将福利和预期工作量纳入薪酬评估中。如果你必须在这个位置上工作 80 小时，那么高额补偿的报价可能看起来不太有吸引力。你可能不得不做一些侦探工作来确定真相。一家公司可能会说他们重视工作与生活的平衡，而既定的文化告诉你一个不同的故事：人们必须每周工作80小时才能获得晋升或者甚至才能获得期望薪水和项目期限。对于许多职位，特别是在硅谷，可变薪酬（现金奖励，限制性股票单位和股票期权）构成了薪酬总额的重要组成部分，同时也带来了更多的收益。</p>
-<p>（未完待续）</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/07/LiveAsPhD3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Susan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SEUITE">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/07/LiveAsPhD3/" class="post-title-link" itemprop="url">研究生生存指南(3)</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-07 18:42:46" itemprop="dateCreated datePublished" datetime="2019-04-07T18:42:46+08:00">2019-04-07</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="再见，多谢博士生涯！（3）"><a href="#再见，多谢博士生涯！（3）" class="headerlink" title="再见，多谢博士生涯！（3）"></a>再见，多谢博士生涯！（3）</h1><p>又名</p>
-<h2 id="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"><a href="#“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”" class="headerlink" title="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"></a>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”<!-- omit in toc --></h2><ul>
-<li><a href="#再见多谢博士生涯3">再见，多谢博士生涯！（3）</a><ul>
-<li><a href="#规划能力">规划能力</a></li>
-<li><a href="#抓住机遇">抓住机遇</a></li>
-<li><a href="#沟通技巧">沟通技巧</a></li>
-<li><a href="#选择顾问和委员会">选择顾问和委员会</a></li>
-</ul>
-</li>
-</ul>
-<p>如果你不知道怎么阅读，请从<a href="https://seuite.github.io/2019/04/05/LiveAsPhD1/">研究生生存指南(1)</a>开始。</p>
-<h2 id="规划能力"><a href="#规划能力" class="headerlink" title="规划能力"></a>规划能力</h2><blockquote>
-<p>“没有计划就是计划失败。”</p>
-</blockquote>
-<p>由于学术是一种商业活动，你必须承担责任。你会被要求与访客打招呼，展示示例，出席会议，按时完成项目等。如果你规划不善，你将很难完成这些义务。如果一个技术上才华横溢的学生却表现得”心不在焉”的个性并因无法很好的规划自己生活而声名狼藉，他的学术生涯将受到极大的阻碍。</p>
-<p>有许多不同的时间管理和组织方法，你可以在当地书店找到许多书籍。本指南不会描述它们。找一个适合你的方法并使用它。我强烈推荐 Stephen Covey 的书（在参考文献中列出）。另一本书是 David Allen 的《Getting Things Done》。但无论你选择什么方法，确保它适合你就行了。我从来没有找到任何使用和我一样的规划方法的人，但它对我确实有作用（通过最小化归档和查找信息的总时间）。</p>
-<p><strong>真正重要的是它是否有效。</strong></p>
-<p>我发现了一个恰当的比喻：组织任务就像玩一个抛球杂技。这需要规划和技巧：</p>
-<ul>
-<li>在球落到地面之前，你必须抓住并抛出每个球。</li>
-<li>你一次只能扔一个球，就像你一次只能处理一个任务一样。</li>
-<li>抛球的顺序至关重要，就像处理任务的顺序通常决定你是否满足所有截止日期一样。</li>
-<li>最后，一旦你开始一项任务（抓球），你想要完成足够的任务，你可以暂时忽略它（把它扔到空中足够高，这样它就不会停顿一段时间）。</li>
-<li>否则，你在任务之间的上下文切换中浪费了太多时间。你是否看到变戏法者试图将每个球保持在高于地面的同一高度，每秒都疯狂地接触每一个球？</li>
-</ul>
-<p>Randy Pausch（弗吉尼亚州和CMU教授）有一套关于时间管理的笔记。他的指南中的三个字总结了最重要的一步：<strong>杀死你的电视</strong>。（译者注：杀死你的手机！）他要求你保持优先顺序。什么是博士生最重要的事情？<strong>完成论文</strong>，而不是观看你最喜欢的电视剧的每一集。这并不意味着放弃生活中的其他一切，但它意味着知道什么事应该优先去做并相应地分配时间。</p>
-<h2 id="抓住机遇"><a href="#抓住机遇" class="headerlink" title="抓住机遇"></a>抓住机遇</h2><blockquote>
-<p>- “中国人称运气为机遇，他们说机遇每天都会敲门。有些人听到了；有些人没有。听到机会敲门是不够的。你必须让他进来，问候他，交朋友，共同努力。”</p>
-<ul>
-<li>Bernard Gittelson</li>
-</ul>
-</blockquote>
-<p>我曾多次被问及如何找到一名优秀的导师或如何让教授或其他有权力的人为他们提供更上一层的机会。</p>
-<p>最好的方法是以积极的方式让自己受到关注，这样教授或其他有能力分发机会的人就会决定花时间指导你或为你提供这样的机会。然后你必须做必要的工作来利用这些机会。</p>
-<p>让我分享一下这个故事。当我还是 UNC 教堂山分校的一名研究生时，我们一群人开车去弗吉尼亚大学参观 Randy Pausch 的课题组。毫不奇怪，Randy 让我们中的一些人进行了讲话。我是其中一名。在我的演讲之后，Randy 评论说他从来不知道我是一个如此充满活力的演说家。</p>
-<p>可能正是因为这次报告，后来我被邀请加入讲授 SIGGRAPH 会议课程的小组组。Randy 是其中一位。他们正在教授虚拟现实课程，并希望我成为最后一位演讲者并讨论增强现实有关的内容。我接受了。这意味着要创建一套包含在课程中的笔记。我决定尝试定义，描述和概括增强现实领域（这是在1995年，当时这个领域足够小，这对于这样一个文件来说是合理的目标！）。在我们教授该课程之后，该课程的另一位教授 Steven Feiner 建议我更新我的笔记并将其提交给名为 Presence：Teleoperators and Virtual Environments 的麻省理工学院的新期刊。所以我将笔记改成了一份期刊论文，投稿并发表了。</p>
-<p><strong>该论文最终成为增强现实领域中被引用次数最多的参考文献。</strong>我在论文中提供的”增强现实”的定义被研究界所接受，研究人员在他们想要解释他们的论文是关于增强现实的主题时引用了我的论文。它为我开启了其他机会，例如在该领域的首要研究会议的指导委员会任职，这可能是我被尊为 <strong>IEEE Fellow</strong> 的一个原因。（译者注：IEEE Fellow 指国际电气与电子工程师协会会士）</p>
-<p>这些完全超出了我的计划。运气肯定是一个方面。但关键是：</p>
-<ul>
-<li>我做了一些事情让我在自己的领域得到了顶级教授的积极关注。</li>
-<li>因为我展示出的潜力，他们决定给我一个机会。</li>
-<li>最重要的，我完成了利用这些机会的工作。</li>
-</ul>
-<p>现在我是一名高级研究员。如果让我从教授的角度来看问题，如果某人做了一些有潜力或引起我注意的事情，我会更愿意为他们投入时间或者按照自己的方式引导他们。</p>
-<p>不要到处寻求指导或接受机会。证明你是值得培养的，确保有能力的人知道你的潜力，当你有机会时，付出必要的努力。</p>
-<h2 id="沟通技巧"><a href="#沟通技巧" class="headerlink" title="沟通技巧"></a>沟通技巧</h2><blockquote>
-<p>- “一般来说，不费吹灰之力写的东西读起来是不快乐的。”</p>
-<ul>
-<li>Samuel Johnson</li>
-</ul>
-<p>- “Present to inform, not to impress; if you inform, you will impress.”</p>
-<ul>
-<li>Frederick P. Brooks，Jr。</li>
-</ul>
-</blockquote>
-<p>作为一名学生，我总是感到惊讶的是，关于商业的文章始终将善于沟通置于雇主希望看到的技能列表的顶部附近，但在简历中却往往找不到。现在，作为一个在工业界工作了很长时间并也雇用别人的人，我可以证明这是真的。</p>
-<p>书面和口头的沟通技巧对于获得一个作为博士生/研究者的良好印象至关重要。至少，你必须通过口头报告来证明你的论文。但你也应该试图撰写技术论文和报告，在会议上进行演示，并向访客群体进行演示。如果你能写得好，说得好，你将获得认可，并与其他研究生区别开来。在重要访客或重要会议面前进行演示时尤其如此。</p>
-<p><strong>相反，如果你不能很好地沟通，那么你毕业后的职业机会将极其有限的。</strong>教授们大部分时间都在沟通：教学，筹款，指导研究生，并记录他们的成绩（通过论文，视频，幻灯片等）。在行业中，我们需要能够进行良好沟通的人员，以便他们可以在团队中工作，了解企业和客户需要什么，展示他们的结果，筹集资金，以及过渡到项目和人事管理中的领导角色。如果你技术上很聪明，但却无法与其他人交流或合作，那么你的成绩将仅限于你可以单独完成的任务，而你的职业发展将在行业和学术界都有一个很低的上限。</p>
-<p>不幸的是，并非所有研究生都接受过演讲或撰写技术文档的培训（与英文论文不同）。这些都是可以学到的技能！如果进行报告和撰写论文不是你的天赋，请不要担心。当我开始读研究生时，我不太愿意进行口头报告，所以我通过上课，阅读课程和练习，共同努力学习如何做到这一点。这并不容易，但值得为之投入。如果你需要练习，请尝试在研究午餐会上进行非正式会谈，加入 <a href="http://www.toastmasters.org/" target="_blank" rel="noopener">Toastmasters</a>（译者注：一个美国公益性演讲技巧培训机构），并研究优秀的演讲者以了解他们的工作。</p>
-<p>涵盖关于这个主题的所有内容就足以写满一整个指南，并且用视频比在书面文档中能够更好地展现它。但这里有几个基本要点：</p>
-<ul>
-<li>良好的组织非常重要！在前几段或前几分钟内，告诉我为什么我应该阅读你的论文或听你的报告。明确你的目标和已经涵盖的内容。</li>
-<li>使幻灯片中的字体足够大，以便坐在后面的人可以阅读它们。对于大型演示厅，这通常意味着每个幻灯片不超过6-7行，字号不小于 28。你会惊讶于有多少可视化领域的专家（特别是终身教授！）会用不可读的幻灯片进行演示（译者注：即无字幻灯片）。</li>
-<li>变化产生趣味。改变你的节奏，音调和音量。强调重点。环顾四周。抛出一些视频，图片或实例。</li>
-<li>不要站在屏幕前面阻碍所有人的视线。你会惊讶于多少人无意识之间经常这样做。</li>
-<li>指出你工作的局限性。这有助于你的信誉。同样，在适当的时候给予其他人信任。</li>
-<li>与音视工作人员交朋友！运行音视系统是一项吃力不讨好的工作。如果一切顺利，那是理所应当的事情，没有人会说什么。但如果出现任何问题，整个观众都会回头看着控制室。帮助音视人员就是在帮助你自己。务必提前入住并测试设备。告诉他们你在演讲中要做什么（例如，我会运行3个视频片段）。在你登上讲台前，一定要知道一切是如何运作的。完成后，感谢音视工作人员的帮助！</li>
-</ul>
-<p>信心是提供良好表达的关键。获得信心的方法是做出精彩的演讲。当你刚刚开始时，这是一个 <a href="http://en.wikipedia.org/wiki/Catch-22_%28logic%29" target="_blank" rel="noopener">Catch-22</a>（译者注：死循环，一个例子是没有蛋所以没有鸡，没有鸡所以生不出蛋）。然而，一旦你变得足够好，这将变成一个积极的反馈循环，可以使会谈变得愉快起来。</p>
-<p>如果你想看一个优秀的演讲例子，请观看 Randy Pausch 创作的 <a href="http://en.wikipedia.org/wiki/Really_Achieving_Your_Childhood_Dreams" target="_blank" rel="noopener">The Last Lecture</a> （<a href="http://www.youtube.com/watch?v=ji5_MqicxSo" target="_blank" rel="noopener">YouTube视频</a>）。我私下里认识 Randy，在他之后进行演讲对我而言是一个艰难的任务，不只一次而是两次。Randy 在 The Last Lecture 中讲述了他的生活，但我会告诉你这不是一种特例。他是一位出色的演讲者，我们都可以从中学到很多东西。有一次，在我在弗吉尼亚大学讲话后，Randy 告诉我，他没有意识到我是一个充满活力的演讲者。我回答说，对我来说这并不是天生的，不像 Randy 是一个天生才华横溢的演讲者。对我而言，我必须努力才能做到这样。但我证明了，通过努力工作，人们可以训练出良好的演讲技巧，并得到 Randy 等人的关注。</p>
-<p>关于如何以引人注目的方式进行交流的一个很好的参考是 Chip 和 Dan Heath 撰写的 <a href="http://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287/ref=sr_1_1?ie=UTF8&amp;qid=1412373009&amp;sr=8-1&amp;keywords=made+to+stick" target="_blank" rel="noopener">Made to Stick: Why Some Ideas Survive and Others Die</a>。他们展示了如何创作人们会记住的信息的具体方法。</p>
-<p>撰写论文并将其发表对于博士来说至关重要。想要在毕业后获得研究职位的学生。较强的写作能力显着提高了你的论文被接受的可能。当我还是一名年轻的研究生并阅读了一篇我不理解的论文时，我想”哎呀，我一定是傻瓜。” 今天我读同一篇论文时会想：”孩子，这是一篇糟糕的论文。作者没有很好地解释和展示他们的成果。”这种反应足以让我拒绝这篇论文。</p>
-<p>你在哪里提交你的论文？你的教授会帮助你做出这个选择，但总的来说，我建议你选择你认为它有合理的机会被接受的最好的会议或期刊。在一个备受推崇的场所写作，提交和展示论文比在不太受尊重的场所更难。如果你不尝试一下最好的结果，你将永远不知道它是否会成功。计算机图形学领域有点不寻常，因为最理想的发布地点是会议（SIGGRAPH），而不是期刊（尽管SIGGRAPH论文现在发表在名为 Transactions on Graphics 的期刊上）。请注意，期刊可能需要数年才能发布提交的论文，而会议的周转时间要快得多。</p>
-<p>最后，不要忘记与你的教授和你的队友沟通。让你的委员会知晓和评判你的进度。我做的一件事（其他几个人做的）是写简短（一屏幕长度以内）状态报告，我每周都会通过电子邮件发送给我的教授和团队成员。这些是一种有效的方式，能够让每个人都了解我正在做的事情。它们也是我记录进度的好方法。如果我需要记住我在六个月内完成的工作，我有很多旧的状态报告可以阅读参考。你会惊讶于教授和管理者多么欣赏这种简单的练习。在每周的报告结尾，我还会引用一个不同的幽默短语来奖励人们阅读它。</p>
-<p>当你在实验室的工作达到里程碑或取得成果时，让人们了解它！带给你的教授和同学并展示它！这是一个双赢的局面。它让其他人知道你正在取得进步并取得成果，并获得有价值的反馈和建议。</p>
-<h2 id="选择顾问和委员会"><a href="#选择顾问和委员会" class="headerlink" title="选择顾问和委员会"></a>选择顾问和委员会</h2><blockquote>
-<p>- “实验室的一些学生只是名义上由论文顾问监督。这对于独立主动的人来说非常有用。它的优点是你只需要处理自己的神经病，而不包括你顾问的。”</p>
-<ul>
-<li>摘自”How to do research at the MIT AI Lab”</li>
-</ul>
-</blockquote>
-<p>选择合适的顾问对于顺利完成博士学位至关重要。你的顾问必须是能够覆盖你的专业领域以及你可以与之相处的人。当我开始读研究生时，我认为顾问-学生关系应该非常接亲近，无论是专业还是社交。实际上，这种关系是教授和学生共同选择的。它可以很近，在教授的家中共享晚餐，或者它可以是比较疏远的，例如偶尔会面以提醒教授该学生还活着。</p>
-<p>选择顾问的一个基本问题是选择初级（非终身教授）还是高级（终身教授）教授。非终身教授往往旅行较少，而且通常更容易同意（成为你的顾问）。从一个从未在学校的顾问那里获得帮助是很难的。非终身教职员工的建议较少，你必须与教授争分夺秒。他们更有可能亲自参与你的研究——编写代码，午夜时分还待在实验室里等等。非终身教职员工如果想获得终身教职，必须精力充沛，努力工作，这种工作习惯会影响他们的学生。但是，终身教职员工也有几个优势。他们通常是会将大部分资金和资源用来支持你的人。他们没有必要与学生竞争出版物和认可。你不会面临让他或她的顾问没有获得任期并离开大学的风险。终身教师对”游戏如何运作”更有经验，因此可以得到更好的指导，人脉，毕业后的工作等。</p>
-<p>我最终聘请了一位非终身教授（实际上，他当时甚至不在 tenure track）担任我的顾问，但也在我的委员会中安排了几位终身教授，其中包括一些我领域中的最顶级的教授。通过这种方式，我得到了两全其美的解决方案：初级顾问的日常关注，以及委员会的资源和经验。</p>
-<p>教授在研究生中培养声誉。有些人闻名于让他的博士生迅速毕业。另外一些人是难以忍受的，所以他们的学生需要继续他们永恒的项目或辍学离开。有些人要求他们的学生必须做什么，而其他人则会考虑学生的兴趣方向。多问问周围的人。你学到的东西可能很有启发性。如果情况发生变化，使另一位教授更符合你的需求，如果这是一个万全之策，那么不要害怕改变自己的选择。</p>
-<p>在选择委员会时，你应该确保它们能涵盖论文的所有方面。你还应该确保所有委员会成员都可以参加会议！选入太多经常旅行的教授，将导致难以将所有五六个人聚集在一个房间进行三小时的口试或提案会议。在安排此类会议时，首先要找到难以接触的教授在学校的时间，然后再考虑其他委员会成员的时间。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/06/LiveAsPhD2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Susan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SEUITE">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/06/LiveAsPhD2/" class="post-title-link" itemprop="url">研究生生存指南(2)</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-06 22:08:46" itemprop="dateCreated datePublished" datetime="2019-04-06T22:08:46+08:00">2019-04-06</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-10 13:55:38" itemprop="dateModified" datetime="2019-04-10T13:55:38+08:00">2019-04-10</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="再见，多谢博士生涯！（2）"><a href="#再见，多谢博士生涯！（2）" class="headerlink" title="再见，多谢博士生涯！（2）"></a>再见，多谢博士生涯！（2）</h1><p>又名</p>
-<h2 id="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"><a href="#“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”" class="headerlink" title="“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”"></a>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”<!-- omit in toc --></h2><ul>
-<li><a href="#再见多谢博士生涯2">再见，多谢博士生涯！（2）</a><ul>
-<li><a href="#研究生院是一个不同的游戏">研究生院是一个不同的游戏</a></li>
-<li><a href="#倡议">倡议</a></li>
-<li><a href="#韧性">韧性</a></li>
-<li><a href="#灵活性">灵活性</a></li>
-<li><a href="#人际交往能力">人际交往能力</a></li>
-</ul>
-</li>
-</ul>
-<p>如果你不知道怎么阅读，请从<a href="https://seuite.github.io/2019/04/05/LiveAsPhD1/">研究生生存指南(1)</a>开始。</p>
-<h2 id="研究生院是一个不同的游戏"><a href="#研究生院是一个不同的游戏" class="headerlink" title="研究生院是一个不同的游戏"></a>研究生院是一个不同的游戏</h2><blockquote>
-<p>- “不要让学校妨碍你的教育。” </p>
-<ul>
-<li>马克吐温</li>
-</ul>
-<p>- “IQ测试是为了预测学业成绩而发明的，没有别的。如果我们想要能够预测生活成功的东西，我们必须完全发明另一项测试。”</p>
-<ul>
-<li>Robert Zajonc</li>
-</ul>
-</blockquote>
-<p>如果你开始进修博士学位，你会发现研究生院与本科学校的世界截然不同。如果你刚刚获得硕士学位，那么研究生院除了课程更深入，更先进之外，可能与本科生没有太大差别（取决于你获得学位的地方）。但是对于博士生，研究生院是一个全新的游戏。表现良好的学生是那些提前认识到这点而不是之后才意识到并被迫调整自己的学生。</p>
-<p>Jason Hong 有一篇关于这个主题的文章叫做博士生必须扔掉本科生的心态（访问需要 ACM 数字图书馆订阅）。</p>
-<p>上课不是研究生院的主题。你一开始会参加些课程，但晚些时候你可能就不会有课可上了。人们会通过他（她）的研究来评价新毕业的博士生，而不是他或她的课业成绩。并且，对我的教授没有任何恶意，你在博士学习的大部分内容都是如此。知识都来自于课外：自己做研究，参加会议，与同学讨论。研究生院的成功不是来自完成一定数量的课程单元，而是来自成功完成研究计划。</p>
-<p>研究生和老师之间更像是师徒关系，每个学生都有自己的项目，而大师们可能会也可能不会起到什么作用。这就像教学生游泳的时候，将学生扔进游泳池的深处，看看是谁活着游到了另一端，谁淹死了。或者培训时钟设计师的时候，将学生锁在时钟工厂内，留给他们一些能够工作的时钟和大量时钟部件以及用于组装时钟的工具。然而，教程不完整都算是最好的情况了，甚至导师自己也不知道明年的模型要怎么办。</p>
-<p>成为一个熟练的博士需要和成为一个优秀的本科生不同的能力。本科教育通过课堂项目（不超过一个学期），报告，中期和期末测试来检验你。在大多数情况下，你是一个人工作的。你的教授可能不知道你的名字。班上的其他学生都参加相同的考试或做类似的项目。但是在博士阶段，你必须选择并完成一项独特的长期研究计划。对于我们大多数人来说，这意味着你必须学习如何进行研究以及所有这些：</p>
-<ul>
-<li>与你的教授，工作人员和同学们密切合作</li>
-<li>与他人交流成果</li>
-<li>找到绕过障碍的方法</li>
-<li>处理政治问题</li>
-</ul>
-<p>卡尔沃格尔认为，成功的研究生最重要的人格特质是好奇，自律，热爱和妄想症（相信他们的研究项目会发现一些新的和重要的东西）。</p>
-<p>我不是说在研究生院里考试和成绩完全不重要。完成博士学位的两个最大障碍之一正是通过资格考试（另一个是找到一个不差的论文题目）。但是因为研究生院需要各种不同的技能，它完全不同与基于考试的本科教育。招生委员会在考量谁出类拔萃，谁会辍学时，GRE和本科成绩似乎并不是一个好的指标，因为这些测试不衡量创造力，韧性，人际关系技巧，口头表达技巧和许多其他重要的特征。</p>
-<p>接下来的几节讨论了这些特征。</p>
-<h2 id="倡议"><a href="#倡议" class="headerlink" title="倡议"></a>倡议</h2><blockquote>
-<p>- “主动行动的人与不行动的人之间的区别实际上是白天和黑夜之间的区别。我不是说有效性有25％到50％的差异；我说的是5000％以上的差异，特别是如果他们聪明，清醒并且对其它事物非常敏锐。”</p>
-<ul>
-<li>Stephen R. Covey，《高效人士的7个习惯》</li>
-</ul>
-</blockquote>
-<p>论文代表了一项专注的个人研究工作，你将在自己独特的项目中发挥领导作用。如果你希望你的顾问能够握住你的手并告诉你每一步都要做什么，那么你就错过了论文的重点。博士生必须表现出完成论文的主动性。这并不意味着教授的指导并不重要，只是指导应该是一种大方向上的建议，而非细枝末节的工作安排。如果你从未做过教授明确告知的任务以外的工作，那么你需要更主动一些。</p>
-<p>在北卡罗来纳大学，有一个着名的轶事，讲述了一位名叫Joe Capowski的前UNC研究生。多年前，UNC得到了一对力反馈机械臂，用于分子可视化和对接实验。问题是如何将它们转移到UNC。这些机械臂是大而重的野兽，位于伊利诺伊州芝加哥的阿贡国家实验室。不幸的是，当时卡车司机正在进行罢工。Joe Capowski 主动（并且没有告诉任何人），飞到 Argonne，租了一辆卡车，将机械臂一路带回北卡罗来纳州，然后账单交给了计算机科学学院!许多年后，乔·卡普索斯基（Joe Capowski）竞选教堂山市议会并获得了席位。Fred Brooks 教授给了他一个背书。我还记得 Brooks 博士所说的话：”我可能不同意他的政治观点，但我知道他能够完成他的任务。”（感谢 Jim Lipscomb 对这个轶事的更正。）</p>
-<p>虽然 Joe Capowski 的轶事可能有点极端，但它确实表明，如果你不是一个”定时炸弹”，那么事后道歉通常比事前等待允许更好。某些大学（如麻省理工学院）擅长培养研究生的”能做”态度，因此他们变得更加自信和富有成效。高年级研究生的标志之一是他或她知道需要许可的任务类型和不需要许可的任务类型。这些知识将伴随经验。一般来说，高年级研究生最自由地主动参与项目。你必须学会这种特权。你可以独立工作并开始和完成适当的任务越多，你的教授就会越多地让你独自去做你想做的事。</p>
-<h2 id="韧性"><a href="#韧性" class="headerlink" title="韧性"></a>韧性</h2><blockquote>
-<p>- “让我告诉你导致我实现目标的秘诀。我的力量完全在于我的坚韧。”</p>
-<ul>
-<li>路易斯巴斯德</li>
-</ul>
-</blockquote>
-<p>获得博士学位并不需要你成为一个天才（虽然成为天才更好）。但没有人能够在轻言放弃的情况下完成论文。论文通常需要几年时间才能完成。对于那些从未参与过持续时间超过四分之一或学期的项目的本科生来说，这可能是一种文化冲击（在其结束时，无论项目的状态如何，都可以自己宣布胜利然后回家）。没有人能提前告诉你这篇论文需要花多长时间，所以很难看出”路的尽头”在哪里。你会遇到意外的问题和障碍，这可能会导致项目延期数月或数年。这很容易使你变得沮丧和无动于衷。如果你不顽强地坚持你的研究，你就很难完成你的论文。</p>
-<p>坚韧就意味着即使在情绪低落或事情进展不顺利的时候也要坚持下去。例如，我没有享受我研究生院的第一年。在离开UNC之前我没有把这件事告诉任何人。我没有参加任何一个项目，专注于上课。其中一些课程我也没有学好。我没有感觉到自己成为课题组的一部分，我真的想知道我是否是一名合格的研究生。即便如此，我仍然坚持了下去。当夏天到来时，我在该部门找到了一份工作，我更加积极地参与研究，更喜欢研究生院。博士学位进修的一部分正是把自己变成一名”厚脸皮”，这样你就不会脆弱到一遇到任何困难的迹象就选择放弃。</p>
-<p>我作为研究生学到的一个教训是：</p>
-<p><strong>完成学位论文的最好方法是每天做一些让你更接近完成它的事情。</strong></p>
-<p>如果你还剩下的就是写作，那么每天都去写下论文的一部分。如果你还有研究要做，那就每天做一部分。当你”情绪化”或感觉富有成效时，不要只做这一件事情。这种程度的自律将让你跨过各种起起落落，并确保你能够完成论文。</p>
-<h2 id="灵活性"><a href="#灵活性" class="headerlink" title="灵活性"></a>灵活性</h2><blockquote>
-<p>- “回到研究生院，我学会了如何在没有资金，权力甚至办公空间的情况下生存。研究生在学术等级中是最低的，因此他们必须从缝隙中谋求资源。当你处于望远镜排班表的最后一行时，你可以在等待其他观察者之间的一段时间内，通过在山顶上闲逛来观察。当你需要使用实验室里的电子小工具时，你可以在晚上借用它，整夜使用它，并在任何人注意之前将它归还。我没有太多关于行星物理学的知识，但我的小聪明是与生俱来的。”</p>
-<ul>
-<li>Clifford Stoll， 《杜鹃蛋》</li>
-</ul>
-<p>（译者注：《杜鹃蛋》是问世于 80 年代末互联网刚刚兴起的年代的著名武侠小说）</p>
-</blockquote>
-<p>灵活性意味着利用机会和协同作用，解决问题，并愿意根据需要改变计划。作为一名研究生，你处于学术图腾柱的最底层（译者注：指经验最少，地位最低的人）。即使是本科生也可以比你排名更高，特别是在私立大学（因为实际上他们支付了学费！）你不能命令任何人做任何事情。一般而言，你将处于对大事件做出反应而不是掌控它们的位置。因此，你的方法和研究计划必须变得灵活。</p>
-<p>例如，你可能无法如你所想那般去访问一块实验室设备，或者由于你无法控制的事件而突然切断访问。你会做什么？你能找到替代品吗？或者减少该设备所需的操作时间？或者在没有其它人使用该设备的零散时间进来？或者重新定义项目的方向，以便不再需要使用该设备？</p>
-<p>一件事可以是好事也可以是坏事。高效率的研究生与普通学生之间的区别在于前者认识到这些机会并利用它们。我把加里·毕晓普带到UNC并没有任何关系。但是在他到达之后，我意识到如果他成为我的顾问会加速我的研究进展，所以我做了决定，这对我的研究生生涯有很大的帮助。协同效应和意外发现的机会确实会出现，但必须要有足够的灵活性来识别并利用它们。</p>
-<h2 id="人际交往能力"><a href="#人际交往能力" class="headerlink" title="人际交往能力"></a>人际交往能力</h2><blockquote>
-<p>- “对于人类来说，诚实是一个程度问题。工程师在技术和人际关系方面始终保持诚实。这就是为什么让工程师远离客户，浪漫的爱好者以及其他无法处理真相的人的好主意。”</p>
-<ul>
-<li>Scott Adams，《迪尔伯特原则》</li>
-</ul>
-<p>“我可以计算出天体的运动，但不能计算出人们的疯狂。”</p>
-<ul>
-<li>Isaac Newton</li>
-</ul>
-</blockquote>
-<p>一般而言，计算机科学专业的学生并不擅长人际交往。我们中的一些人进入这个领域是因为机器比人类更容易理解。尽管计算机可能令人沮丧，但它们至少以合乎逻辑的方式表现，而人类往往不这样做。但是，你在研究生院及其他地方的成功在很大程度上取决于你与顾问，委员会，研究和支持人员以及同学建立和维持人际关系的能力。这并不意味着你必须成为”聚会狂”。我不是也不会成为一个善于交际的人。但我确实努力学习和锻炼人际交往的技巧，这对我的研究生生涯以及随后的研究工作至关重要。</p>
-<p>你可能会问，为什么这很重要？如果一个人在技术上很出色，那么这不应该无所谓吗？答案是否定的，因为情况与你的大学生时代不同。无论是在研究生院还是在商业中，你必须依靠并与其他人一起努力实现你的目标为了正确看待这一点，我从 Kerry J. Patterson 的一篇名为《组织：柔软和肮脏的一面 (Organizations: The Soft and Gushy Side)》的文章中摘录了以下内容。，发表在 1991 年秋季 The Bent 期刊：</p>
-<blockquote>
-<p>15年前，我在研究工程师和科学家的职业生涯时，第一次了解到组织的反复无常，人性化的一面。研究设计要求我每天花8小时进行一对一的访谈。在两小时当中，我会问一位工程师，化学家，物理学家或应用数学家一些”职业”问题。他们都曾为一家全球500强公司工作过。在这120分钟内，受试者谈论了组织危险的一面。两个小时几乎不足以让他们分享完他们的故事。所有人都热情地讨论了他们个人的事业。大多数人对组织的”软性和肮脏”方面感到沮丧。有些人已经认识到了这个系统，并试图去掌握它。其他人没有。</p>
-<p>作为研究设计的一部分，我们要求与低，中，高水平的人​​交谈。这本身就是一项有趣的练习。为了确定绩效排名，我们会在高级经理面前放置他或她的组织中10-50人的姓名。每个名字都会整齐地写在一张 3x5 大小的卡牌中间。在要求经理从上到下对员工进行排名之后，经理们会对卡牌进行分类。通常情况下，执行官会将名称分为三堆或四堆，然后再去整理每一堆。无论策略如何，这通常只需要几分钟。这样，管理相关专业人士的人员能够从上到下排名多达50人。这个过程很少超过三分钟，几次挠头和嘀咕声。三分钟。尽管政治对于接收端的人来说可能显得模棱两可，但是最高层的人能够以清晰的方式判断每个人的表现。</p>
-<p>然后将该绩效排名（由未参与访谈的个人进行）用作参考度量。我们这些进行访谈的人试图找出能够预测排名的信息（非参考性度量）。科学家的职业生涯如何才能获得最高排名？是什么摧毁了一个非常好的职业生涯？当然，科学实力应该会产生一些影响。而它确实如此。</p>
-<p>但技术实力并不像另一个因素那样具有预测性。我们发现，我们可以通过他们对人和政治的态度，在一两分钟内告诉受访者所属的绩效等级。被管理者排名低的个人谈到组织政治就好像是毒药一样。他们对业务人员非常恼火。他们经常表示，他们宁愿独自一人进行研究，不受人类情感的影响。他们将组织的社交方面描述为”软弱和愚蠢。”他们听起来非常痛苦。</p>
-<p>相比之下，表现最佳的人找到了在政治体系内工作的方法。他们并没有热衷于政治。他们看起来并不像你认为的在大学里进行政治斗争的那个孩子。他们并没有成为满脸堆笑的销售人员。这些在他们的领域中名列前茅专业科学家往往就是这样。他们就像科学家一样打扮和谈吐。他们与排在底部的人的差异很明显。他们找到了与组织，其他人，和政治和平相处的方法。他们通过掌握坚实的能力和柔软的人性来登顶他们的领域。</p>
-<p>并不只有工程师和科学家认为组织人性的一面令人厌恶。随着我们将研究范围扩大到包括教授，会计师和其他专业人士，研究结果非常相似。所有人都认为政治阴谋令人反感。只是有些人找到了社交的方法 - 表现最佳的人。</p>
-</blockquote>
-<p>学生通常瞧不起政治，但政治最基本的，积极的形式只是完成事情的艺术。政治主要是关于谁被允许做什么以及谁会获得资源（金钱，人员，设备等）。你需要资源，包括资本和人员，而在研究中取得成功。为了获取这些资源，你必须具备人际交往能力。如果你无法与某些人合作或惹恼了他们，你将无法获得这些资源，也无法完成你的研究。</p>
-<p>此外，完成博士学位的人通常的职业会是担任领导角色。领导需要良好的人际交往能力来说服和激励他人以某种方式思考或采取某些行动。如果你没有良好的人际关系或”软”技能，你所拥有的影响力将仅限于你自己。你的潜力是有限的。</p>
-<p>以下是解释关系为何如此重要的一个例子：</p>
-<p><strong>作为一名研究生，哪些人，是我应该尽力避免冒犯的？</strong></p>
-<p>是我的委员会吗？不，因为与你的顾问和委员会的适当的分歧和交涉对于在合理的时间内毕业至关重要。也不是我的同学们。因为我不需要他们当中大多数人的帮助，他们中的大多数人也不需要我。</p>
-<p>关键是研究者和支持人员。这包括科研人员和所有各种支持职位（系统管理员，网络管理员，视听专家，电子服务，光学和机械工程师，以及最重要的，行政助理）。我需要他们的帮助来完成我的研究，但他们对我并没有直接的需求。因此，我优先考虑与他们建立并保持良好的工作关系。</p>
-<p>培养人际关系主要在于尊重和判断他们不同的工作方式。</p>
-<ul>
-<li>在需要信任的时候给予信任</li>
-<li>承认并感谢他们的帮助</li>
-<li>投桃报李（记得回礼）</li>
-<li>尊重他们的专业知识，建议和时间</li>
-<li>如果你错了，请道歉</li>
-</ul>
-<p>意识到不同的人以不同的方式工作并受到不同的事物的激励——你越了解这种多样性，你就能越好地与他们互动并促使他们帮助你。对于某些人来说，一顿晚餐或是一张免费篮球赛门票就可以创造奇迹。</p>
-<p>一个真实的例子：在我的研究中，我需要对名为”Pixel Planes 5”的计算机图形学中的一些底层代码进行重大修改。这需要我没有的专业知识，而另一位名为 Marc Olano 研究生知道。我应该如何利用Marc的专业知识并完成我需要做的更改？</p>
-<p>去找 Marc，解释问题，并让他做出改写，是一个<strong>错误</strong>的方法。需要改写代码的不是马克，而是我。因此，应该由我来做大部分的工作。期待由他完成这项工作，表明你不尊重他的时间。</p>
-<p>我实际上做的是：向Marc解释问题，他为我勾画了一个可能的解决方案。然后我告别 Marc，独自工作了几天，试图落实这个解决方案。我完成了一部分，但最终还是没能解决另一部分。只有在这时我才重又找到马克并请他帮忙。</p>
-<p>通过这样做，我表明了对他的时间的尊重，并希望尽量减轻他的负担，从而使他更愿意帮助我。几个月后，当他和 Jon Cohen 需要我的帮助来建立一个展示他们的软件的系统时，我非常乐意回报他们。</p>
-<p>人际交往是一个巨大的话题，远远地超出了我的描述。我在这部分真正能做的就是（希望）说服你，这些技能对你的研究生生涯至关重要，并当你需要提高这些技能时，鼓励你去学习更多。我仍有很多需要学习的东西。我建议从阅读《高效人士的7个习惯》和《Type Talk》开始（均在参考文献部分中列出）。杂志上的文章《如何成为一名明星工程师》（参考文献中列出）也触及了这一主题。</p>
-<p>Scott Adams（<a href="http://en.wikipedia.org/wiki/Dilbert" target="_blank" rel="noopener">迪尔伯特</a>的创造者）写了一本有趣的书，名为 <a href="http://www.amazon.com/How-Fail-Almost-Everything-Still/dp/1591846919/ref=sr_1_1?ie=UTF8&amp;qid=1412373663&amp;sr=8-1&amp;keywords=scott+adams" target="_blank" rel="noopener">《我的生活故事：如何在几乎所有的事情中失败，却仍然赢得大奖》</a>，他描述了与生活成功相关的系统和技能，包括心理学和如何善解人意。</p>
-<p>（未完待续）</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://seuite.github.io/2019/04/05/Week6Report/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Susan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SEUITE">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/05/Week6Report/" class="post-title-link" itemprop="url">第6周周报</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-04-05 18:00:00" itemprop="dateCreated datePublished" datetime="2019-04-05T18:00:00+08:00">2019-04-05</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-04-13 17:04:46" itemprop="dateModified" datetime="2019-04-13T17:04:46+08:00">2019-04-13</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="SEUITE第6周报告"><a href="#SEUITE第6周报告" class="headerlink" title="SEUITE第6周报告"></a>SEUITE第6周报告</h1><h2 id="总体进展"><a href="#总体进展" class="headerlink" title="总体进展"></a>总体进展</h2><p>本周开始更新 SEUITE 博客，上线公共文件站，维护测试平台。</p>
-<h2 id="详细进展"><a href="#详细进展" class="headerlink" title="详细进展"></a>详细进展</h2><h3 id="SEUITE-博客"><a href="#SEUITE-博客" class="headerlink" title="SEUITE 博客"></a>SEUITE 博客</h3><blockquote>
-<p><a href="https://seuite.github.io">链接地址</a></p>
-</blockquote>
-<ul>
-<li>每天发布一篇博客（每篇字数约5k）</li>
-<li>内容为有关计算机/学习的内容</li>
-<li>使用 hexo 生成静态网页，主题为 NeXT</li>
-</ul>
-<h3 id="公共文件站"><a href="#公共文件站" class="headerlink" title="公共文件站"></a>公共文件站</h3><blockquote>
-<p><a href="https://ftp.seu.services" target="_blank" rel="noopener">链接地址</a></p>
-</blockquote>
-<ul>
-<li>提供公共资源下载</li>
-<li>内容为 SEUITE 相关文档/代码资源</li>
-<li>使用 H5ai 静态代理在测试平台上，文件备份到 GitHub 上</li>
-</ul>
-<h3 id="测试平台"><a href="#测试平台" class="headerlink" title="测试平台"></a>测试平台</h3><blockquote>
-<p><a href="https://test.seu.services" target="_blank" rel="noopener">链接地址</a></p>
-</blockquote>
-<ul>
-<li>作为主服务器的测试服务器使用</li>
-<li>保持基本环境于主服务器同步的情况下进行开发</li>
-<li>托管在阿里云，可能将文档站和公共文件站转移上去</li>
-</ul>
-<h3 id="其它事务"><a href="#其它事务" class="headerlink" title="其它事务"></a>其它事务</h3><ul>
-<li>镜像站前端待维护</li>
-<li>GitHub App 待开发</li>
-</ul>
-<h2 id="下周主要工作"><a href="#下周主要工作" class="headerlink" title="下周主要工作"></a>下周主要工作</h2><ol>
-<li>维持博客更新</li>
-<li>维护文档站，将404填满</li>
-<li>将组会变为沙龙形式，讨论一周问题，博客和新闻</li>
-</ol>
-<h2 id="祝大家能够享受快乐的校园生活"><a href="#祝大家能够享受快乐的校园生活" class="headerlink" title="祝大家能够享受快乐的校园生活"></a>祝大家能够享受快乐的校园生活</h2><blockquote>
-<p>教授的价值是通过他们杀死了多少棵树来评价的。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
+  
+ 
+   
+ 
 
 
+
+
+
+
+<div id="site-header" class="carousel slide carousel-fade" data-ride="carousel" >  
+
+  
+  <ol class="carousel-indicators">
+
+    
+      
+        <li data-target="#site-header" data-slide-to="0" class="active"></li>
+      
+    
+      
+        <li data-target="#site-header" data-slide-to="1"></li>
+      
+    
+      
+        <li data-target="#site-header" data-slide-to="2"></li>
+      
+    
+      
+        <li data-target="#site-header" data-slide-to="3"></li>
+      
+    
+      
+        <li data-target="#site-header" data-slide-to="4"></li>
+      
+    
+      
+        <li data-target="#site-header" data-slide-to="5"></li>
+      
+    
+      
+        <li data-target="#site-header" data-slide-to="6"></li>
+      
+    
+      
+        <li data-target="#site-header" data-slide-to="7"></li>
+      
+    
+      
+        <li data-target="#site-header" data-slide-to="8"></li>
+      
+    
+  </ol>
+  
+
+  
+  <div class="carousel-inner" role="listbox">
+    
+      
+
+        
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background0.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              
+              
+              
+
+            </div>
+            
 
           </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background1.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background2.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background3.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background4.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background5.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background6.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background7.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background8.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+
+  
+  </div>
+  
+
+  
+  <div class="carousel-content text-center white-text wow fadeIn">
+    <div class="row mx-0 headfont mb-5 pb-3">
+      
+      <div class="col-12 col-sm-5 align-middle">
+        <a href="https://seuite.github.io">
           
+            <img class="pull-right avatar avatar-lg " src="https://seuite.github.io/img/Susan_new_logo.png" alt="" >
+          
+        </a>
+      </div>
+      
+
+      <div class="col-12 col-sm-7 text-left pl-5">
+        
+        <a href="https://seuite.github.io">
+          <h1 class="display-4 mb-2 mt-2 h1">
+            <strong>SEUITE</strong>
+          </h1>
+        </a>
+        
+        <p class="mb-0 p" style="font-size: 1.250rem; font-weight: 200;">
+            东南大学网络技术和开源软件协会
+        </p>
+        
+        <p class="mb-0 p" style="font-size: 1.250rem; font-weight: 200;">
+            ------------
+        </p>
+        
+        <p class="mb-0 p" style="font-size: 1.250rem; font-weight: 200;">
+            希望每个人都能够享受快乐的校园生活
+        </p>
+        
+        
+
+        
+        <div class="mt-2" style="font-size: 2rem; color: white;">
+            
+              <a href="https://github.com/seuite" target="_blank" rel="noopener"><i class="fab fa-github pr-1" aria-hidden="true"></i></a>    
+            
+            
+
+            
+
+            
+
+            
+    
+            
+    
+            
+        
+            
+            
+                <a href="mailto:seuite@outlook.com"><i class="far fa-envelope-open pr-1" aria-hidden="true"></i></a>
+            
+    
+            
 
         </div>
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+
+      </div>
     </div>
   </div>
+  
 
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
+  
+  <a class="carousel-control-prev" href="#site-header" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#site-header" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  
 
+</div>
+  
+
+  
+  
+    <section class="container pt-5 text-center">
+      <h1 class="display-3">Hello, World!</h1>
       
-
+      <p style="font-size:1.8rem; color: var(--text-light);">~ No Day But Today ~</p>
       
+    </section>
+  
+  
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Susan</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
 
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">13</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
 
-              
+    
+  
+  <main class="post-main-wrapper px-5">
+    <div class="row">
+      
+      <div class="col-md-3">
+        
+        
+        
 
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">8</span>
-                    <span class="site-state-item-name">tags</span>
-                  
-                </div>
-              
-            </nav>
-          
+  
 
-          
+  
 
-          
+  
 
-          
+  
 
-          
-          
+  
 
-          
-            
-          
-          
+  
 
-        </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <hr>
+  
+    <div class="post-meta">
+      <div class="mb-2">
+        <a href="https://seuite.github.io/categories/">
+          <span class="font-weight-bold text-uppercase post-meta">
+            <i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 
+            Categories
+          </span>
+        </a>
       </div>
 
-      
-
-      
-
+      <div class="li-x post-meta" style="margin-left: -8px;">
+        
+          
+          
+            
+            <li class="py-1">
+              <a href="https://seuite.github.io/categories/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88">
+                <span>周末闲谈 (6)</span>
+              </a>
+            </li>           
+          
+            
+              <li class="middot"></li>
+            
+            <li class="py-1">
+              <a href="https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper">
+                <span>每日-Paper (3)</span>
+              </a>
+            </li>           
+          
+            
+              <li class="middot"></li>
+            
+            <li class="py-1">
+              <a href="https://seuite.github.io/categories/report">
+                <span>Report (1)</span>
+              </a>
+            </li>           
+          
+            
+              <li class="middot"></li>
+            
+            <li class="py-1">
+              <a href="https://seuite.github.io/categories/test">
+                <span>Test (1)</span>
+              </a>
+            </li>           
+          
+        
+      </div>
     </div>
-  </aside>
+
+    
   
 
 
         
+        
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <hr>
+  
+    <div class="post-meta">
+      <div class="mb-2">
+        <a href="https://seuite.github.io/tags/">
+          <span class="font-weight-bold text-uppercase post-meta">
+            <i class="fas fa-tags pr-1" aria-hidden="true"></i> 
+            Featured Tags
+          </span>
+        </a>
       </div>
-    </main>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">SEUITE</span>
+      <div class="li-x post-meta tags-md" style="margin-left: -8px;">
+        
+        
+        
+            <li><a href="https://seuite.github.io/tags/blog" role="button"><span>blog (9)</span></a></li>
+          
+        
+            <li><a href="https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA" role="button"><span>计算机 (9)</span></a></li>
+          
+        
+            <li><a href="https://seuite.github.io/tags/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97" role="button"><span>研究生生存指南 (6)</span></a></li>
+          
+        
+            <li><a href="https://seuite.github.io/tags/seuite" role="button"><span>seuite (2)</span></a></li>
+          
+        
+            <li><a href="https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5" role="button"><span>周报 (2)</span></a></li>
+          
+        
+            <li><a href="https://seuite.github.io/tags/%E7%BB%8F%E5%85%B8%E4%BD%9C%E5%93%81" role="button"><span>经典作品 (1)</span></a></li>
+          
+        
+            <li><a href="https://seuite.github.io/tags/%E8%AE%BA%E6%96%87" role="button"><span>论文 (1)</span></a></li>
+          
+        
+      </div>
+    </div>
+
+    
+  
+
+
+        
+  
+
+  
 
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+  <hr>
+  
+    <div class="post-meta">
+      <div class="mb-2">
+        <a href="https://seuite.github.io/series/">
+          <span class="font-weight-bold text-uppercase post-meta">
+            <i class="fas fa-bookmark pr-1" aria-hidden="true"></i> 
+            Recommend Series
+          </span>
+        </a>
+      </div>
+     
+      <div class="post-meta" >
+        
+          
+          
+
+            
+            
+            
+            
+              
+              
+<div class="card card-cascade wider mb-4 mt-2">
+    <a href="https://seuite.github.io/series/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF">
+  
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="https://seuite.github.io/img/default.jpg" >
+    
+      <div class="mask rgba-white-slight waves-effect waves-light"></div>
+    
+  </div>
+
+  
+  <div class="card-body card-body-cascade text-center">
+   
+
+    
+    <h4 class="card-title"><strong>再见多谢博士生涯 (5)</strong></h4>
+    
+
+    
+    <p class="card-text"> </p>
+    
+
+
+  </div>
+</a>
+
 </div>
 
 
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+            
+          
+          
 
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.0.1</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
+            
+            
+            
+            
+              
+              
+<div class="card card-cascade wider mb-4 mt-2">
+    <a href="https://seuite.github.io/series/%E5%89%8D%E6%B2%BF%E8%BF%9B%E5%B1%95">
+  
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="https://seuite.github.io/img/default.jpg" >
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-    
-
+      <div class="mask rgba-white-slight waves-effect waves-light"></div>
     
   </div>
 
   
+  <div class="card-body card-body-cascade text-center">
+   
 
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+    
+    <h4 class="card-title"><strong>前沿进展 (3)</strong></h4>
+    
+
+    
+    <p class="card-text"> </p>
+    
+
+
+  </div>
+</a>
+
+</div>
+
+
+            
+          
+          
+
+        
+      </div>
+    
+      
+    </div>
+  
+
+  
+
+      </div>
+      
+
+      
+      
+      <div class="col-md-9 mt-3">  
+        
+        
+        
+          
+          <div>
+              
+                  <div class="post-wrapper white-bg post-card">
+  
+  <a href="https://seuite.github.io/report/week7report/">
+    <div class="post-header text-center">
+      <div class="px-4 post-heading">第7周周报</div>
+      <ul class="post-meta li-x mt-1">
+        
+          <li>April 4, 12049</li>
+        
+    
+        
+          <li class="middot"></li>
+          <li>One minute read</li>
+        
+      </ul>
+    </div>
+    
+
+    
+      SEUITE 第7周报告 总体进展 本周依然在更新 SEUITE 博客，重写了社团主页，做了非常多的测试demo。 详细进展 SEUITE 博客 链接地址 每天发布一篇博客（每篇字数约7k） 本周主题为 前沿计算机领域 paper 纵览 依旧使用 hexo 生成静态网页，主题为 NeXT 测试平台 链接地址 作为主服务器的测试服务器使用 无法使用域名访问，需使用ip地址访问，因此做反代的时候需要注意迁移至生产环境时的改写 不会将文档站和公共文件站转移上去 社团主页 链接地址 重写了主页 更新了 fav......
+    
+  </a>
+
+  
+  
+  <div class="post-meta li-x mt-2 div-x">
+    <div>
+      
+      
+    </div>
+   
+    <div>
+      
+        
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://seuite.github.io/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="https://seuite.github.io/tags/seuite" role="button">SEUITE </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5" role="button">周报 </a></li>
+      
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+              
+                  <div class="post-wrapper white-bg post-card">
+  
+  <a href="https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/11/">
+    <div class="post-header text-center">
+      <div class="px-4 post-heading">每天一篇计算机 Paper (2019/4/11)</div>
+      <ul class="post-meta li-x mt-1">
+        
+          <li>April 4, 12049</li>
+        
+    
+        
+          <li class="middot"></li>
+          <li>6 minute read</li>
+        
+      </ul>
+    </div>
+    
+    
+      <div class="view">
+        <img src="https://i.loli.net/2019/04/06/5ca87b7dac457.jpg" />
+      </div>
+    
+
+    
+      双目标进化优化中的生殖偏差，连锁学习和多样性保持
+    
+  </a>
+
+  
+  
+  <div class="post-meta li-x mt-2 div-x">
+    <div>
+      
+        
+          <li><a href="https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 每日 Paper </a></li>
+        
+      
+      
+        
+          <li><a href="https://seuite.github.io/series/%E5%89%8D%E6%B2%BF%E8%BF%9B%E5%B1%95"><i class="fas fa-bookmark pr-1" aria-hidden="true"></i>前沿进展</a></li>
+        
+      
+    </div>
+   
+    <div>
+      
+        
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://seuite.github.io/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper" role="button">每日 Paper </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA" role="button">计算机 </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/blog" role="button">blog </a></li>
+      
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+              
+                  <div class="post-wrapper white-bg post-card">
+  
+  <a href="https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/11/">
+    <div class="post-header text-center">
+      <div class="px-4 post-heading">每天一篇计算机 Paper (2019/4/11)</div>
+      <ul class="post-meta li-x mt-1">
+        
+          <li>April 4, 11049</li>
+        
+    
+        
+          <li class="middot"></li>
+          <li>5 minute read</li>
+        
+      </ul>
+    </div>
+    
+    
+      <div class="view">
+        <img src="https://i.loli.net/2019/04/06/5ca87b7dac457.jpg" />
+      </div>
+    
+
+    
+      关于偏好的任务分配的分式 0-1 规划
+    
+  </a>
+
+  
+  
+  <div class="post-meta li-x mt-2 div-x">
+    <div>
+      
+        
+          <li><a href="https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 每日 Paper </a></li>
+        
+      
+      
+        
+          <li><a href="https://seuite.github.io/series/%E5%89%8D%E6%B2%BF%E8%BF%9B%E5%B1%95"><i class="fas fa-bookmark pr-1" aria-hidden="true"></i>前沿进展</a></li>
+        
+      
+    </div>
+   
+    <div>
+      
+        
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://seuite.github.io/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper" role="button">每日 Paper </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA" role="button">计算机 </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/blog" role="button">blog </a></li>
+      
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+              
+                  <div class="post-wrapper white-bg post-card">
+  
+  <a href="https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/10/">
+    <div class="post-header text-center">
+      <div class="px-4 post-heading">每天一篇计算机 Paper (2019/4/10)</div>
+      <ul class="post-meta li-x mt-1">
+        
+          <li>April 4, 10049</li>
+        
+    
+        
+          <li class="middot"></li>
+          <li>6 minute read</li>
+        
+      </ul>
+    </div>
+    
+    
+      <div class="view">
+        <img src="https://i.loli.net/2019/04/06/5ca87b7dac457.jpg" />
+      </div>
+    
+
+    
+      用于数据挖掘的元启发式方法
+    
+  </a>
+
+  
+  
+  <div class="post-meta li-x mt-2 div-x">
+    <div>
+      
+        
+          <li><a href="https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 每日 Paper </a></li>
+        
+      
+      
+        
+          <li><a href="https://seuite.github.io/series/%E5%89%8D%E6%B2%BF%E8%BF%9B%E5%B1%95"><i class="fas fa-bookmark pr-1" aria-hidden="true"></i>前沿进展</a></li>
+        
+      
+    </div>
+   
+    <div>
+      
+        
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://seuite.github.io/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper" role="button">每日 Paper </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA" role="button">计算机 </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/blog" role="button">blog </a></li>
+      
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+              
+                  <div class="post-wrapper white-bg post-card">
+  
+  <a href="https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF5/">
+    <div class="post-header text-center">
+      <div class="px-4 post-heading">再见，多谢博士生涯！（5）</div>
+      <ul class="post-meta li-x mt-1">
+        
+          <li>April 4, 9049</li>
+        
+    
+        
+          <li class="middot"></li>
+          <li>11 minute read</li>
+        
+      </ul>
+    </div>
+    
+    
+      <div class="view">
+        <img src="https://i.loli.net/2019/04/06/5ca87b7dac457.jpg" />
+      </div>
+    
+
+    
+      “关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”
+    
+  </a>
+
+  
+  
+  <div class="post-meta li-x mt-2 div-x">
+    <div>
+      
+        
+          <li><a href="https://seuite.github.io/categories/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 周末闲谈 </a></li>
+        
+      
+      
+        
+          <li><a href="https://seuite.github.io/series/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF"><i class="fas fa-bookmark pr-1" aria-hidden="true"></i>再见，多谢博士生涯！</a></li>
+        
+      
+    </div>
+   
+    <div>
+      
+        
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://seuite.github.io/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper" role="button">每日 Paper </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA" role="button">计算机 </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/blog" role="button">blog </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E5%AD%98%E6%8C%87%E5%8D%97" role="button">研究生生存指南 </a></li>
+      
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+</div>
+
+              
+              
+          </div>
+        
+
+      </div>
+      
+
+    </div>
+  </main>
+  
+
+
+    
+    
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+  
+  <div class="pb-2 mt-5 pt-5">
+    
+      <a href="https://github.com/seuite " target="_blank" rel="noopener"><i class="fab fa-github mr-3" aria-hidden="true"></i></a>    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+        <a href="mailto:seuite@outlook.com"><i class="far fa-envelope-open mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+    
+
+  </div>
+  
+
+  
+  <div class="copyright py-4">
+    
+    <span>  2019 - 2019 &copy; | Theme <a href='https://github.com/seuite/hugo-susan-theme' target="_blank">Susan</a> by <a href='https://github.com/seuite' target="_blank">SEUITE</a>  </span>
+  </div>
+  
+
+</footer>
+
+
+    
+
+
+
+
+
+
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/jquery/jquery.smooth-scroll.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/popper.min.js"></script>
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/holder.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/mdb/mdb.min.js"></script>
+
+<script type="text/javascript" src="https://seuite.github.io/js/main.js"></script>
+
+
+
+  
+  <script src="https://seuite.github.io/js/vendors/highlight.pack.js"> </script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+  <script src="https://seuite.github.io/js/vendors/katex/katex.min.js"> </script>
+  <script src="https://seuite.github.io/js/vendors/katex/contrib/auto-render.min.js"></script>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          renderMathInElement(document.body);
+      });
+  </script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  
+  new WOW().init();
 </script>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="/js/src/utils.js?v=7.0.1"></script>
-
-  <script src="/js/src/motion.js?v=7.0.1"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/src/schemes/muse.js?v=7.0.1"></script>
-
-
-
-  
-
-  
-
-
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
-
-
-  
-  
-
-
-
-  
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-</body>
+  </body>
 </html>

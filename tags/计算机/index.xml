@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>计算机 on SEUITE 博客</title>
+    <link>https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+    <description>Recent content in 计算机 on SEUITE 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Fri, 12 Apr 2019 14:23:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>每天一篇计算机 Paper (2019/4/11)</title>
+      <link>https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/11/</link>
+      <pubDate>Fri, 12 Apr 2019 14:23:01 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/11/</guid>
+      <description>双目标进化优化中的生殖偏差，连锁学习和多样性保持</description>
+    </item>
+    
+    <item>
+      <title>每天一篇计算机 Paper (2019/4/11)</title>
+      <link>https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/11/</link>
+      <pubDate>Thu, 11 Apr 2019 09:23:41 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/11/</guid>
+      <description>关于偏好的任务分配的分式 0-1 规划</description>
+    </item>
+    
+    <item>
+      <title>每天一篇计算机 Paper (2019/4/10)</title>
+      <link>https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/10/</link>
+      <pubDate>Wed, 10 Apr 2019 18:42:14 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/10/</guid>
+      <description>用于数据挖掘的元启发式方法</description>
+    </item>
+    
+    <item>
+      <title>再见，多谢博士生涯！（5）</title>
+      <link>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF5/</link>
+      <pubDate>Tue, 09 Apr 2019 14:32:31 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF5/</guid>
+      <description>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”</description>
+    </item>
+    
+    <item>
+      <title>再见，多谢博士生涯！（4）</title>
+      <link>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF4/</link>
+      <pubDate>Mon, 08 Apr 2019 00:23:49 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF4/</guid>
+      <description>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”</description>
+    </item>
+    
+    <item>
+      <title>再见，多谢博士生涯！（3）</title>
+      <link>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF3/</link>
+      <pubDate>Sun, 07 Apr 2019 18:42:14 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF3/</guid>
+      <description>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”</description>
+    </item>
+    
+    <item>
+      <title>再见，多谢博士生涯！（2）</title>
+      <link>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF2/</link>
+      <pubDate>Sat, 06 Apr 2019 22:14:19 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF2/</guid>
+      <description>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”</description>
+    </item>
+    
+    <item>
+      <title>再见，多谢博士生涯！（1）</title>
+      <link>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF1/</link>
+      <pubDate>Fri, 05 Apr 2019 00:14:19 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF1/</guid>
+      <description>“关于计算机研究生院一开始我想知道，但直到后来才学会的一切。”</description>
+    </item>
+    
+    <item>
+      <title>越糟糕越好：简单之美 (Worse Is Better)</title>
+      <link>https://seuite.github.io/blog/1-01/%E8%B6%8A%E7%B3%9F%E7%B3%95%E8%B6%8A%E5%A5%BD%E7%AE%80%E5%8D%95%E4%B9%8B%E7%BE%8E-worse-is-better/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://seuite.github.io/blog/1-01/%E8%B6%8A%E7%B3%9F%E7%B3%95%E8%B6%8A%E5%A5%BD%E7%AE%80%E5%8D%95%E4%B9%8B%E7%BE%8E-worse-is-better/</guid>
+      <description>简单压倒一切</description>
+    </item>
+    
+  </channel>
+</rss>

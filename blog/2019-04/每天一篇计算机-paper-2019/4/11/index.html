@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zn-Hans">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
+  <meta name="author" content="SEUITE">
+  <meta name="description" content="关于偏好的任务分配的分式 0-1 规划">
+  
+  <meta property="og:title" content="每天一篇计算机 Paper (2019/4/11)" />
+<meta property="og:description" content="关于偏好的任务分配的分式 0-1 规划" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/11/" />
+<meta property="article:published_time" content="2019-04-11T09:23:41&#43;08:00"/>
+<meta property="article:modified_time" content="2019-04-11T09:23:41&#43;08:00"/><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/10/" />
+
+
+
+  <title>
+  
+       每天一篇计算机 Paper (2019/4/11) | SEUITE 博客 
+  
+  </title>
+
+  <link rel="canonical" href="https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/11/">
+
+  
+  
+
+  
+  <link href="https://seuite.github.io/css/vendors-extensions/fontawesome/all.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">
+  <link href="https://seuite.github.io/css/font.css" rel="stylesheet"> 
+    
+  
+  <link href="https://seuite.github.io/css/vendors/bootstrap4/bootstrap.min.css" rel="stylesheet">
+  <link href="https://seuite.github.io/css/vendors-extensions/mdb/mdb.min.css" rel="stylesheet"> 
+  <link href="https://seuite.github.io/css/vendors/mdb/style.min.css" rel="stylesheet"> 
+  <link href="https://seuite.github.io/css/main.css" rel="stylesheet">
+
+
+  
+  <link rel="shortcut icon"
+  
+      href="https://seuite.github.io/img/favicon.png"
+  
+  >
+
+
+  
+  
+
+  <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+  </style>
+
+
+  
+    
+    <link rel="stylesheet" href="https://seuite.github.io/js/vendors/katex/katex.min.css">
+  
+  
+
+  
+    
+    <link rel="stylesheet" href="https://seuite.github.io/css/vendors/highlight/github-gist.css">
+  
+
+</head>
+
+  <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
+  
+    
+    
+
+    
+      
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="https://seuite.github.io">
+          
+        <img class="avatar" src="https://seuite.github.io/img/favicon.png" style="width: 40px!important;height: auto;"  class="d-inline-block align-top" alt="" >
+        
+        <strong> SEUITE</strong>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item ">
+            <a class="nav-link" href="https://seuite.github.io">Home</a>
+          </li>
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://seuite.github.io/blog/" >博客  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://seuite.github.io/report/" >周报  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://seuite.github.io/about/" >关于我们  </a>
+            </li>
+          
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+ 
+      
+ 
+
+
+
+
+
+
+<div id="site-header" class="carousel slide carousel-fade" data-ride="carousel" style="height: 18rem;" >  
+
+  
+  
+  
+
+  
+  <div class="carousel-inner" role="listbox">
+    
+      
+
+        
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background0.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              
+              
+              
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background1.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background2.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background3.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background4.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background5.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background6.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background7.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background8.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+
+  
+  </div>
+  
+
+  
+  <div class="carousel-content text-center white-text wow fadeIn">
+    <div class="row mx-0 headfont mt-3 pt-4">
+      
+      <div class="col-12 col-sm-5 align-middle">
+        <a href="https://seuite.github.io">
+          
+            <img class="pull-right avatar avatar-md" src="https://seuite.github.io/img/Susan_new_logo.png" alt="" >
+          
+        </a>
+      </div>
+      
+      <div class="col-12 col-sm-7 text-left pl-2">
+        <a href="https://seuite.github.io">
+          <h1 class="mb-2 h1" style="font-weight: 300;" >
+            <strong>SEUITE 博客</strong>
+          </h1>
+        </a>
+        
+
+             
+        <div class="mt-2" style="font-size: 1rem; color: white;">
+            
+              <a href="https://github.com/seuite" target="_blank" rel="noopener"><i class="fab fa-github pr-1" aria-hidden="true"></i></a>    
+            
+            
+
+            
+
+            
+
+            
+    
+            
+
+            
+
+        
+            
+                <a href="mailto:seuite@outlook.com"><i class="far fa-envelope-open pr-1" aria-hidden="true"></i></a>
+            
+    
+            
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  
+
+</div>
+  
+    
+
+    
+  
+  <main class="post-main-wrapper">
+    
+    
+    <div class="row">
+
+      
+
+      
+      <div class="container pr-5">
+      
+
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
+
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+      
+        <li><a href="https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 每日 Paper </a></li>
+      
+    
+    
+      
+        <li><a href="https://seuite.github.io/series/%E5%89%8D%E6%B2%BF%E8%BF%9B%E5%B1%95"><i class="fas fa-bookmark pr-1" aria-hidden="true"></i>前沿进展</a></li>
+      
+    
+  </ul>
+
+  <div class="px-4 post-heading">每天一篇计算机 Paper (2019/4/11)</div>
+
+  <ul class="post-meta li-x mt-1">
+    
+      <li>April 4, 11049</li>
+    
+
+    
+      <li class="middot"></li>
+      <li>5 minute read</li>
+    
+  </ul>
+  
+    <div class="view">
+      <img src="https://i.loli.net/2019/04/06/5ca87b7dac457.jpg" />
+    </div>
+  
+
+</div>
+
+
+          <div class="post-content markdown">
+            
+
+<h1 id="关于偏好的任务分配的分式-0-1-规划">关于偏好的任务分配的分式 0-1 规划</h1>
+
+<blockquote>
+<p>Güngör, M. (2019). &ldquo;A fractional 0–1 program for task assignment with respect to preferences.&rdquo; Computers &amp; Industrial Engineering 131: 263-268.
+- 译者：陈思源</p>
+</blockquote>
+
+<p>本文隶属于&rdquo;每天一篇计算机 Paper&rdquo;系列博客，更多内容请点击<a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/">这个链接</a>。</p>
+
+<h2 id="1-introduction">1. Introduction</h2>
+
+<p>我们考虑一个分配问题，其中每个任务必须分配给一个独特的人，负载分配必须公平; 更确切地说，任何人的负载都可能偏离平均值超过指定的常数。假设每个人都为每项任务指定一个偏好级别。对于给定的任务，我们将满意度定义为这些水平相对于负荷的加权平均值。例如，如果有人用负载 3 和 12 执行任务 A 和 B，并且如果他们对这些任务的偏好等级分别为 1 和 10，那么他的满意度就是 $ \frac{(3×1)+(12×10)}{3+12} = 8.2 $。我们希望在总加权满意度最大化的意义上找到最佳分配。我们的动机来自教学辅助任务分配问题。</p>
+
+<p>We consider an assignment problem where each task must be assigned to a unique person, and load distribution must be fair; more precisely, nobody’s load can deviate from the average more than a specified constant. Every person is assumed to designate a preference level for each task. For a given assignment, we define satisfaction as the weighted average of these levels with respect to loads. For instance, if somebody undertakes tasks A and B with loads 3 and 12, and if his preference levels for these tasks are 1 and 10, respectively, then his satisfaction is (3×1)+(12×10) 3+12 = 8.2. We want to find the best assignment in the sense that total weighted satisfaction is maximized. Our motivation comes from the teaching assistant-task assignment problem.</p>
+
+<p>因为满意度被定义为两个线性函数的比率，数学模型是一个多比率，约束的 0-1 分式规划。在最近的一项讨论中，Borrero等人（2016b）概述了关于分式 0-1 程序（通常也称为双曲 0-1 程序）的文献，包括它们的应用，相关的计算复杂性和解决方法。可以将分式 0-1 程序重新表示为等效的混合整数线性程序。Li（1994）提出了这种方法，Wu（1997）进一步讨论了这种方法。Tawarmalani等（2002）开发了八种不同的混合整数凸规划重构，与 Li 相比，它具有更好的松弛界限。Borrero等（2016a）提出了一种改进线性化配方的简单技术。关键思想是利用 0-1 决策变量的某些特定线性组合的二进制表示。</p>
+
+<p>The mathematical model turns out to be a multiple-ratio, constrained, fractional 0-1 program since satisfaction is defined as a ratio of two linear functions. In a recent survey, Borrero et al. (2016b) overview the literature on fractional 0-1 programs (also, often referred to as hyperbolic 0-1 programs) including their applications, related computational complexity, and solution methods. It is possible to reformulate fractional 0-1 programs as equivalent mixed-integer linear programs. Li (1994) propose such an approach that is further discussed by Wu (1997). Tawarmalani et al. (2002) develop eight different mixed-integer convex programming reformulations which have superior relaxation bounds compared to Li’s. Borrero et al. (2016a) suggest a simple technique to improve linearized formulations. The key idea is to exploit binary representations of certain linear combinations of the 0-1 decision variables.</p>
+
+<p>Pentico（2007）提出了一项关于过去五十年来文献中出现的任务问题变化的考察。我们考虑的问题与那里提到的分式分配问题的不同之处在于，在我们的案例中，可以将多个任务分配给同一个对象。广义赋值问题具有这种特点，但其目标函数是线性的，并且其对象的负载没有下限（仅上限）。Krumke和Thielen（2013）探讨了广义赋值的变体，特别是包含了下界假设的研讨会赋值的问题; 但是，它们允许了对象完全闲置的可能性。</p>
+
+<p>Pentico (2007) presents a survey of the variations of the assignment problem that have appeared in the literature over the past fifty years. The problem we consider differs from the fractional assignment problem mentioned there in that multiple tasks may be assigned to the same agent in our case. The generalized assignment problem enjoys this property, but its objective function is linear, and there is no lower bound on agents’ loads (only upper bounds). Krumke and Thielen (2013) investigate a variation of generalized assignment, particularly the seminar assignment, that assume lower bounds; however, they allow for the possibility that an agent be left completely idle.</p>
+
+<p>许多分配模型都考虑了偏好。在兼职人员安排的背景下有一些例子（Mohan，2008; Akbari等，2013; Ruiz-Torres等，2015），大学时间表（Daskalaki等，2004）及其子问题 学院-课程分配问题（Ozdemir和Gasimov，2004; Ismayilova等，2007; Al-Yakoob和Sherali，2015），助教-作业分配问题（G¨uler等，2015），和研讨会主题-学生分配问题（Geiger和温格，2010）。大多数情况下，满意度直接表示为线性函数而不是线性函数的比率，并与其他几个目标一起并入模型中。Ozdemir和Gasimov（2004）和Ruiz-Torres等人（2015）是少数在定义中使用比率的人之一。Ruiz-Torres等人（2015）没有提供数学模型，但提出了启发式算法。Ozdemir和Gasimov（2004）考虑了多个目标，其中之一是平均满意度的优化。他们通过分析层次过程将这些目标转化为单一目标，将问题重新表述为非线性非凸性程序，并使用Gasimov（2002）中描述的修改后的次梯度方法来解决它。</p>
+
+<p>Many assignment models take preferences into account. There are examples in the contexts of part-time personnel scheduling (Mohan, 2008; Akbari et al., 2013; Ruiz-Torres et al., 2015), university timetabling (Daskalaki et al., 2004) and its subproblem of faculty-course assignment (Ozdemir and Gasimov, 2004; Ismayilova et al., 2007; Al-Yakoob and Sherali, 2015), teaching assistant-task assignment (G¨uler et al., 2015), and seminar topic-student assignment (Geiger and Wenger, 2010). Most often satisfactions are expressed directly as linear functions rather than ratios of linear functions, and incorporated into the model together with several other objectives. Ozdemir and Gasimov (2004) and Ruiz-Torres et al. (2015) are among those few who use ratios in their definitions. Ruiz-Torres et al. (2015) do not provide a mathematical program, but propose heuristics. Ozdemir and Gasimov (2004) consider multiple objectives, one of them being the optimization of average satisfaction level. They transform these objectives into a single objective by means of the analytic hierarchy process, reformulate the problem as a nonlinear nonconvex program, and use the modified subgradient method described in Gasimov (2002) to solve it.</p>
+
+<p>本文的贡献是双重的。一方面，我们提供了一个新的分式 0-1 应用：关于偏好的任务分配（参见Borrero等，2016b）。另一方面，我们建议对 Ozdemir 和 Gasimov（2004）中类似问题采用替代解决方案，将其视为非线性非凸性程序。也就是说，我们建议将问题线性化，然后通过现成的求解器求解等效的混合整数模型。</p>
+
+<p>The contribution of this paper is twofold. On the one hand, we provide a new application of fractional 0-1 programming: task assignment with respect to preferences (cf. Borrero et al., 2016b). On the other hand, we suggest an alternative solution approach for the similar problem in Ozdemir and Gasimov (2004) treated as a nonlinear nonconvex program. Namely, we propose to linearize the problem and then solve an equivalent mixed-integer model by an off-the-shelf solver.</p>
+
+<p>在精确的定义之后，我们在 §2.1 中展示问题的计算复杂度，并在 §2.2 给出三种等效混合整数线性公式。接下来，我们在 §3 中讨论一些实际问题，并在 §4 中引入启发式。然后我们在 §5 中提供计算研究。最后在 §6 中，我们总结了主要结果，并提到了进一步研究的一些机会。</p>
+
+<p>After a precise definition, we show the problem’s computational complexity in §2.1, and givethree equivalent mixed-integer linear formulations in §2.2. Next, we discuss some practical issues in §3, and introduce a heuristic in §4. Then we provide a computational study in §5. Finally, we make a summary of main results and mention a few opportunities for further research in §6.</p>
+
+          </div>
+
+          
+          <div class="row">
+            <div class="col-md-8">
+            
+              <div class="mb-5">
+                
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://seuite.github.io/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper" role="button">每日 Paper </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA" role="button">计算机 </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/blog" role="button">blog </a></li>
+      
+    
+  </div>
+</div>
+              </div>
+            
+            </div>
+            
+          </div>
+          
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+                <a href=https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/10/ class="post-meta">Previous
+                  <div class="pt-2 pb-5 d-flex">
+                    <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
+                    <span>每天一篇计算机 Paper (2019/4/10)</span>
+                  </div>
+                </a>
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+                <a href=https://seuite.github.io/blog/2019-04/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87%E8%AE%A1%E7%AE%97%E6%9C%BA-paper-2019/4/11/ class="post-meta">Next
+                  <div class="pt-2 pb-5 flex-reverse">
+                    <i class="fas fa-angle-right text-grey font-weight-bold ml-2 active-color"></i>
+                    <span>每天一篇计算机 Paper (2019/4/11)</span>
+                  </div>
+                </a>
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+        
+
+      </div>
+      
+
+      
+
+    </div>
+    
+
+
+  </main>
+  
+
+
+    
+    
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+  
+  <div class="pb-2 mt-5 pt-5">
+    
+      <a href="https://github.com/seuite " target="_blank" rel="noopener"><i class="fab fa-github mr-3" aria-hidden="true"></i></a>    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+        <a href="mailto:seuite@outlook.com"><i class="far fa-envelope-open mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+    
+
+  </div>
+  
+
+  
+  <div class="copyright py-4">
+    
+    <span>  2019 - 2019 &copy; | Theme <a href='https://github.com/seuite/hugo-susan-theme' target="_blank">Susan</a> by <a href='https://github.com/seuite' target="_blank">SEUITE</a>  </span>
+  </div>
+  
+
+</footer>
+
+
+    
+
+
+
+
+
+
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/jquery/jquery.smooth-scroll.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/popper.min.js"></script>
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/holder.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/mdb/mdb.min.js"></script>
+
+<script type="text/javascript" src="https://seuite.github.io/js/main.js"></script>
+
+
+
+  
+  <script src="https://seuite.github.io/js/vendors/highlight.pack.js"> </script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+  <script src="https://seuite.github.io/js/vendors/katex/katex.min.js"> </script>
+  <script src="https://seuite.github.io/js/vendors/katex/contrib/auto-render.min.js"></script>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          renderMathInElement(document.body);
+      });
+  </script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  
+  new WOW().init();
+</script>
+
+
+
+
+  </body>
+</html>
