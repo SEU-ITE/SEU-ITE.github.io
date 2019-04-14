@@ -1,0 +1,88 @@
+baseURL                   = "https://seuite.github.io"
+builddrafts                = false
+languageCode               = "zn-Hans"
+canonifyurls               = true
+contentdir                 = "content"
+layoutdir                  = "layouts"
+publishdir                 = "public"
+enableEmoji                = true
+hasCJKLanguage             = true
+summaryLength              = 200
+Paginate                   = 3
+
+theme                      = "Susan"
+title                      = "SEUITE 博客"
+
+pygmentsuseclasses         = true
+
+
+[permalinks]
+  blog                     = "blog/:year-:month/:slug/"
+
+
+[taxonomies]
+  tag                      = "tags"
+  series                   = "series"
+  category                 = "categories"
+
+
+[menu]
+  [[menu.main]]
+    name                   = "博客"
+    weight                 = -120
+    identifier             = "blog"
+    url                    = "blog/"  
+
+  [[menu.main]]
+    name                   = "周报"
+    weight                 = -110
+    identifier             = "report"
+    url                    = "report/" 
+
+  [[menu.main]]
+    name                   = "关于我们"
+    weight                 = -100
+    identifier             = "about"
+    url                    = "about/"  
+
+ 
+
+[params]
+  faviconfile              = "img/favicon.png"             # from content/
+  avatar                   = "img/Susan_new_logo.png"             # path to image in static dir e.g img/avatar.png 
+  author                   = "SEUITE"
+  description              = ["东南大学网络技术和开源软件协会", "------------", "希望每个人都能够享受快乐的校园生活"]           # appears in the site header when set to a non-empty string
+  welcome_head             = "Hello, World!"
+  welcome_word             = "~ No Day But Today ~"
+
+  latestpostscount         = 5                             # how many posts to display on the home page
+  bloggroupby              = 'month'
+  dateform                 = "April 1, 2019"
+  dateformfull             = "2019-04-01  Monday  00:00:00"
+  noshowreadtime           = false                         # if true, don't show "<x> minutes read" in posts
+
+  # slides
+  slidesDirPath            = "content/img/header-slides"    # path to image in local dir (path for hugo)
+  slidesDirPathURL         = "img/header-slides"    # path to image in static dir (for static pages)
+
+  # highlighting 
+  highlightjs              = true
+
+  # latex
+  katex                    = true
+
+  # links
+  email                    = "seuite@outlook.com"
+  github                   = "https://github.com/seuite"
+  # linkedin                 = "//linkedin.com/in/you"
+  # facebook                 = "//facebook.com/you"
+  # twitter                  = "//twitter.com/you" 
+  # flickr                   = "//flickr.com/photos/you"
+  # px500                    = "//px500"
+  # instagram                = "//instagram.com/you"
+  # include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
+  
+  # analytics
+  # googleAnalytics          = "your-google-analytic-id"
+    
+    
