@@ -2,7 +2,7 @@
 date = "2019-04-05T20:29:37+08:00"
 draft = false
 title = "SEUITE第6周报告"
-categories = ["Report"]
+categories = ["周报"]
 tags = ["SEUITE", "周报"]
 +++
 

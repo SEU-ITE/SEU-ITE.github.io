@@ -1,10 +1,10 @@
----
-title: 第7周周报
-date: 2019-04-12 18:00:00
-tags:
- - SEUITE
- - 周报
----
++++
+date = "2019-04-12T20:00:00+08:00"
+draft = false
+title = "SEUITE第7周报告"
+categories = ["周报"]
+tags = ["SEUITE", "周报"]
++++
 
 # SEUITE 第7周报告
 
