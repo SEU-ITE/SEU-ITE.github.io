@@ -3,42 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://seuite.github.io/categories/</loc>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://seuite.github.io/tags/seuite/</loc>
-    <lastmod>2019-04-12T18:00:00+00:00</lastmod>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seuite.github.io/</loc>
-    <lastmod>2019-04-12T18:00:00+00:00</lastmod>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seuite.github.io/report/</loc>
-    <lastmod>2019-04-12T18:00:00+00:00</lastmod>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/report/week7report/</loc>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://seuite.github.io/tags/</loc>
-    <lastmod>2019-04-12T18:00:00+00:00</lastmod>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/categories/%E5%91%A8%E6%8A%A5/</loc>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</loc>
-    <lastmod>2019-04-12T18:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/report/week7report/</loc>
-    <lastmod>2019-04-12T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/categories/</loc>
-    <lastmod>2019-04-12T14:23:01+08:00</lastmod>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -137,12 +143,6 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/categories/report/</loc>
-    <lastmod>2019-04-05T20:29:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://seuite.github.io/report/week6report/</loc>
     <lastmod>2019-04-05T20:29:37+08:00</lastmod>
   </url>
@@ -161,17 +161,6 @@
   <url>
     <loc>https://seuite.github.io/blog/2019-04/%E5%86%8D%E8%A7%81%E5%A4%9A%E8%B0%A2%E5%8D%9A%E5%A3%AB%E7%94%9F%E6%B6%AF1/</loc>
     <lastmod>2019-04-05T00:14:19+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/report/test/</loc>
-    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/categories/test/</loc>
-    <lastmod>2015-08-19T20:29:37-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
