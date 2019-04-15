@@ -108,4 +108,3 @@ Aside from the work of Burks et al: , none of the designs in the literature seem
 简要回顾了迄今为止语言启发的机器设计的发展，现在可以将它们留在背景当中了。本方法与过去的方法不同，它基于对源语言语义的数学分析。此外，对所得设计的评估是分析性的，并且将该 APL 机器与其他类似设备进行了清晰的比较。当然，与过去的设计有相似之处。特别是，程序段，数据描述符和堆栈的使用本身并不新颖，尽管这里开发的机器与上一节中提到的机器有很大不同。
 
 Having briefly reviewed the developments of language-inspired machine design to date, they can now be left in the background. The present approach is different from those in the past in that it is based on a mathematical analysis of the semantics of the source language. Also, the evaluation of the resulting design is analytic, and gives a clear comparison of this APL machine to other similar devices. There are, of course, similarities to the designs of the past. In particular, the use of program segments, data descriptors, and stacks is not novel in itself, although the machine developed here is substantially different from those mentioned in the last section.
-
