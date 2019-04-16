@@ -7,15 +7,15 @@ title: "用于数据挖掘的元启发式方法"
 tags: ["每日 Paper", "计算机", "blog"]
 series: ["前沿进展"]
 categories: ["每日 Paper"]
-img: "https://i.loli.net/2019/04/06/5ca87b7dac457.jpg"
 toc: true
 summary: "每天一篇计算机 Paper (2019/4/10)"
 ---
 
 > Dhaenens, C. and L. Jourdan (2019). "Metaheuristics for data mining." 4OR.
-- 译者：陈思源
+>
+>- 译者：陈思源
 
-本文隶属于"每天一篇计算机 Paper"系列博客，更多内容请点击[这个链接](https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/)。
+本文隶属于"每天一篇计算机 Paper"系列博客，更多内容请点击[这个链接](https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/)。本系列博客均非完整译文，如需阅读完整文章，请访问相关图书馆订阅。
 
 ## 1. Introduction
 
@@ -47,7 +47,7 @@ Technological improvements such as Hadoop and MapReduce have allowed the develop
 
 As indicated before, data mining is the mathematical core of the KDD process. Data mining tasks can be classified into two categories: predictive (or supervised) and descriptive (or unsupervised) tasks. The supervised tasks learn on available data to predict for new data, whereas unsupervised tasks provide a description of the data and existing relationships. Primary data mining tasks, as depicted in Fig. 1, are as follows: 
 
-![Fig.1](/../img/MetaheuristicsForDataMiningFig1.jpg)
+![Fig.1](img/everday_paper/metaheuristics_for_data_mining_fig1.jpg)
 
 - 聚类（也称为无监督分类）：将数据集分解或分组为组，使得组中的元素彼此相似，并且尽可能与其他组的元素不同
 - 关联规则挖掘：提取描述不同元素的特征之间的关系（译者注：可以将关联规则理解为通过量化的方法描述元素 A 的特征 a 对元素 B 的特征 b 有多大的影响）

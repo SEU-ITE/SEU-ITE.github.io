@@ -7,15 +7,15 @@ title: "双目标进化优化中的生殖偏差，连锁学习和多样性保持
 tags: ["每日 Paper", "计算机", "blog"]
 series: ["前沿进展"]
 categories: ["每日 Paper"]
-img: "https://i.loli.net/2019/04/06/5ca87b7dac457.jpg"
 toc: false
 summary: "每天一篇计算机 Paper (2019/4/11)"
 ---
 
 >Martins, J. P. and A. C. B. Delbem (2019). "Reproductive bias, linkage learning and diversity preservation in bi-objective evolutionary optimization." Swarm and Evolutionary Computation.
-- 译者：陈思源
+>
+>- 译者：陈思源
 
-本文隶属于"每天一篇计算机 Paper"系列博客，更多内容请点击[这个链接](https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/)。
+本文隶属于"每天一篇计算机 Paper"系列博客，更多内容请点击[这个链接](https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/)。本系列博客均非完整译文，如需阅读完整文章，请访问相关图书馆订阅。
 
 # Introduction
 

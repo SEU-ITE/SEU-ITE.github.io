@@ -7,17 +7,18 @@ title: "一种基于 APL 的机器"
 tags: ["每日 Paper", "计算机", "blog"]
 series: ["经典论著"]
 categories: ["每日 Paper"]
-img: "img/an_apl_machine_paperback.jpg"
+img: "img/everday_paperan_apl_machine.jpg"
 toc: true
 summary: "每天一篇计算机 Paper (2019/4/15)"
 ---
 
 >Philip Samuel Abrams. 1970. An Apl Machine. Ph.D. Dissertation. Stanford University, Stanford, CA, USA. AAI7022146.
-- 译者：陈思源
+>
+>- 译者：陈思源
 
-本文隶属于"每天一篇计算机 Paper"系列博客，更多内容请点击[这个链接](https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/)。
+本文隶属于"每天一篇计算机 Paper"系列博客，更多内容请点击[这个链接](https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/)。本系列博客均非完整译文，如需阅读完整文章，请访问相关图书馆订阅。
 
-# 摘要
+## 摘要
 
 本论文提出了一种适用于 APL 的机器结构设计，可以有效地评估该语言的程序。
 
