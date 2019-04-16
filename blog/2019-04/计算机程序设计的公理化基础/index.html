@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="zn-Hans">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
+  <meta name="author" content="SEUITE">
+  <meta name="description" content="每天一篇计算机 Paper (2019/4/16)">
+  
+  <meta property="og:title" content="计算机程序设计的公理化基础" />
+<meta property="og:description" content="每天一篇计算机 Paper (2019/4/16)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://seuite.github.io/blog/2019-04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%85%AC%E7%90%86%E5%8C%96%E5%9F%BA%E7%A1%80/" />
+<meta property="article:published_time" content="2019-04-16T16:34:40&#43;08:00"/>
+<meta property="article:modified_time" content="2019-04-16T16:34:40&#43;08:00"/><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E-apl-%E7%9A%84%E6%9C%BA%E5%99%A8/" />
+
+
+
+  <title>
+  
+       计算机程序设计的公理化基础 | SEUITE 博客 
+  
+  </title>
+
+  <link rel="canonical" href="https://seuite.github.io/blog/2019-04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%85%AC%E7%90%86%E5%8C%96%E5%9F%BA%E7%A1%80/">
+
+  
+  
+
+  
+  <link href="https://seuite.github.io/css/vendors-extensions/fontawesome/all.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">
+  <link href="https://seuite.github.io/css/font.css" rel="stylesheet"> 
+    
+  
+  <link href="https://seuite.github.io/css/vendors/bootstrap4/bootstrap.min.css" rel="stylesheet">
+  <link href="https://seuite.github.io/css/vendors-extensions/mdb/mdb.min.css" rel="stylesheet"> 
+  <link href="https://seuite.github.io/css/vendors/mdb/style.min.css" rel="stylesheet"> 
+  <link href="https://seuite.github.io/css/main.css" rel="stylesheet">
+
+
+  
+  <link rel="shortcut icon"
+  
+      href="https://seuite.github.io/img/favicon.png"
+  
+  >
+
+
+  
+  
+
+  <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+  </style>
+
+
+  
+    
+    <link rel="stylesheet" href="https://seuite.github.io/js/vendors/katex/katex.min.css">
+  
+  
+
+  
+    
+    <link rel="stylesheet" href="https://seuite.github.io/css/vendors/highlight/github-gist.css">
+  
+
+</head>
+
+  <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
+  
+    
+    
+
+    
+      
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="https://seuite.github.io">
+          
+        <img class="avatar" src="https://seuite.github.io/img/favicon.png" style="width: 40px!important;height: auto;"  class="d-inline-block align-top" alt="" >
+        
+        <strong> </strong>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item ">
+            <a class="nav-link" href="https://seuite.github.io">Home</a>
+          </li>
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://seuite.github.io/blog/" >博客  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://seuite.github.io/report/" >周报  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://seuite.github.io/about/" >关于我们  </a>
+            </li>
+          
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+   
+      
+ 
+
+
+
+
+
+
+<div id="site-header" class="carousel slide carousel-fade" data-ride="carousel" style="height: 18rem;" >  
+
+  
+  
+  
+
+  
+  <div class="carousel-inner" role="listbox">
+    
+      
+
+        
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides/background0.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              
+              
+              
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background1.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background2.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background3.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background4.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background5.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background6.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background7.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://seuite.github.io/img/header-slides//background8.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+
+  
+  </div>
+  
+
+  
+  <div class="carousel-content text-center white-text wow fadeIn">
+    <div class="row mx-0 headfont mt-3 pt-4">
+      
+      <div class="col-12 col-sm-5 align-middle">
+        <a href="https://seuite.github.io">
+          
+            <img class="pull-right avatar avatar-md" src="https://seuite.github.io/img/Susan_new_logo.png" alt="" >
+          
+        </a>
+      </div>
+      
+      <div class="col-12 col-sm-7 text-left pl-2">
+        <a href="https://seuite.github.io">
+          <h1 class="mb-2 h1" style="font-weight: 300;" >
+            <strong>SEUITE 博客</strong>
+          </h1>
+        </a>
+        
+
+             
+        <div class="mt-2" style="font-size: 1rem; color: white;">
+            
+              <a href="https://github.com/seuite" target="_blank" rel="noopener"><i class="fab fa-github pr-1" aria-hidden="true"></i></a>    
+            
+            
+
+            
+
+            
+
+            
+    
+            
+
+            
+
+        
+            
+                <a href="mailto:seuite@outlook.com"><i class="far fa-envelope-open pr-1" aria-hidden="true"></i></a>
+            
+    
+            
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  
+
+</div>
+  
+    
+
+    
+  
+  <main class="container-fluid">
+    
+    
+    <div class="row">
+
+      
+
+      
+      <div class="col-md-10">
+      
+
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
+
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+      
+        <li><a href="https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 每日 Paper </a></li>
+      
+    
+    
+      
+        <li><a href="https://seuite.github.io/series/%E7%BB%8F%E5%85%B8%E8%AE%BA%E8%91%97"><i class="fas fa-bookmark pr-1" aria-hidden="true"></i>经典论著</a></li>
+      
+    
+  </ul>
+
+  <div class="px-4 post-heading">计算机程序设计的公理化基础</div>
+
+  <ul class="post-meta li-x mt-1">
+    
+      <li>April 4, 16049</li>
+    
+
+    
+      <li class="middot"></li>
+      <li>5 minute read</li>
+    
+  </ul>
+  
+    <div class="view">
+      <img src="https://seuite.github.io/img/everday_paper/an_axiomatic_basis_for_computer_programming.jpg" />
+    </div>
+  
+
+</div>
+
+
+          <div class="post-content markdown">
+            
+
+<blockquote>
+<p>Hoare C.A.R. (1969) An Axiomatic Basis for Computer Programming. COMMUNICATIONS OF THE ACM Verification. vol 12: page 576&ndash;580</p>
+
+<p>译者：陈思源</p>
+</blockquote>
+
+<p>本文隶属于&rdquo;每天一篇计算机 Paper&rdquo;系列博客，更多内容请点击<a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/">这个链接</a>。本系列博客均非完整译文，如需阅读完整文章，请访问相关图书馆订阅。</p>
+
+<h2 id="abstruct">ABSTRUCT</h2>
+
+<p>在本文中，为探索计算机程序的逻辑基础，我们尝试使用了一些首先应用于几何学研究，后来扩展到其他数学分支的技术。这包括阐明公理集和可用于证明计算机程序的属性的推理规则。我们给出了这些公理和规则的例子，并且展示了简单定理的形式证明。最后，我们讨论了对这些主题的研究可能会同时带来的理论和实践方面的重要优势。</p>
+
+<p>In this paper an attempt is made to explore the logical foundations of computer programming by use of techniques which were first applied in the study of geometry and have later been extended to other branches of mathematics. This involves the elucidation of sets of axioms and rules of inference which can be used in proofs of the properties of computer programs. Examples are given of such axioms and rules, and a formal proof of a simple theorem is displayed. Finally, it is argued that important advantages, both theoretical and practical, may follow from a pursuance of these topics.</p>
+
+<h2 id="introduction">INTRODUCTION</h2>
+
+<p>计算机程序是一门精确的科学，因为程序的所有属性以及在任何给定环境中执行它的所有后果原则上都可以通过纯粹的演绎推理从程序本身的文本中找到。演绎推理包含对有效公理集应用有效的推理规则。因此，阐明作为计算机程序推理基础的公理和推理规则是可取和有趣的。公理的确切选择在某种程度上取决于编程语言的选择。出于说明的目的，本文仅限于一种非常简单的语言，它本质上是所有当前面向过程的语言的一个子集。</p>
+
+<p>Computer programming is an exact science in that all the properties of a program and all the consequences of executing it in any given environment can, in principle, be found out from the text of the program itself by means of purely deductive reasoning. Deductive reasoning involves the application of valid rules of inference to sets of valid axioms. It is therefore desirable and interesting to elucidate the axioms and rules of inference which underlie our reasoning about computer programs. The exact choice of axioms will to some extent depend on the choice of programming language. For illustrative purposes, this paper is confined to a very simple language, which is effectively a subset of all current procedure-oriented languages.</p>
+
+<h2 id="forrmal-language-definition">Forrmal Language Definition</h2>
+
+<p>高级编程语言（例如 ALGOL，FORTRAN 和 COBOL）通常旨在在具有不同大小，配置和设计的各种计算机上进行实现。
+已经发现一个严重的问题是，为确保所有实现者之间的兼容性，这些语言的定义要足够严格。由于兼容性的目的是促进用语言表达的程序的交换，实现这一目的的一种方法是坚持语言的所有实现都应“满足”推理的公理和推理规则，这些证据是表达程序属性的证据的基础。在语言中，除非出现硬件故障，否则将完成基于这些证明的所有预测。实际上，这相当于接受公理和推理规则作为语言意义的最终明确规范。</p>
+
+<p>A high level programming language, such as ALGOL, FORTRAN, or COBOL, is usually intended to be implemented on a variety of computers of differing size, configuration, and design. It has been found a serious problem to define these languages with sufficient rigour to ensure compatibility among all implementors. Since the purpose of compatibility is to facilitate interchange of programs expressed in the language, one way to achieve this would be to insist that all implementations of the language shall &ldquo;satisfy&rdquo; the axioms and rules of inference which underlie proofs of the properties of programs expressed in the language, so that all predictions based on these proofs will be fulfilled, except in the event of hardware failure. In effect, this is equivalent to accepting the axioms and rules of inference as the ultimately definitive specification of the meaning of the language.</p>
+
+<p>除了为实现的正确性提供立即且可能甚至可证明的标准之外，用于定义编程语言语义的公理技术看起来像 ALGOL 60 报告的形式语法，因为它很容易被该语言的实现者和相当顶尖的用户理解。只有通过在单个文档（可能甚至证明是一致的）中弥合这种不断扩大的沟通差距，才能从正式的语言定义中获得最大的优势。</p>
+
+<p>Apart from giving an immediate and possibly even provable criterion for the correctness of an implementation, the axiomatic technique for the definition of programming language semantics appears to be like the formal syntax of the ALGOL 60 report, in that it is sufficiently simple to be understood both by the implementor and by the reasonably sophisticated user of the language. It is only by bridging this widening communication gap in a single document (perhaps even provably consistent) that the maximum advantage can be obtained from a formal language definition.</p>
+
+<p>使用公理化方法的另一个巨大优势是公理提供了一种简单而灵活的技术，可以使语言的某些特定方面无需定义，例如，整数范围，浮点精度和溢出技术的选择。这对于标准化目的是绝对必要的，否则语言将无法在不同的硬件设计上有效地实现。因此，编程语言标准应该由一组普遍适用性的公理组成，并且从一组描述实施者所面临的选择范围的补充公理中进行选择。第2节给出了为此目的使用公理的一个例子。</p>
+
+<p>Another of the great advantages of using an axiomatic approach is that axioms offer a simple and flexible technique for leaving certain aspects of a language undefined, for example, range of integers, accuracy of floating point, and choice of overflow technique. This is absolutely essential for standardization purposes, since otherwise the language will be impossible to implement efficiently on differing hardware designs. Thus a programming language standard should consist of a set of axioms of universal applicability, together with a choice from a set of supplementary axioms describing the range of choices facing an implementor. An example of the use of axioms for this purpose was given in Section 2.</p>
+
+<p>形式语言定义的另一个目标是帮助设计更好的编程语言。ALGOL 60 语法的规律性，清晰度和易于实现，可能至少也有部分归因于其定义使用了精美的规范技术。公理的使用可能在&rdquo;语义学&rdquo;领域产生类似的优势，因为似乎可以通过一些“不言而喻”的公理来描述一种语言，这种公理可以相对容易地构建，这种语言可能比一种具有许多模糊公理的语言，难以用于证明。此外，公理使语言设计者能够非常简单直接地表达他的一般意图，而不需要描述通常伴随算法的大量细节。最后，公理可以用很大程度上彼此独立的方式表达，这样设计师就可以在一个公理或一组公理上自由地工作，而不用担心与语言的其他部分的意外交互影响。</p>
+
+<p>Another of the objectives of formal language definition is to assist in the design of better programming languages. The regularity, clarity, and ease of implementation of the ALGOL 60 syntax may at least in part be due to the use of an elegant formal technique for its definition. The use of axioms may lead to similar advantages in the area of &ldquo;semantics,&rdquo; since it seems likely that a language which can be described by a few &ldquo;self-evident&rdquo; axioms from which proofs will be relatively easy to construct will be preferable to a language with many obscure axioms which are difficult to apply in proofs. Furthermore, axioms enable the language designer to express his general intentions quite simply and directly, without the mass of detail which usually accompanies algorithmic descriptions. Finally, axioms can be formulated in a manner largely independent of each other, so that the designer can work freely on one axiom or group of axioms without fear of unexpected interaction effects with other parts of the language.</p>
+
+          </div>
+
+          
+          <div class="row">
+            <div class="col-md-8">
+            
+              <div class="mb-5">
+                
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://seuite.github.io/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper" role="button">每日 Paper </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA" role="button">计算机 </a></li>
+      
+    
+      <li><a href="https://seuite.github.io/tags/blog" role="button">blog </a></li>
+      
+    
+  </div>
+</div>
+              </div>
+            
+            </div>
+            
+          </div>
+          
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+                <a href=https://seuite.github.io/blog/2019-04/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E-apl-%E7%9A%84%E6%9C%BA%E5%99%A8/ class="post-meta">Previous
+                  <div class="pt-2 pb-5 d-flex">
+                    <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
+                    <span>一种基于 APL 的机器</span>
+                  </div>
+                </a>
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+        
+
+      </div>
+      
+
+      
+	
+	
+	
+	
+		
+		
+		
+	
+
+		
+		<div class="col-md-2 pl-0">
+
+			
+			<div id="page-scrollspy" class="toc-nav">
+				
+				<ul class="nav nav-pills ml-0">
+					
+					<li class="nav-item pb-3 text-center">
+						<span class="font-weight-bold mb-2">- CATALOG - </span>
+					</li>
+
+					
+						
+						
+							
+								
+								
+									<ul class="nav">
+								
+								
+
+										<li class="nav-item">
+						 					<a class="nav-link" href="#abstruct">
+												 ABSTRUCT
+											</a>
+										</li>
+						 
+								
+								
+									</ul>
+								
+							
+						
+				 
+						
+						
+							
+								
+								
+									<ul class="nav">
+								
+								
+
+										<li class="nav-item">
+						 					<a class="nav-link" href="#introduction">
+												 INTRODUCTION
+											</a>
+										</li>
+						 
+								
+								
+									</ul>
+								
+							
+						
+				 
+						
+						
+							
+								
+								
+									<ul class="nav">
+								
+								
+
+										<li class="nav-item">
+						 					<a class="nav-link" href="#forrmal-language-definition">
+												 Forrmal Language Definition
+											</a>
+										</li>
+						 
+								
+								
+									</ul>
+								
+							
+						
+				 
+
+				</ul>
+			</div>
+			
+
+		</div>
+		
+	
+
+    </div>
+    
+
+
+  </main>
+  
+
+
+    
+    
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+  
+  <div class="pb-2 mt-5 pt-5">
+    
+      <a href="https://github.com/seuite " target="_blank" rel="noopener"><i class="fab fa-github mr-3" aria-hidden="true"></i></a>    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+        <a href="mailto:seuite@outlook.com"><i class="far fa-envelope-open mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+    
+
+  </div>
+  
+
+  
+  <div class="copyright py-4">
+    
+    <span>  2019 - 2019 &copy; | Theme <a href='https://github.com/seuite/hugo-susan-theme' target="_blank">Susan</a> by <a href='https://github.com/seuite' target="_blank">SEUITE</a>  </span>
+  </div>
+  
+
+</footer>
+
+
+    
+
+
+
+
+
+
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/jquery/jquery.smooth-scroll.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/popper.min.js"></script>
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/holder.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+<script type="text/javascript" src="https://seuite.github.io/js/vendors/mdb/mdb.min.js"></script>
+
+<script type="text/javascript" src="https://seuite.github.io/js/main.js"></script>
+
+
+
+  
+  <script src="https://seuite.github.io/js/vendors/highlight.pack.js"> </script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+  <script src="https://seuite.github.io/js/vendors/katex/katex.min.js"> </script>
+  <script src="https://seuite.github.io/js/vendors/katex/contrib/auto-render.min.js"></script>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          renderMathInElement(document.body);
+      });
+  </script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  
+  new WOW().init();
+</script>
+
+
+
+
+  </body>
+</html>
