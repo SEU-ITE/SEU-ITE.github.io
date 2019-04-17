@@ -129,10 +129,12 @@ execute typical instruction
 
 执行基本指令
 	1/1,000,000,000 sec = 1 nanosec
+
 fetch from L1 cache memory
 
 从一级缓存中读取数据
 	0.5 nanosec
+
 branch misprediction
 
 分支预测失败
