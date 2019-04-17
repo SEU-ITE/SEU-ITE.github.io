@@ -6,10 +6,19 @@
     <description>Recent content in 计算机 on SEUITE 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Tue, 16 Apr 2019 16:34:40 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 13:29:43 +0800</lastBuildDate>
     
 	<atom:link href="https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FORTH - 一种交互式计算的语言</title>
+      <link>https://seuite.github.io/blog/2019-04/forth-%E4%B8%80%E7%A7%8D%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%AD%E8%A8%80/</link>
+      <pubDate>Wed, 17 Apr 2019 13:29:43 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/blog/2019-04/forth-%E4%B8%80%E7%A7%8D%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%AD%E8%A8%80/</guid>
+      <description>每天一篇计算机 Paper (2019/4/17)</description>
+    </item>
     
     <item>
       <title>计算机程序设计的公理化基础</title>
