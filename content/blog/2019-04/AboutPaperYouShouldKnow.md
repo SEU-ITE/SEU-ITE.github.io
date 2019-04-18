@@ -1,10 +1,15 @@
 ---
-title: 关于论文
-date: 2019-04-04 23:13:20
-tags: 
- - 论文 
- - 研究生生存指南
+date: "2019-04-04T23:12:20+08:00"
+publishdate: "2019-04-04+08:00"
+lastmod: "2019-04-04+08:00"
+draft: false
+title: "关于论文"
+tags: [ "paper", "blog", "经典作品"]
+categories: ["周末闲谈"]
+toc: false
+summary: "不知道怎么写论文？"
 ---
+
 # 关于论文
 
 ## TLDR
