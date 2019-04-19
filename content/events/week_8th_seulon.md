@@ -1,10 +1,10 @@
 +++
-date = "2019-04-12T20:00:00+08:00"
+date = "2019-04-19T08:23:00+08:00"
 draft = false
 title = "SEUITE 沙龙：从 Markdown 到静态网页生成器"
 categories = ["Seulon"]
 tags = ["SEUITE", "Seulon"]
-summary= "这周摸了个爽！"
+summary= "第1次的 Seulon"
 +++
 
 > [讲稿地址](https://ftp.seu.services)
