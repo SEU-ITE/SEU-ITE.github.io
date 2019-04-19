@@ -6,10 +6,19 @@
     <description>Recent content on SEUITE 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Thu, 18 Apr 2019 23:29:43 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 19 Apr 2019 08:16:34 +0800</lastBuildDate>
     
 	<atom:link href="https://seuite.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SEUITE第8周报告</title>
+      <link>https://seuite.github.io/report/2018-2019-03/week_8th_report/</link>
+      <pubDate>Fri, 19 Apr 2019 08:16:34 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/report/2018-2019-03/week_8th_report/</guid>
+      <description>这周摸了个爽！</description>
+    </item>
     
     <item>
       <title>无痛理解贝叶斯网络理论</title>
@@ -72,15 +81,6 @@
       
       <guid>https://seuite.github.io/report/2018-2019-03/week_7th_report/</guid>
       <description>这周摸的快乐！</description>
-    </item>
-    
-    <item>
-      <title>SEUITE第8周报告</title>
-      <link>https://seuite.github.io/report/2018-2019-03/week_8th_report/</link>
-      <pubDate>Fri, 12 Apr 2019 20:00:00 +0800</pubDate>
-      
-      <guid>https://seuite.github.io/report/2018-2019-03/week_8th_report/</guid>
-      <description>这周摸了个爽！</description>
     </item>
     
     <item>
