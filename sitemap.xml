@@ -43,13 +43,13 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper/</loc>
+    <loc>https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper/</loc>
     <lastmod>2019-04-18T23:29:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper/</loc>
+    <loc>https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper/</loc>
     <lastmod>2019-04-18T23:29:43+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -105,23 +105,50 @@
   </url>
   
   <url>
+    <loc>https://seuite.github.io/events/week_8th_seulon/</loc>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seuite.github.io/report/</loc>
     <lastmod>2019-04-12T20:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/report/week7report/</loc>
+    <loc>https://seuite.github.io/report/2018-2019-03/week_7th_report/</loc>
     <lastmod>2019-04-12T20:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</loc>
+    <loc>https://seuite.github.io/report/2018-2019-03/week_8th_report/</loc>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/categories/seulon/</loc>
     <lastmod>2019-04-12T20:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://seuite.github.io/tags/seulon/</loc>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/events/</loc>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seuite.github.io/categories/%E5%91%A8%E6%8A%A5/</loc>
+    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</loc>
     <lastmod>2019-04-12T20:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -180,7 +207,7 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/report/week6report/</loc>
+    <loc>https://seuite.github.io/report/2018-2019-03/week_6th_report/</loc>
     <lastmod>2019-04-05T20:29:37+08:00</lastmod>
   </url>
   

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seulon on SEUITE 博客</title>
+    <link>https://seuite.github.io/tags/seulon/</link>
+    <description>Recent content in Seulon on SEUITE 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Fri, 12 Apr 2019 20:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://seuite.github.io/tags/seulon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SEUITE 沙龙：从 Markdown 到静态网页生成器</title>
+      <link>https://seuite.github.io/events/week_8th_seulon/</link>
+      <pubDate>Fri, 12 Apr 2019 20:00:00 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/events/week_8th_seulon/</guid>
+      <description>这周摸了个爽！</description>
+    </item>
+    
+  </channel>
+</rss>
