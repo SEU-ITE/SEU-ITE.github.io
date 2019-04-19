@@ -4,19 +4,47 @@
   
   <url>
     <loc>https://seuite.github.io/categories/</loc>
-    <lastmod>2019-04-19T08:16:34+08:00</lastmod>
+    <lastmod>2019-04-19T08:23:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seuite.github.io/tags/seuite/</loc>
-    <lastmod>2019-04-19T08:16:34+08:00</lastmod>
+    <lastmod>2019-04-19T08:23:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seuite.github.io/</loc>
-    <lastmod>2019-04-19T08:16:34+08:00</lastmod>
+    <lastmod>2019-04-19T08:23:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/events/week_8th_seulon/</loc>
+    <lastmod>2019-04-19T08:23:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/events/</loc>
+    <lastmod>2019-04-19T08:23:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/categories/seulon/</loc>
+    <lastmod>2019-04-19T08:23:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/tags/seulon/</loc>
+    <lastmod>2019-04-19T08:23:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/tags/</loc>
+    <lastmod>2019-04-19T08:23:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -28,12 +56,6 @@
   <url>
     <loc>https://seuite.github.io/report/2018-2019-03/week_8th_report/</loc>
     <lastmod>2019-04-19T08:16:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/tags/</loc>
-    <lastmod>2019-04-19T08:16:34+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -127,30 +149,8 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/events/week_8th_seulon/</loc>
-    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/events/</loc>
-    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://seuite.github.io/report/2018-2019-03/week_7th_report/</loc>
     <lastmod>2019-04-12T20:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/categories/seulon/</loc>
-    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/tags/seulon/</loc>
-    <lastmod>2019-04-12T20:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
