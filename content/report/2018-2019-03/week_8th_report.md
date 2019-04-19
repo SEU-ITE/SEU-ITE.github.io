@@ -1,5 +1,5 @@
 +++
-date = "2019-04-12T20:00:00+08:00"
+date = "2019-04-19T08:16:34+08:00"
 draft = false
 title = "SEUITE第8周报告"
 categories = ["周报"]
@@ -7,7 +7,7 @@ tags = ["SEUITE", "周报"]
 summary= "这周摸了个爽！"
 +++
 
-# SEUITE 第7周报告
+# SEUITE 第8周报告
 
 ## 总体进展
 
