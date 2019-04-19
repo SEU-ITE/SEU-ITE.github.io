@@ -40,8 +40,14 @@ pygmentsuseclasses         = true
     url                    = "report/" 
 
   [[menu.main]]
-    name                   = "关于我们"
+    name                   = "活动"
     weight                 = -100
+    identifier             = "events"
+    url                    = "events/" 
+
+  [[menu.main]]
+    name                   = "关于我们"
+    weight                 = -90
     identifier             = "about"
     url                    = "about/"  
 
