@@ -1,23 +1,22 @@
 ---
-date: "2019-04-13T00:00:00+08:00"
-publishdate: "2019-04-13+08:00"
-lastmod: "2019-04-13+08:00"
-draft: true
+date: "2019-04-20T23:47:25+08:00"
+publishdate: "2019-04-20+08:00"
+lastmod: "2019-04-20+08:00"
+draft: false
 title: " "
 tags: ["来点轻松的", "计算机", "blog"]
 series: ["周末闲谈"]
 categories: ["周末闲谈"]
 img: " "
 toc: false
-summary: " "
+summary: "边笑边哭"
 ---
 
-=================================
-Epigrams on Programming 编程警句
-=================================
+## Epigrams on Programming 编程警句
 
-译者说
-======
+
+## 译者说
+
 
 正如第72句所言*An adequate bootstrap is a contradiction in terms.*，需要解释的笑话多多少少有些悖论的影子。解释笑话总是件吃力不讨好的事，一来容易隐射说笑话的人说得不高明，二来容易隐射听笑话的人反应不够快。
 
@@ -33,21 +32,16 @@ Epigrams on Programming 编程警句
 
 感谢 `marrowleaves <https://github.com/marrowleaves>`_ 的校正。
 
-举烛公子 `arbipher <https://github.com/arbipher>`_
+## 正文
 
-20140905
 
-正文
-====
-
-Preface 前言
--------------
+### Preface 前言
 
 The phenomena surrounding computers are diverse and yield a surprisingly rich base for launching metaphors at individual and group activities. Conversely, classical human endeavors provide an inexhaustible source of metaphor for those of us who are in labor within computation. Such relationships between society and device are not new, but the incredible growth of the computer's influence (both real and implied).lends this symbiotic dependency a vitality like a gangly youth growing out of his clothes within an endless puberty.
 
 The epigrams that follow attempt to capture some of the dimensions of this traffic in imagery that sharpens, forcuses, clarifies, enlarges and beclouds our view of this most remarkable of all roans' artifacts, the computer.
 
-Epigrams 警句
+### Epigrams 警句
 --------------
 
 1
@@ -110,7 +104,7 @@ Epigrams 警句
 
    如果一个程序用于处理大量数据，它就没几种选择了。
 
-6. 
+1. 
 ~~~~~
 
 原文:

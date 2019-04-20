@@ -1,7 +1,7 @@
 +++
 date = "2019-04-19T08:23:00+08:00"
 draft = false
-title = "SEUITE 沙龙：从 Markdown 到静态网页生成器"
+title = "SEUITE 沙龙：从 Markdown 到静态网站生成器"
 categories = ["Seulon"]
 tags = ["SEUITE", "Seulon"]
 summary= "第1次的 Seulon"
@@ -11,7 +11,7 @@ summary= "第1次的 Seulon"
 > [直播地址](https://live.bilibili.com/61306)
 > [录像地址](https://ftp.seu.services/seulon)
 
-本周的 Seulon 由陈思源同学带来关于 Markdown 使用及静态网页生成器的相关原理，使用和制作，顺便讲讲一周新闻和问题以及 SEUITE 的硬广。同时感谢微软学生俱乐部的热情邀请和大力协助！
+本周的 Seulon 由陈思源同学带来关于 Markdown 使用及静态网站生成器的相关原理，使用和制作，顺便讲讲一周新闻和问题以及 SEUITE 的硬广。同时感谢微软学生俱乐部的热情邀请和大力协助！
 
 - 地点：梅四西辅楼二楼 微软学生俱乐部
 - 时间：第八周周五（4/19）20:45
