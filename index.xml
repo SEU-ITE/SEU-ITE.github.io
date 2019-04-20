@@ -229,6 +229,39 @@ https://github.com/kamranahmedse/developer-roadmap/blob/master/images/backend.pn
     </item>
     
     <item>
+      <title></title>
+      <link>https://seuite.github.io/blog/1-01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://seuite.github.io/blog/1-01/</guid>
+      <description>31
+  Simplicity does not precede complexity, but follows it.
+简单不先于复杂，而在复杂之后。
+32
+  Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.
+应该用案例分析来评价程序员，而不是他们的机智和逻辑。
+33
+  The 11th commandment was &amp;ldquo;Thou Shalt Compute&amp;rdquo; or &amp;ldquo;Thou Shalt Not Compute&amp;rdquo; - I forget which.
+第11条戒律是“你应计算”或“你不应计算”-我忘了。
+吐槽:
+The 11th commandment说法来自摩西十诫(Ten Commandments)的。Thou是古英语you，shalt是古英语第二人称should。  34
+  The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.
+字符串是个朴实的数据结构，所有使用它的地方总是出现雷同的处理流程。字符串是信息隐藏的完美工具。
+吐槽:
+彼时的string一定是pass-by-value的  35
+  Everyone can be taught to sculpt: Michelangelo would have had to be taught how not to. So it is with the great programmers.
+每个人都能学习雕塑，只有米开朗基罗希望学习过雕塑的禁忌。伟大的程序员同理。
+36
+  The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics.
+用程序证明四色定理不会改变数学-这不过证明了，这个持续了一个世纪的挑战，对数学不太重要。
+37
+  The most important computer is the one that rages in our skulls and ever seeks that satisfactory external emulator. The standardization of real computers would be a disaster - and so it probably won&amp;rsquo;t happen.
+最重要的计算机莫过于那个在我们头颅中咆哮着寻求一个能使它满足的外部模拟器的玩意儿。 而真实电脑的标准化对于这个目的是种灾难，所以它可能永远不会发生。
+38
+  Structured Programming supports the law of the excluded muddle.</description>
+    </item>
+    
+    <item>
       <title>越糟糕越好：简单之美 (Worse Is Better)</title>
       <link>https://seuite.github.io/blog/1-01/%E8%B6%8A%E7%B3%9F%E7%B3%95%E8%B6%8A%E5%A5%BD%E7%AE%80%E5%8D%95%E4%B9%8B%E7%BE%8E-worse-is-better/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
