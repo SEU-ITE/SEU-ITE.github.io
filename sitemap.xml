@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://seuite.github.io/blog/2019-04/</loc>
-    <lastmod>2019-04-20T23:47:25+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://seuite.github.io/categories/</loc>
     <lastmod>2019-04-20T23:47:25+08:00</lastmod>
     <priority>0</priority>
@@ -38,13 +33,13 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/categories/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
+    <loc>https://seuite.github.io/series/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
     <lastmod>2019-04-20T23:47:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/series/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
+    <loc>https://seuite.github.io/categories/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
     <lastmod>2019-04-20T23:47:25+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -57,6 +52,11 @@
   
   <url>
     <loc>https://seuite.github.io/blog/</loc>
+    <lastmod>2019-04-20T23:47:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/blog/2019-04/%E7%BC%96%E7%A8%8B%E8%AD%A6%E5%8F%A5-130/</loc>
     <lastmod>2019-04-20T23:47:25+08:00</lastmod>
   </url>
   
@@ -83,13 +83,13 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/categories/seulon/</loc>
+    <loc>https://seuite.github.io/tags/seulon/</loc>
     <lastmod>2019-04-19T08:23:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/tags/seulon/</loc>
+    <loc>https://seuite.github.io/categories/seulon/</loc>
     <lastmod>2019-04-19T08:23:00+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -105,13 +105,13 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/categories/%E5%91%A8%E6%8A%A5/</loc>
+    <loc>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</loc>
     <lastmod>2019-04-19T08:16:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</loc>
+    <loc>https://seuite.github.io/categories/%E5%91%A8%E6%8A%A5/</loc>
     <lastmod>2019-04-19T08:16:34+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -122,13 +122,13 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper/</loc>
+    <loc>https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper/</loc>
     <lastmod>2019-04-18T23:29:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper/</loc>
+    <loc>https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper/</loc>
     <lastmod>2019-04-18T23:29:43+08:00</lastmod>
     <priority>0</priority>
   </url>
