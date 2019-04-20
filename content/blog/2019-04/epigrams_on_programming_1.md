@@ -7,6 +7,7 @@ title: "编程警句 130"
 tags: ["来点轻松的", "计算机", "blog"]
 series: ["周末闲谈"]
 categories: ["周末闲谈"]
+img: "img/weekend_talks/epigrams_on_programming_1.jpg"
 toc: false
 summary: "边笑边哭"
 ---
