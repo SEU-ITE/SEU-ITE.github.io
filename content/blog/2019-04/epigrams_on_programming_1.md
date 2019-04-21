@@ -3,7 +3,7 @@ date: "2019-04-20T23:47:25+08:00"
 publishdate: "2019-04-20+08:00"
 lastmod: "2019-04-20+08:00"
 draft: false
-title: "编程警句 130"
+title: "编程警句 130（1-30）"
 tags: ["来点轻松的", "计算机", "blog"]
 series: ["周末闲谈"]
 categories: ["周末闲谈"]
@@ -14,9 +14,7 @@ summary: "边笑边哭"
 
 ## Epigrams on Programming 编程警句
 
-
 ## 译者说
-
 
 正如第72句所言 *An adequate bootstrap is a contradiction in terms.*，需要解释的笑话多多少少有些悖论的影子。解释笑话总是件吃力不讨好的事，一来容易隐射说笑话的人说得不高明，二来容易隐射听笑话的人反应不够快。
 
