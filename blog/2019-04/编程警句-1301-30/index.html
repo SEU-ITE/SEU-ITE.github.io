@@ -7,24 +7,24 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
   <meta name="author" content="SEUITE">
-  <meta name="description" content="每天一篇计算机 Paper (2019/4/17)">
+  <meta name="description" content="边笑边哭">
   
-  <meta property="og:title" content="无痛理解贝叶斯网络理论" />
-<meta property="og:description" content="每天一篇计算机 Paper (2019/4/17)" />
+  <meta property="og:title" content="编程警句 130（1-30）" />
+<meta property="og:description" content="边笑边哭" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seuite.github.io/blog/2019-04/%E6%97%A0%E7%97%9B%E7%90%86%E8%A7%A3%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C%E7%90%86%E8%AE%BA/" />
-<meta property="article:published_time" content="2019-04-18T23:29:43&#43;08:00"/>
-<meta property="article:modified_time" content="2019-04-18T23:29:43&#43;08:00"/><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/forth-%E4%B8%80%E7%A7%8D%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%AD%E8%A8%80/" /><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%85%AC%E7%90%86%E5%8C%96%E5%9F%BA%E7%A1%80/" /><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E-apl-%E7%9A%84%E6%9C%BA%E5%99%A8/" />
+<meta property="og:url" content="https://seuite.github.io/blog/2019-04/%E7%BC%96%E7%A8%8B%E8%AD%A6%E5%8F%A5-1301-30/" />
+<meta property="article:published_time" content="2019-04-20T23:47:25&#43;08:00"/>
+<meta property="article:modified_time" content="2019-04-20T23:47:25&#43;08:00"/>
 
 
 
   <title>
   
-       无痛理解贝叶斯网络理论 | SEUITE 博客 
+       编程警句 130（1-30） | SEUITE 博客 
   
   </title>
 
-  <link rel="canonical" href="https://seuite.github.io/blog/2019-04/%E6%97%A0%E7%97%9B%E7%90%86%E8%A7%A3%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C%E7%90%86%E8%AE%BA/">
+  <link rel="canonical" href="https://seuite.github.io/blog/2019-04/%E7%BC%96%E7%A8%8B%E8%AD%A6%E5%8F%A5-1301-30/">
 
   
   
@@ -402,7 +402,7 @@
       
 
       
-      <div class="col-md-10">
+      <div class="container-fluid">
       
 
         
@@ -412,31 +412,31 @@
   <ul class="post-meta li-x">
     
       
-        <li><a href="https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 每日 Paper </a></li>
+        <li><a href="https://seuite.github.io/categories/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 周末闲谈 </a></li>
       
     
     
       
-        <li><a href="https://seuite.github.io/series/%E7%BB%8F%E5%85%B8%E8%AE%BA%E8%91%97"><i class="fas fa-bookmark pr-1" aria-hidden="true"></i>经典论著</a></li>
+        <li><a href="https://seuite.github.io/series/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88"><i class="fas fa-bookmark pr-1" aria-hidden="true"></i>周末闲谈</a></li>
       
     
   </ul>
 
-  <div class="px-4 post-heading">无痛理解贝叶斯网络理论</div>
+  <div class="px-4 post-heading">编程警句 130（1-30）</div>
 
   <ul class="post-meta li-x mt-1">
     
-      <li>April 4, 18049</li>
+      <li>April 4, 20049</li>
     
 
     
       <li class="middot"></li>
-      <li>4 minute read</li>
+      <li>5 minute read</li>
     
   </ul>
   
     <div class="view">
-      <img src="https://seuite.github.io/img/everday_paper/bayesian_networks_without_tears.jpg" />
+      <img src="https://seuite.github.io/img/weekend_talks/epigrams_on_programming_1.jpg" />
     </div>
   
 
@@ -446,33 +446,256 @@
           <div class="post-content markdown">
             
 
-<blockquote>
-<p>Eugene Charniak (1991). Bayesian Networks without Tears. AI Magazine Contents, Volume 12(4): 50-63</p>
+<h2 id="epigrams-on-programming-编程警句">Epigrams on Programming 编程警句</h2>
 
-<p>译者：陈思源</p>
+<h2 id="译者说">译者说</h2>
+
+<p>正如第72句所言 *An adequate bootstrap is a contradiction in terms.*，需要解释的笑话多多少少有些悖论的影子。解释笑话总是件吃力不讨好的事，一来容易隐射说笑话的人说得不高明，二来容易隐射听笑话的人反应不够快。</p>
+
+<p>一来这笑话是外国笑话，难免中外笑点不同；二来这笑话是三十年前的笑话，笑点不一定是这个时代的笑点；三来，最大的幸福，莫过于有人告诉我说“你这句话解释错了，原意应该是如此如此”。</p>
+
+<p><em>Epigrams on Programming</em> 作者是 <a href="http://en.wikipedia.org/wiki/Alan_Perlis">Alen Jay Perlis</a> ，美国计算机科学家，程序员中的上古巨神，因在编程语言中的早期探索和获得首届图灵奖闻名。</p>
+
+<p><em>Epigrams on Programming</em> 发表于 <a href="http://portalparts.acm.org/950000/947955/fm/frontmatter.pdf?ip=198.55.120.199&amp;CFID=552884859&amp;CFTOKEN=85666119">ACM SIGPLAN Notices, Volume 17 Issue 9, September 1982</a></p>
+
+<p>耶鲁大学网站上刊登的本文以 <a href="http://www.cs.yale.edu/homes/perlis-alan/quotes.html">Epigrams in Programming</a> 为题。Epigrams on Programming 比 Epigrams in Programming 多了 10 条 meta-epigram。</p>
+
+<p>正文小标题为译者所加。</p>
+
+<p>感谢 <a href="https://github.com/marrowleaves">marrowleaves</a> 的校正。</p>
+
+<h2 id="正文">正文</h2>
+
+<h3 id="preface-前言">Preface 前言</h3>
+
+<p>The phenomena surrounding computers are diverse and yield a surprisingly rich base for launching metaphors at individual and group activities. Conversely, classical human endeavors provide an inexhaustible source of metaphor for those of us who are in labor within computation. Such relationships between society and device are not new, but the incredible growth of the computer&rsquo;s influence (both real and implied).lends this symbiotic dependency a vitality like a gangly youth growing out of his clothes within an endless puberty.</p>
+
+<p>The epigrams that follow attempt to capture some of the dimensions of this traffic in imagery that sharpens, forcuses, clarifies, enlarges and beclouds our view of this most remarkable of all roans&rsquo; artifacts, the computer.</p>
+
+<h3 id="epigrams-警句">Epigrams 警句</h3>
+
+<hr />
+
+<ol>
+<li>&gt;One man&rsquo;s constant is another man&rsquo;s variable.
+<br /></li>
+</ol>
+
+<p>吾之常量，彼之变量。</p>
+
+<ol>
+<li>&gt;Functions delay binding: data structures induce binding. Moral: Structure data late in the programming process.</li>
+</ol>
+
+<p>函数推迟绑定；数据结构导致绑定。寓意：(编程中)推迟数据结构化的时间。</p>
+
+<ol>
+<li>&gt;Syntactic sugar causes cancer of the semi-colons.</li>
+</ol>
+
+<p>语法糖导致分号癌。</p>
+
+<p><code>吐槽: Python 说，我没有分号癌！</code></p>
+
+<ol>
+<li>&gt;Every program is a part of some other program and rarely fits.</li>
+</ol>
+
+<p>每个程序都是其他程序不合适的一部分。</p>
+
+<ol>
+<li>&gt;If a program manipulates a large amount of data, it does so in a small number of ways.</li>
+</ol>
+
+<p>如果一个程序用于处理大量数据，它就没几种选择了。</p>
+
+<ol>
+<li>&gt;Symmetry is a complexity reducing concept (co-routines include sub-routines); seek it everywhere.</li>
+</ol>
+
+<p>对称性有助于减少复杂度（协程包含例程）。对称性无处不在。</p>
+
+<p><code>sub-routines: 和通常所见的function、method、procedure是同义词，使用return返回。co-routines 使用yield。</code></p>
+
+<ol>
+<li>&gt;It is easier to write an incorrect program than understand a correct one.</li>
+</ol>
+
+<p>写错误的程序比理解正确的程序简单。</p>
+
+<ol>
+<li>&gt;A programming language is low level when its programs require attention to the irrelevant.</li>
+</ol>
+
+<p>任何编程语言在处理无关事务时都是低级语言。</p>
+
+<ol>
+<li>&gt; It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.</li>
+</ol>
+
+<p>用100个函数操作一个数据结构比仅用10个函数但是操作10个不同的数据结构要好。</p>
+
+<ol>
+<li><blockquote>
+<p>Get into a rut early: Do the same processes the same way. Accumulate idioms. Standardize. The only difference (!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.</p>
 </blockquote>
 
-<p>本文隶属于&rdquo;每天一篇计算机 Paper&rdquo;系列博客，更多内容请点击<a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/">这个链接</a>。</p>
+<p>早立规矩：同样方式做的同样处理。积累固定用法(idiom)。标准化。你和莎士比亚的唯一区别是成语(idiom)量——不是词汇量。</p></li>
+</ol>
 
-<p>本系列博客均非完整译文，如需阅读完整文章，请访问相关图书馆订阅。</p>
+<p><code>吐槽: idiom有两个意思，可惜不能都翻译成“成语”。</code></p>
 
-<h2 id="abstract">Abstract</h2>
+<ol>
+<li><blockquote>
+<p>If you have a procedure with 10 parameters, you probably missed some.</p>
+</blockquote>
 
-<p>为概率理论基础相当有限的人工智能研究人员，我给出了一个关于贝叶斯网络的介绍。在过去的几年中，这种使用概率推理的方法在 AI 概率和不确定性社区中变得相当流行。实际上可以说，AI-不确定性社区的一大部分都使用了贝叶斯网络作为解决方案的 AI 逻辑论证。然而，尽管它们显然具有明显的重要性，但这些思想和技术并没有传播到相关的研究领域之外。这可能是因为这些想法和技术并不容易理解。为纠正这种情况，我希望使概率上不复杂的贝叶斯网络更容易理解。</p>
+<p>如果你写了一个需要10个参数的函数，你或许还漏了什么。</p></li>
 
-<p>I give an introduction to Bayesian networks for AI researchers with a limited grounding in probability theory. Over the last few years, this method of reasoning using probabilities has become popular within the AI probability and uncertainty community. Indeed, it is probably fair to say that Bayesian networks are to a large segment of the AI-uncertainty community what resolution theorem proving is to the AI-logic community. Nevertheless, despite what seems to be their obvious importance, the ideas and techniques have not spread much beyond the research community responsible for them. This is probably because the ideas and techniques are not that easy to understand. I hope to rectify this situation by making Bayesian networks more accessible to the probabilistically unsophisticated.</p>
+<li><blockquote>
+<p>Recursion is the root of computation since it trades description for time.</p>
+</blockquote>
 
-<h2 id="introduction">Introduction</h2>
+<p>递归是计算之母。她用描述换取时间。</p></li>
 
-<p>在过去的几年中，使用概率推理的方法，或者称做信念网络，贝叶斯网络，知识地图，概率因果网络等，已经在AI概率和不确定性社区中变得流行。这种方法在 Judea Pearl（1988）的书中得到了最好的总结，但这些想法是许多人的产物。我采用了 Pearl 的命名，贝叶斯网络，理由是这个名称对于网络的状态是完全中立的（他们真的代表信仰，因果关系或者其它东西吗？）。贝叶斯网络已应用于医学诊断中的问题（Heckerman 1990; Spiegelhalter，Franklin和Bull 1989），地图学习（Dean 1990），语言理解（Charniak和Goldman 1989a，1989b; Goldman 1990），视觉问题（Levitt，Mullin，和Binford 1989），启发式搜索（Hansson和Mayer 1989）等。实际上可以说，AI-不确定性社区的一大部分都使用了贝叶斯网络作为解决方案的 AI 逻辑论证。然而，尽管它们显然具有明显的重要性，但这些思想和技术并没有传播到相关的研究领域之外。这可能是因为这些想法和技术并不容易理解。为纠正这种情况，我希望使概率上不复杂的贝叶斯网络更容易理解。也就是说，本文试图使概率论基础有限的人可以获得基本的相关思想和理论直觉（相当于Charniak和McDermott [1985]中提出的内容）。</p>
+<li><blockquote>
+<p>If two people write exactly the same program, each should be put in micro-code and then they certainly won&rsquo;t be the same.</p>
+</blockquote>
 
-<p>Over the last few years, a method of reasoning using probabilities, variously called belief networks, Bayesian networks, knowledge maps, probabilistic causal networks, and so on, has become popular within the AI probability and uncertainty community. This method is best summarized in Judea Pearl’s (1988) book, but the ideas are a product of many hands. I adopted Pearl’s name, Bayesian networks, on the grounds that the name is completely neutral about the status of the networks (do they really represent beliefs, causality, or what?). Bayesian networks have been applied to problems in medical diagnosis (Heckerman 1990; Spiegelhalter, Franklin, and Bull 1989), map learning (Dean 1990), language understanding (Charniak and Goldman 1989a, 1989b; Goldman 1990), vision (Levitt, Mullin, and Binford 1989), heuristic search (Hansson and Mayer 1989), and so on. It is probably fair to say that Bayesian networks are to a large segment of the AI-uncertainty community what resolution theorem proving is to the AIlogic community. Nevertheless, despite what seems to be their obvious importance, the ideas and techniques have not spread much beyond the research community responsible for them. This is probably because the ideas and techniques are not that easy to understand. I hope to rectify this situation by making Bayesian networks more accessible to the probabilistically unsophisticated. That is, this article tries to make the basic ideas and intuitions accessible to someone with a limited grounding in probability theory (equivalent to what is presented in Charniak and McDermott [1985]).</p>
+<p>如果两个人用低级语言写同一个程序，它们显然不会相同。</p></li>
 
-<h2 id="conclusions">Conclusions</h2>
+<li><blockquote>
+<p>In the long run every program becomes rococo - then rubble.</p>
+</blockquote>
 
-<p>贝叶斯网络为人工智能研究人员提供了一种方便的方法来尝试解决众多问题，在这些问题中，人们希望得出逻辑上无法保证的结论，而不是概率性的结论。此外，它们允许您在没有指定一组数字的传统障碍的情况下尝试解决这些问题，这些数字随模型的复杂性呈指数级增长。可能它们使用的主要缺点是评估时间（一般情况下的指数时间）。但是，由于现在有很多人使用贝叶斯网络，因此对有效的精确求解方法以及各种近似方案进行了大量研究。我相信贝叶斯网络或其后代是未来的潮流。</p>
+<p>程序终将成为洛可可，然后是碎石。</p>
 
-<p>Bayesian networks offer the AI researcher a convenient way to attack a multitude of problems in which one wants to come to conclusions that are not warranted logically but, rather, probabilistically. Furthermore, they allow you to attack these problems without the traditional hurdles of specifying a set of numbers that grows exponentially with the complexity of the model. Probably the major drawback to their use is the time of evaluation (exponential time for the general case). However, because a large number of people are now using Bayesian networks, there is a great deal of research on efficient exact solution methods as well as a variety of approximation schemes. It is my belief that Bayesian networks or their descendants are the wave of the future.</p>
+<p><code>Rococo: 洛可可，起源于18世纪法国的艺术风格。华而不实，过度装饰。</code></p>
+
+<p>吐槽: 这句话原型应该是:</p>
+
+<pre><code>But this long run is a misleading guide to current affairs. 
+In the long run we are all dead - John Maynard Keynes
+</code></pre>
+
+<p>这种长远的眼光对当下事物是一种误导。长远来看，我们都要要死的 —— 凯恩斯（经济学家，不要说没听过这个名字。。。）</p></li>
+
+<li><blockquote>
+<p>Everything should be built top-down, except the first time.</p>
+</blockquote>
+
+<p>凡事都应该自顶向下，除了第一次。</p></li>
+
+<li><blockquote>
+<p>Every program has (at least) two purposes: the one for which it was written and another for which it wasn’t.</p>
+</blockquote>
+
+<p>程序都有至少两个目的：一个是写它的目的，另一个不是。</p></li>
+
+<li><blockquote>
+<p>If a listener nods his head when you&rsquo;re explaining your program, wake him up.</p>
+</blockquote>
+
+<p>如果有人听你讲解程序时点头了，把他叫醒。</p></li>
+
+<li><blockquote>
+<p>A program without a loop and a structured variable isn&rsquo;t worth writing.</p>
+</blockquote>
+
+<p>没有循环和结构变量的程序不值得写。</p>
+
+<p>吐槽: 这句话原型应该是:</p>
+
+<pre><code>The unexamined life is not worth living for a human being - Socrates
+</code></pre>
+
+<p>未经审视的生活不值得度过 —— 苏格拉底</p></li>
+
+<li><blockquote>
+<p>A language that doesn&rsquo;t affect the way you think about programming, is not worth knowing.</p>
+</blockquote>
+
+<p>没有影响你思考编程的语言不值得学。</p></li>
+
+<li><blockquote>
+<p>Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.</p>
+</blockquote>
+
+<p>模块是误解之源；信息隐藏预示沟通的必要。</p>
+
+<p>吐槽: 这句话原型应该是:</p>
+
+<pre><code>Wherever there is a will there is a way.
+</code></pre>
+
+<p>有志者事竟成。</p></li>
+
+<li><blockquote>
+<p>Optimization hinders evolution.</p>
+</blockquote>
+
+<p>优化阻碍进化。</p></li>
+
+<li><blockquote>
+<p>A good system can&rsquo;t have a weak command language.</p>
+</blockquote>
+
+<p>好系统无坏指令。</p></li>
+
+<li><blockquote>
+<p>To understand a program you must become both the machine and the program.</p>
+</blockquote>
+
+<p>要理解一段程序，你得同时成为机器和这段程序。</p></li>
+
+<li><blockquote>
+<p>Perhaps if we wrote programs from childhood on, as adults we&rsquo;d be able to read them.</p>
+</blockquote>
+
+<p>从童年开始写程序，长大了就能读懂了。</p></li>
+
+<li><blockquote>
+<p>One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.</p>
+</blockquote>
+
+<p>脑海中只能呈现复杂的信息。就像视觉，无论静止的画面多么美丽，变化更加重要。</p></li>
+
+<li><blockquote>
+<p>There will always be things we wish to say in our programs that in all
+known languages can only be said poorly.</p>
+</blockquote>
+
+<p>程序中总有些话，所有已知的语言都不能很好的表达。</p>
+
+<p><code>吐槽: 何不把programs改成love letter，千言万语道不尽我对你的爱云云。</code></p></li>
+
+<li><blockquote>
+<p>Once you understand how to write a program get someone else to write it.</p>
+</blockquote>
+
+<p>一旦你理解了怎么写某个程序，让别人去写它吧。</p></li>
+
+<li><blockquote>
+<p>Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?</p>
+</blockquote>
+
+<p>很难找到合适的时间单位来衡量计算机领域内的进展。有些教堂建了一个世纪。<br />
+你能想象写了一个世纪的程序的雄伟壮丽吗？</p></li>
+
+<li><blockquote>
+<p>For systems, the analogue of a face-lift is to add to the control graph
+an edge that creates a cycle, not just an additional node.</p>
+</blockquote>
+
+<p>系统的整容是在控制图上加一条边，而不是新的节点。<br />
+<a href="http://en.wikipedia.org/wiki/Control_flow_graph">Control graph</a> 指程序运行逻辑。其 node 是顺序执行的基本单元，edge 表示跳转。</p></li>
+
+<li><blockquote>
+<p>In programming, everything we do is a special case of something more general - and often we know it too quickly.</p>
+</blockquote>
+
+<p>编程中，我们常常过快的了解到，所做的都是普遍情况的特例，</p></li>
+</ol>
 
           </div>
 
@@ -486,7 +709,7 @@
   <li class="pr-0"><a href="https://seuite.github.io/tags/"><i class="fas fa-tags"></i></a></li>
   <div class="tags-sm">
     
-      <li><a href="https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper" role="button">每日 Paper </a></li>
+      <li><a href="https://seuite.github.io/tags/%E6%9D%A5%E7%82%B9%E8%BD%BB%E6%9D%BE%E7%9A%84" role="button">来点轻松的 </a></li>
       
     
       <li><a href="https://seuite.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA" role="button">计算机 </a></li>
@@ -508,23 +731,16 @@
           <div class="row pt-3">
             <div class="col-md-6">
               
-                <a href=https://seuite.github.io/blog/2019-04/forth-%E4%B8%80%E7%A7%8D%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%AD%E8%A8%80/ class="post-meta">Previous
+                <a href=https://seuite.github.io/blog/2019-04/%E6%97%A0%E7%97%9B%E7%90%86%E8%A7%A3%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C%E7%90%86%E8%AE%BA/ class="post-meta">Previous
                   <div class="pt-2 pb-5 d-flex">
                     <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
-                    <span>FORTH - 一种交互式计算的语言</span>
+                    <span>无痛理解贝叶斯网络理论</span>
                   </div>
                 </a>
               
             </div>
             
             <div class="col-md-6 text-right" >
-              
-                <a href=https://seuite.github.io/blog/2019-04/%E7%BC%96%E7%A8%8B%E8%AD%A6%E5%8F%A5-1301-30/ class="post-meta">Next
-                  <div class="pt-2 pb-5 flex-reverse">
-                    <i class="fas fa-angle-right text-grey font-weight-bold ml-2 active-color"></i>
-                    <span>编程警句 130（1-30）</span>
-                  </div>
-                </a>
               
             </div>
           </div>
@@ -538,102 +754,6 @@
       
 
       
-	
-	
-	
-	
-		
-		
-		
-	
-
-		
-		<div class="col-md-2 pl-0">
-
-			
-			<div id="page-scrollspy" class="toc-nav">
-				
-				<ul class="nav nav-pills ml-0">
-					
-					<li class="nav-item pb-3 text-center">
-						<span class="font-weight-bold mb-2">- CATALOG - </span>
-					</li>
-
-					
-						
-						
-							
-								
-								
-									<ul class="nav">
-								
-								
-
-										<li class="nav-item">
-						 					<a class="nav-link" href="#abstract">
-												 Abstract
-											</a>
-										</li>
-						 
-								
-								
-									</ul>
-								
-							
-						
-				 
-						
-						
-							
-								
-								
-									<ul class="nav">
-								
-								
-
-										<li class="nav-item">
-						 					<a class="nav-link" href="#introduction">
-												 Introduction
-											</a>
-										</li>
-						 
-								
-								
-									</ul>
-								
-							
-						
-				 
-						
-						
-							
-								
-								
-									<ul class="nav">
-								
-								
-
-										<li class="nav-item">
-						 					<a class="nav-link" href="#conclusions">
-												 Conclusions
-											</a>
-										</li>
-						 
-								
-								
-									</ul>
-								
-							
-						
-				 
-
-				</ul>
-			</div>
-			
-
-		</div>
-		
-	
 
     </div>
     
