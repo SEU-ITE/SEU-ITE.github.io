@@ -6,10 +6,19 @@
     <description>Recent content in Seulon on SEUITE 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Fri, 19 Apr 2019 08:23:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 22 Apr 2019 19:30:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seuite.github.io/categories/seulon/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2nd SEUITE 沙龙：初入 Node.js 与 Typescript</title>
+      <link>https://seuite.github.io/events/week_9th_seulon/</link>
+      <pubDate>Mon, 22 Apr 2019 19:30:00 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/events/week_9th_seulon/</guid>
+      <description>第2次的 Seulon</description>
+    </item>
     
     <item>
       <title>1st SEUITE 沙龙：从 Markdown 到静态网站生成器</title>
@@ -18,15 +27,6 @@
       
       <guid>https://seuite.github.io/events/week_8th_seulon/</guid>
       <description>第1次的 Seulon</description>
-    </item>
-    
-    <item>
-      <title>2st SEUITE 沙龙：初入 Node.js 与 Typescript</title>
-      <link>https://seuite.github.io/events/week_9th_seulon/</link>
-      <pubDate>Fri, 19 Apr 2019 08:23:00 +0800</pubDate>
-      
-      <guid>https://seuite.github.io/events/week_9th_seulon/</guid>
-      <description>第2次的 Seulon</description>
     </item>
     
   </channel>
