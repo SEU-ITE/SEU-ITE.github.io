@@ -12,12 +12,21 @@
     
     
     <item>
-      <title>SEUITE 沙龙：从 Markdown 到静态网站生成器</title>
+      <title>1st SEUITE 沙龙：从 Markdown 到静态网站生成器</title>
       <link>https://seuite.github.io/events/week_8th_seulon/</link>
       <pubDate>Fri, 19 Apr 2019 08:23:00 +0800</pubDate>
       
       <guid>https://seuite.github.io/events/week_8th_seulon/</guid>
       <description>第1次的 Seulon</description>
+    </item>
+    
+    <item>
+      <title>2st SEUITE 沙龙：初入 Node.js 与 Typescript</title>
+      <link>https://seuite.github.io/events/week_9th_seulon/</link>
+      <pubDate>Fri, 19 Apr 2019 08:23:00 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/events/week_9th_seulon/</guid>
+      <description>第2次的 Seulon</description>
     </item>
     
   </channel>

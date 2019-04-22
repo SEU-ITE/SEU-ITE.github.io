@@ -6,7 +6,7 @@
     <description>Recent content on SEUITE 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Sun, 21 Apr 2019 23:40:28 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Apr 2019 23:47:25 +0800</lastBuildDate>
     
 	<atom:link href="https://seuite.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>编程警句 130（31-40）</title>
       <link>https://seuite.github.io/blog/2019-04/%E7%BC%96%E7%A8%8B%E8%AD%A6%E5%8F%A5-13031-40/</link>
-      <pubDate>Sun, 21 Apr 2019 23:40:28 +0800</pubDate>
+      <pubDate>Sun, 21 Apr 2019 23:47:25 +0800</pubDate>
       
       <guid>https://seuite.github.io/blog/2019-04/%E7%BC%96%E7%A8%8B%E8%AD%A6%E5%8F%A5-13031-40/</guid>
       <description>边笑边哭</description>
@@ -30,12 +30,21 @@
     </item>
     
     <item>
-      <title>SEUITE 沙龙：从 Markdown 到静态网站生成器</title>
+      <title>1st SEUITE 沙龙：从 Markdown 到静态网站生成器</title>
       <link>https://seuite.github.io/events/week_8th_seulon/</link>
       <pubDate>Fri, 19 Apr 2019 08:23:00 +0800</pubDate>
       
       <guid>https://seuite.github.io/events/week_8th_seulon/</guid>
       <description>第1次的 Seulon</description>
+    </item>
+    
+    <item>
+      <title>2st SEUITE 沙龙：初入 Node.js 与 Typescript</title>
+      <link>https://seuite.github.io/events/week_9th_seulon/</link>
+      <pubDate>Fri, 19 Apr 2019 08:23:00 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/events/week_9th_seulon/</guid>
+      <description>第2次的 Seulon</description>
     </item>
     
     <item>
