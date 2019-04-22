@@ -7,24 +7,24 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
   <meta name="author" content="SEUITE">
-  <meta name="description" content="每天一篇计算机 Paper (2019/4/16)">
+  <meta name="description" content="每天一篇计算机 Paper (2019/4/22)">
   
-  <meta property="og:title" content="计算机程序设计的公理化基础" />
-<meta property="og:description" content="每天一篇计算机 Paper (2019/4/16)" />
+  <meta property="og:title" content="一个用于大型共享数据库的数据关系模型" />
+<meta property="og:description" content="每天一篇计算机 Paper (2019/4/22)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seuite.github.io/blog/2019-04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%85%AC%E7%90%86%E5%8C%96%E5%9F%BA%E7%A1%80/" />
-<meta property="article:published_time" content="2019-04-16T16:34:40&#43;08:00"/>
-<meta property="article:modified_time" content="2019-04-16T16:34:40&#43;08:00"/><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/%E4%B8%80%E4%B8%AA%E7%94%A8%E4%BA%8E%E5%A4%A7%E5%9E%8B%E5%85%B1%E4%BA%AB%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B/" /><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/forth-%E4%B8%80%E7%A7%8D%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%AD%E8%A8%80/" /><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/%E6%97%A0%E7%97%9B%E7%90%86%E8%A7%A3%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C%E7%90%86%E8%AE%BA/" /><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/forth-%E4%B8%80%E7%A7%8D%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%AD%E8%A8%80/" /><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E-apl-%E7%9A%84%E6%9C%BA%E5%99%A8/" />
+<meta property="og:url" content="https://seuite.github.io/blog/2019-04/%E4%B8%80%E4%B8%AA%E7%94%A8%E4%BA%8E%E5%A4%A7%E5%9E%8B%E5%85%B1%E4%BA%AB%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B/" />
+<meta property="article:published_time" content="2019-04-22T19:07:30&#43;08:00"/>
+<meta property="article:modified_time" content="2019-04-22T19:07:30&#43;08:00"/><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/forth-%E4%B8%80%E7%A7%8D%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%AD%E8%A8%80/" /><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/%E6%97%A0%E7%97%9B%E7%90%86%E8%A7%A3%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C%E7%90%86%E8%AE%BA/" /><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/forth-%E4%B8%80%E7%A7%8D%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%AD%E8%A8%80/" /><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%85%AC%E7%90%86%E5%8C%96%E5%9F%BA%E7%A1%80/" /><meta property="og:see_also" content="https://seuite.github.io/blog/2019-04/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E-apl-%E7%9A%84%E6%9C%BA%E5%99%A8/" />
 
 
 
   <title>
   
-       计算机程序设计的公理化基础 | SEUITE 博客 
+       一个用于大型共享数据库的数据关系模型 | SEUITE 博客 
   
   </title>
 
-  <link rel="canonical" href="https://seuite.github.io/blog/2019-04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%85%AC%E7%90%86%E5%8C%96%E5%9F%BA%E7%A1%80/">
+  <link rel="canonical" href="https://seuite.github.io/blog/2019-04/%E4%B8%80%E4%B8%AA%E7%94%A8%E4%BA%8E%E5%A4%A7%E5%9E%8B%E5%85%B1%E4%BA%AB%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B/">
 
   
   
@@ -422,21 +422,21 @@
     
   </ul>
 
-  <div class="px-4 post-heading">计算机程序设计的公理化基础</div>
+  <div class="px-4 post-heading">一个用于大型共享数据库的数据关系模型</div>
 
   <ul class="post-meta li-x mt-1">
     
-      <li>April 4, 16049</li>
+      <li>April 4, 22049</li>
     
 
     
       <li class="middot"></li>
-      <li>5 minute read</li>
+      <li>4 minute read</li>
     
   </ul>
   
     <div class="view">
-      <img src="https://seuite.github.io/img/everday_paper/an_axiomatic_basis_for_computer_programming.jpg" />
+      <img src="https://seuite.github.io/img/everday_paper/forth_a_language_for_interactive_computing.jpg" />
     </div>
   
 
@@ -447,7 +447,7 @@
             
 
 <blockquote>
-<p>Hoare C.A.R. (1969) An Axiomatic Basis for Computer Programming. COMMUNICATIONS OF THE ACM Verification. vol 12: page 576&ndash;580</p>
+<p>F. Codd, E. (1970). A Relational Model of Data for Large Shared Data Banks. Commun. ACM. 13. 377-387. 10.<sup>1007</sup>&frasl;<sub>978</sub>-3-642-48354-7_4.</p>
 
 <p>译者：陈思源</p>
 </blockquote>
@@ -456,48 +456,51 @@
 
 <p>本系列博客均非完整译文，如需阅读完整文章，请访问相关图书馆订阅。</p>
 
-<h2 id="abstruct">ABSTRUCT</h2>
+<p>译者说：没有关系代数，人类将会怎样？Codd 划时代的论文奠定了现代数据库的基础。顺便说一句，现在的 ORM 试图把 data schema 和对象系统映射起来。问题是，data schema 只是对关系的一种表达方式而已，还和具体的系统实现有关。也许把对象间的结构和关系映射起来才是正道。</p>
 
-<p>在本文中，为探索计算机程序的逻辑基础，我们尝试使用了一些首先应用于几何学研究，后来扩展到其他数学分支的技术。这包括阐明公理集和可用于证明计算机程序的属性的推理规则。我们给出了这些公理和规则的例子，并且展示了简单定理的形式证明。最后，我们讨论了对这些主题的研究可能会同时带来的理论和实践方面的重要优势。</p>
+<h2 id="abstract">Abstract</h2>
 
-<blockquote>
-<p>In this paper an attempt is made to explore the logical foundations of computer programming by use of techniques which were first applied in the study of geometry and have later been extended to other branches of mathematics. This involves the elucidation of sets of axioms and rules of inference which can be used in proofs of the properties of computer programs. Examples are given of such axioms and rules, and a formal proof of a simple theorem is displayed. Finally, it is argued that important advantages, both theoretical and practical, may follow from a pursuance of these topics.</p>
-</blockquote>
-
-<h2 id="introduction">INTRODUCTION</h2>
-
-<p>计算机程序是一门精确的科学，因为程序的所有属性以及在任何给定环境中执行它的所有后果原则上都可以通过纯粹的演绎推理从程序本身的文本中找到。演绎推理包含对有效公理集应用有效的推理规则。因此，阐明作为计算机程序推理基础的公理和推理规则是可取和有趣的。公理的确切选择在某种程度上取决于编程语言的选择。出于说明的目的，本文仅限于一种非常简单的语言，它本质上是所有当前面向过程的语言的一个子集。</p>
+<p>必须保护大型数据库的未来用户不必知道数据在机器中的组织方式（内部表示）。提供这种信息的提示服务不是令人满意的解决方案。当数据的内部表示发生变化时，即使外部表示的某些方面发生变化，终端和大多数应用程序的用户活动也不会受到影响。数据表示是需要经常更改的，因为查询，更新和报告流量会发生变化，存储信息类型也会自然增长。</p>
 
 <blockquote>
-<p>Computer programming is an exact science in that all the properties of a program and all the consequences of executing it in any given environment can, in principle, be found out from the text of the program itself by means of purely deductive reasoning. Deductive reasoning involves the application of valid rules of inference to sets of valid axioms. It is therefore desirable and interesting to elucidate the axioms and rules of inference which underlie our reasoning about computer programs. The exact choice of axioms will to some extent depend on the choice of programming language. For illustrative purposes, this paper is confined to a very simple language, which is effectively a subset of all current procedure-oriented languages.</p>
+<p>Future users of large data banks must be protected from having to know how the data is organized in the machine (the internal representation). A prompting service which supplies such information is not a satisfactory solution. Activities of users at terminals and most application programs should remain unaffected when the internal representation of data is changed and even when some aspects of the external representation are changed. Changes in data representation will often be needed as a result of changes in query, update, and report traffic and natural growth in the types of stored information.</p>
 </blockquote>
 
-<h2 id="formal-language-definition">Formal Language Definition</h2>
-
-<p>高级编程语言（例如 ALGOL，FORTRAN 和 COBOL）通常旨在在具有不同大小，配置和设计的各种计算机上进行实现。
-已经发现一个严重的问题是，为确保所有实现者之间的兼容性，这些语言的定义要足够严格。由于兼容性的目的是促进用语言表达的程序的交换，实现这一目的的一种方法是坚持语言的所有实现都应“满足”推理的公理和推理规则，这些证据是表达程序属性的证据的基础。在语言中，除非出现硬件故障，否则将完成基于这些证明的所有预测。实际上，这相当于接受公理和推理规则作为语言意义的最终明确规范。</p>
+<p>现有的非推理格式化数据系统为用户提供树状结构文件或稍微更一般的数据网络模型。在第 1 节中，讨论了这些模型的不足之处。基于 n 元关系的模型，一种正常形式。对于数据库关系，引入了通用数据子语言的概念。在第 2 节中，讨论了关系（逻辑推理除外）的某些操作，并将其应用于用户模型中的冗余和一致性问题。</p>
 
 <blockquote>
-<p>A high level programming language, such as ALGOL, FORTRAN, or COBOL, is usually intended to be implemented on a variety of computers of differing size, configuration, and design. It has been found a serious problem to define these languages with sufficient rigour to ensure compatibility among all implementors. Since the purpose of compatibility is to facilitate interchange of programs expressed in the language, one way to achieve this would be to insist that all implementations of the language shall &ldquo;satisfy&rdquo; the axioms and rules of inference which underlie proofs of the properties of programs expressed in the language, so that all predictions based on these proofs will be fulfilled, except in the event of hardware failure. In effect, this is equivalent to accepting the axioms and rules of inference as the ultimately definitive specification of the meaning of the language.</p>
+<p>Existing noninferential, formatted data systems provide users with tree-structured files or slightly more general network models of the data. In Section 1, inadequacies of these models are discussed. A model based on n-ary relations, a normal form for data base relations, and the concept of a universal data sublanguage are introduced. In Section 2, certain opera- tions on relations (other than logical inference) are discussed and applied to the problems of redundancy and consistency in the user’s model.</p>
 </blockquote>
 
-<p>除了为实现的正确性提供立即且可能甚至可证明的标准之外，用于定义编程语言语义的公理技术看起来像 ALGOL 60 报告的形式语法，因为它很容易被该语言的实现者和相当顶尖的用户理解。只有通过在单个文档（可能甚至证明是一致的）中弥合这种不断扩大的沟通差距，才能从正式的语言定义中获得最大的优势。</p>
+<h2 id="1-introduction">1. Introduction</h2>
+
+<p>本文涉及基本关系理论在系统中的应用，这些系统提供对大量格式化数据库的共享访问。除了 Childs 的论文[1]，关系到数据系统的主要应用是演绎问答系统。Levein 和 Maron[2]为这一领域的工作提供了大量参考.</p>
 
 <blockquote>
-<p>Apart from giving an immediate and possibly even provable criterion for the correctness of an implementation, the axiomatic technique for the definition of programming language semantics appears to be like the formal syntax of the ALGOL 60 report, in that it is sufficiently simple to be understood both by the implementor and by the reasonably sophisticated user of the language. It is only by bridging this widening communication gap in a single document (perhaps even provably consistent) that the maximum advantage can be obtained from a formal language definition.</p>
+<p>This paper is concerned with the application of elementary relation theory to systems which provide shared access to large banks of formatted data. Except for a paper by Childs [l], the principal application of relations to data systems has been to deductive question-answering systems. Levein and Maron [2] provide numerous references to work in this area.</p>
 </blockquote>
 
-<p>使用公理化方法的另一个巨大优势是公理提供了一种简单而灵活的技术，可以使语言的某些特定方面无需定义，例如，整数范围，浮点精度和溢出技术的选择。这对于标准化目的是绝对必要的，否则语言将无法在不同的硬件设计上有效地实现。因此，编程语言标准应该由一组普遍适用性的公理组成，并且从一组描述实施者所面临的选择范围的补充公理中进行选择。第2节给出了为此目的使用公理的一个例子。</p>
+<p>相比之下，这里处理的问题是数据独立性 - 应用程序和终端活动的独立性，数据类型的增长和数据表示的变化，以及某些类型的数据不一致，即使在非负面系统中也会变得麻烦。</p>
 
 <blockquote>
-<p>Another of the great advantages of using an axiomatic approach is that axioms offer a simple and flexible technique for leaving certain aspects of a language undefined, for example, range of integers, accuracy of floating point, and choice of overflow technique. This is absolutely essential for standardization purposes, since otherwise the language will be impossible to implement efficiently on differing hardware designs. Thus a programming language standard should consist of a set of axioms of universal applicability, together with a choice from a set of supplementary axioms describing the range of choices facing an implementor. An example of the use of axioms for this purpose was given in Section 2.</p>
+<p>In contrast, the problems treated here are those of data independence - the independence of application programs and terminal activities from growth in data types and changes in data representation Ñ and certain kinds of data inconsistency which are expected to become troublesome even in nondeductive systems.</p>
 </blockquote>
 
-<p>形式语言定义的另一个目标是帮助设计更好的编程语言。ALGOL 60 语法的规律性，清晰度和易于实现，可能至少也有部分归因于其定义使用了精美的规范技术。公理的使用可能在&rdquo;语义学&rdquo;领域产生类似的优势，因为似乎可以通过一些“不言而喻”的公理来描述一种语言，这种公理可以相对容易地构建，这种语言可能比一种具有许多模糊公理的语言，难以用于证明。此外，公理使语言设计者能够非常简单直接地表达他的一般意图，而不需要描述通常伴随算法的大量细节。最后，公理可以用很大程度上彼此独立的方式表达，这样设计师就可以在一个公理或一组公理上自由地工作，而不用担心与语言的其他部分的意外交互影响。</p>
+<p>第 1 节中描述的数据的关系视图（或模型）似乎在几个方面优于目前非推理系统流行的图形或网络模型[3,4]。它提供了一种仅使用其自然结构来描述数据的方法——也就是说，不会为机器表示姿势叠加任何其他结构。因此，它为高级数据语言提供了基础，该语言一方面在程序之间产生最大的独立性，另一方面在机器表示和数据组织方面产生最大的独立性。</p>
 
 <blockquote>
-<p>Another of the objectives of formal language definition is to assist in the design of better programming languages. The regularity, clarity, and ease of implementation of the ALGOL 60 syntax may at least in part be due to the use of an elegant formal technique for its definition. The use of axioms may lead to similar advantages in the area of &ldquo;semantics,&rdquo; since it seems likely that a language which can be described by a few &ldquo;self-evident&rdquo; axioms from which proofs will be relatively easy to construct will be preferable to a language with many obscure axioms which are difficult to apply in proofs. Furthermore, axioms enable the language designer to express his general intentions quite simply and directly, without the mass of detail which usually accompanies algorithmic descriptions. Finally, axioms can be formulated in a manner largely independent of each other, so that the designer can work freely on one axiom or group of axioms without fear of unexpected interaction effects with other parts of the language.</p>
+<p>The relational view (or model) of data described in Section 1 appears to be superior in several respects to the graph or network model [ 3 , 4 ] presently in vogue for non-inferential systems. It provides a means of describing data with its natural structure only &ndash; that is, without superimposing any additional structure for machine representation poses. Accordingly, it provides a basis for a high level data language which will yield maximal independence between programs on the one hand and machine representation and organization of data on the other.</p>
 </blockquote>
+
+<p>关系视图的另一个优点是它为处理关系的可导性，冗余和一致性奠定了坚实的基础 - 这些将在第2节中讨论。另一方面，网络模型产生了许多混淆，其中最重要的是错误地推导出用于推导关系的连接（参见第 2 节关于“连接陷阱”的评论）。</p>
+
+<blockquote>
+<p>A further advantage of the relational view is that it forms a sound basis for treating derivability, redundancy, and consistency of relations - these are discussed in Section 2.The network model, on the other hand, has spawned a number of confusions, not the least of which is mistaking the derivation of connections for the derivation of relations (see remarks in Section 2 on the &ldquo;connection trap&rdquo; ).</p>
+</blockquote>
+
+<p>最后，关系视图允许更清楚地评估当前格式化数据系统的范围和逻辑限制，以及单个系统内数据的竞争表示的相对优点（从逻辑角度来看）。本文的各个部分都引用了这种更清晰的视角的例子。没有讨论支持关系模型的系统实现。</p>
+
+<p>Finally, the relational view permits a clearer evaluation of the scope and logical limitations of present formatted data systems, and also the relative merits (from a logical standpoint) of competing representations of data within a single system.Examples of this clearer perspective are cited in various parts of this paper.Implementations of systems to support the relational model are not discussed.</p>
 
           </div>
 
@@ -533,23 +536,16 @@
           <div class="row pt-3">
             <div class="col-md-6">
               
-                <a href=https://seuite.github.io/blog/2019-04/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E-apl-%E7%9A%84%E6%9C%BA%E5%99%A8/ class="post-meta">Previous
+                <a href=https://seuite.github.io/blog/2019-04/%E7%BC%96%E7%A8%8B%E8%AD%A6%E5%8F%A5-13031-40/ class="post-meta">Previous
                   <div class="pt-2 pb-5 d-flex">
                     <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
-                    <span>一种基于 APL 的机器</span>
+                    <span>编程警句 130（31-40）</span>
                   </div>
                 </a>
               
             </div>
             
             <div class="col-md-6 text-right" >
-              
-                <a href=https://seuite.github.io/blog/2019-04/forth-%E4%B8%80%E7%A7%8D%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%AD%E8%A8%80/ class="post-meta">Next
-                  <div class="pt-2 pb-5 flex-reverse">
-                    <i class="fas fa-angle-right text-grey font-weight-bold ml-2 active-color"></i>
-                    <span>FORTH - 一种交互式计算的语言</span>
-                  </div>
-                </a>
               
             </div>
           </div>
@@ -595,8 +591,8 @@
 								
 
 										<li class="nav-item">
-						 					<a class="nav-link" href="#abstruct">
-												 ABSTRUCT
+						 					<a class="nav-link" href="#abstract">
+												 Abstract
 											</a>
 										</li>
 						 
@@ -617,30 +613,8 @@
 								
 
 										<li class="nav-item">
-						 					<a class="nav-link" href="#introduction">
-												 INTRODUCTION
-											</a>
-										</li>
-						 
-								
-								
-									</ul>
-								
-							
-						
-				 
-						
-						
-							
-								
-								
-									<ul class="nav">
-								
-								
-
-										<li class="nav-item">
-						 					<a class="nav-link" href="#formal-language-definition">
-												 Formal Language Definition
+						 					<a class="nav-link" href="#1-introduction">
+												 1. Introduction
 											</a>
 										</li>
 						 
