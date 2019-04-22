@@ -11,7 +11,7 @@ summary= "第2次的 Seulon"
 > [直播地址](https://live.bilibili.com/61306)
 > [录像地址](https://ftp.seu.services/Seulon/)
 
-本周的 Seulon 由微软学生俱乐部的叶志浩同学带来 JavaScript -> Node.js -> NPM 到 TypeScript 初步的，概念性的，大一也听得懂的，介绍。
+本周的 Seulon 由微软学生俱乐部的叶志浩同学带来 JavaScript -> Node.js -> NPM -> TypeScript 初步的，概念性的，大一也听得懂的，介绍。
 
 - 地点：梅四西辅楼二楼 微软学生俱乐部
 - 时间：第九周周日（4/28）20:45
@@ -19,9 +19,9 @@ summary= "第2次的 Seulon"
 
 ### 其它事务
 
-- 可能会有直播和录像
-- 可(ken)能(ding)会有 SEUITE 的各类硬广
-- 第二次办 Seulon 肯定会有各种各样的问题，但是还是欢迎大家来玩~
+- 这次真的有直播和录像
+- 这次肯定会有 SEUITE 的各类硬广
+- 第二次办 Seulon 还是会有各种各样的问题，但是还是欢迎大家来玩~
 
 ### 关于Seulon
 
@@ -38,6 +38,4 @@ summary= "第2次的 Seulon"
 
 ## 祝大家能够享受快乐的校园生活
 
-> Markdown, up to your thoughts.
->
-> 用 Markdown，你的想法不受拘束。
+> Node.js & TS: JavaScript that scales.
