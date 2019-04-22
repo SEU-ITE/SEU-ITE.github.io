@@ -2,14 +2,14 @@
 date: "2019-04-19T13:29:43+08:00"
 publishdate: "2019-04-19+08:00"
 lastmod: "2019-04-19+08:00"
-draft: true
+draft: false
 title: "FORTH - 一种交互式计算的语言"
 tags: ["每日 Paper", "计算机", "blog"]
 series: ["经典论著"]
 categories: ["每日 Paper"]
 img: "img/everday_paper/forth_a_language_for_interactive_computing.jpg"
 toc: true
-summary: "每天一篇计算机 Paper (2019/4/17)"
+summary: "每天一篇计算机 Paper (2019/4/19)"
 ---
 >H Moore, Charles & C Leach, Geoffrey. (1970). FORTH -A Language for Interactive Computing. 
 >
@@ -21,7 +21,7 @@ summary: "每天一篇计算机 Paper (2019/4/17)"
 
 ## Abstract
 
-FORTH 是一个将键盘与计算机连接的程序。它提供了分时用户和管理核心和磁盘内存所需的所有软件。它的核心是一个字典，它将内存划分为定义字符串，代码和数据的条目。由此产生的语言足以描述 FORTH 本身，并且足够灵活，可以进行查询。可以很容易地扩展以处理硬件允许的尽可能多的复杂应用程序。在 B-5500 上，FORTH上使用 2K 的核心，并且可以在剩余的 30 个 1K 核心区域中的每一个中表达复杂的应用。
+FORTH 是一个将键盘与计算机连接的程序。它提供了分时用户和管理核心和磁盘内存所需的所有软件。它的核心是一个字典，它将内存划分为定义字符串，代码和数据的条目。由此产生的语言足以描述 FORTH 本身，并且足够灵活，可以进行查询。可以很容易地扩展以处理硬件允许的尽可能多的复杂应用程序。在 B-5500 上，FORTH 上使用 2K 的核心，并且可以在剩余的 30 个 1K 核心区域中的每一个中表达复杂的应用。
 
 >FORTH is a program that interfaces keyboards with computer. It provides all the software necessary to time-share users and manage core and disk memory. Its key is a dictionary that divides memory into entries that identify character strings, code and data. The resulting language is sufficiently powerful to describe FORTH itself, and sufficiently flexible to make inquiries with. It may be readily extended to handle as many, and as complex, applications as hardware permits. On the B-5500 FORTH uses 2K of core and can express a complex application in each of the 30 1K regions of core that remain.
 

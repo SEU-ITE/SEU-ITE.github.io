@@ -1,7 +1,7 @@
 +++
-date = "2019-04-19T08:23:00+08:00"
+date = "2019-04-22T19:30:00+08:00"
 draft = false
-title = "2st SEUITE 沙龙：初入 Node.js 与 Typescript"
+title = "2nd SEUITE 沙龙：初入 Node.js 与 Typescript"
 categories = ["Seulon"]
 tags = ["SEUITE", "Seulon"]
 summary= "第2次的 Seulon"

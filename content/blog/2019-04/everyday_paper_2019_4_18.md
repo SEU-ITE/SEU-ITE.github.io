@@ -9,7 +9,7 @@ series: ["经典论著"]
 categories: ["每日 Paper"]
 img: "img/everday_paper/bayesian_networks_without_tears.jpg"
 toc: true
-summary: "每天一篇计算机 Paper (2019/4/17)"
+summary: "每天一篇计算机 Paper (2019/4/18)"
 ---
 >Eugene Charniak (1991). Bayesian Networks without Tears. AI Magazine Contents, Volume 12(4): 50-63
 >
