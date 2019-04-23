@@ -3,7 +3,7 @@ date: "2019-04-22T19:07:30+08:00"
 publishdate: "2019-04-22+08:00"
 lastmod: "2019-04-22+08:00"
 draft: false
-title: "FORTH - 一种交互式计算的语言"
+title: "一个用于大型共享数据库的数据关系模型"
 tags: ["每日 Paper", "计算机", "blog"]
 series: ["经典论著"]
 categories: ["每日 Paper"]
