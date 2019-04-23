@@ -95,13 +95,13 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/series/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
+    <loc>https://seuite.github.io/categories/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
     <lastmod>2019-04-21T23:47:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/categories/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
+    <loc>https://seuite.github.io/series/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
     <lastmod>2019-04-21T23:47:25+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -267,6 +267,11 @@
   <url>
     <loc>https://seuite.github.io/tags/%E7%BB%8F%E5%85%B8%E4%BD%9C%E5%93%81/</loc>
     <lastmod>2019-04-04T23:12:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/blog/1-01/</loc>
     <priority>0</priority>
   </url>
   
