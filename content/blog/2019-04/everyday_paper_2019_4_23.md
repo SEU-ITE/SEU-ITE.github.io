@@ -1,7 +1,7 @@
-
-date: "20190423T16:07:30+08:00"
-publishdate: "20190423+08:00"
-lastmod: "20190423+08:00"
+---
+date: "2019-04-23T16:07:30+08:00"
+publishdate: "2019-04-23+08:00"
+lastmod: "2019-04-23+08:00"
 draft: false
 title: "Unix 分时系统"
 tags: ["每日 Paper", "计算机", "blog"]
@@ -10,7 +10,7 @@ categories: ["每日 Paper"]
 img: "img/everday_paper/the_unix_timesharing_system.jpg"
 toc: true
 summary: "每天一篇计算机 Paper (2019/4/23)"
-
+---
 >M. Ritchie, Dennis & Thompson, Ken. (1974). The UNIX timesharing system. Commun. ACM. 17. 365375. 10.1145/357980.358014. 
 >
 >译者：陈思源
