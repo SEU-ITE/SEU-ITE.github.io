@@ -3,7 +3,7 @@ date: "20190423T16:07:30+08:00"
 publishdate: "20190423+08:00"
 lastmod: "20190423+08:00"
 draft: false
-title: "一个用于大型共享数据库的数据关系模型"
+title: "Unix 分时系统"
 tags: ["每日 Paper", "计算机", "blog"]
 series: ["经典论著"]
 categories: ["每日 Paper"]
