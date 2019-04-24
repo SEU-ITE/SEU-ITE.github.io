@@ -16,7 +16,7 @@ summary: "每天一篇计算机 Paper (2019/4/15)"
 >
 >- 译者：陈思源
 
-本文隶属于"每天一篇计算机 Paper"系列博客，更多内容请点击[这个链接](https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-Paper/)。
+本文隶属于"每天一篇计算机 Paper"系列博客，更多内容请点击[这个链接](https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper/)。
 
 本系列博客均非完整译文，如需阅读完整文章，请访问相关图书馆订阅。
 
