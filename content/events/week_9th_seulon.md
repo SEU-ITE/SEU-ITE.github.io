@@ -1,7 +1,7 @@
 +++
 date = "2019-04-22T19:30:00+08:00"
 draft = false
-title = "2nd SEUITE 沙龙：初入 Node.js 与 Typescript"
+title = "2nd SEUITE 沙龙：初入 Node.js 到 Typescript"
 categories = ["Seulon"]
 tags = ["SEUITE", "Seulon"]
 summary= "第2次的 Seulon"
@@ -20,7 +20,7 @@ summary= "第2次的 Seulon"
 ### 其它事务
 
 - 这次真的有直播和录像
-- 这次肯定会有 SEUITE 的各类硬广
+- 这次现场会供应手作金枪鱼三明治
 - 第二次办 Seulon 还是会有各种各样的问题，但是欢迎大家来玩~
 
 ### 关于Seulon

@@ -60,7 +60,7 @@ Cook 证明了 SAT 是一个 NPC 问题，如果 SAT 容易解决（是 P 问题
 
 请问：NPC 问题和 P 问题的关系是什么呢？
 
-请将你的答案发送至 [Susan 的邮箱](seuite@outlook.com)
+请将你的答案发送至 [Susan 的邮箱](mailto:seuite@outlook.com)
 
 每期言之成理的答案均将得到一份小礼品，同时每周答对次数最多及最佳回答的同学将获得一份 Susan 送上的实体礼品~
 
