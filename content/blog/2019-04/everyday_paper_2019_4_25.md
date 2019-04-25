@@ -1,17 +1,17 @@
 ---
-date: "2019-04-24T16:07:30+08:00"
-publishdate: "2019-04-24+08:00"
-lastmod: "2019-04-24+08:00"
+date: "2019-04-25T09:32:15+08:00"
+publishdate: "2019-04-25+08:00"
+lastmod: "2019-04-25+08:00"
 draft: false
-title: "定理证明程序的复杂性"
+title: "符号表达式的递归函数及其机器计算"
 tags: ["每日 Paper", "计算机", "blog"]
 series: ["经典论著"]
 categories: ["每日 Paper"]
 img: "img/everday_paper/the_complexity_of_theorem-proving_procedures.png"
 toc: true
-summary: "每天一篇计算机 Paper (2019/4/24)"
+summary: "每天一篇计算机 Paper (2019/4/25)"
 ---
->A. Cook, Stephen. (1971). The Complexity of Theorem-Proving Procedures. Proc 3rd FOCS. 151-158. 10.1145/800157.805047.
+>John McCarthy. 1960. Recursive functions of symbolic expressions and their computation by machine, Part I. Commun. ACM 3, 4 (April 1960), 184-195.
 >
 >译者：陈思源
 
