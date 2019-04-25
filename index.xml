@@ -6,10 +6,19 @@
     <description>Recent content on SEUITE 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Wed, 24 Apr 2019 16:07:30 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 25 Apr 2019 09:32:15 +0800</lastBuildDate>
     
 	<atom:link href="https://seuite.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>符号表达式的递归函数及其机器计算</title>
+      <link>https://seuite.github.io/blog/2019-04/%E7%AC%A6%E5%8F%B7%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0%E5%8F%8A%E5%85%B6%E6%9C%BA%E5%99%A8%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Thu, 25 Apr 2019 09:32:15 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/blog/2019-04/%E7%AC%A6%E5%8F%B7%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0%E5%8F%8A%E5%85%B6%E6%9C%BA%E5%99%A8%E8%AE%A1%E7%AE%97/</guid>
+      <description>每天一篇计算机 Paper (2019/4/25)</description>
+    </item>
     
     <item>
       <title>定理证明程序的复杂性</title>
