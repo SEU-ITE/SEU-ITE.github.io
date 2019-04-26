@@ -6,10 +6,19 @@
     <description>Recent content in SEUITE on SEUITE 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Mon, 22 Apr 2019 19:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2019 21:03:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seuite.github.io/tags/seuite/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SEUITE第9周报告</title>
+      <link>https://seuite.github.io/report/2018-2019-03/week_9th_report/</link>
+      <pubDate>Fri, 26 Apr 2019 21:03:00 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/report/2018-2019-03/week_9th_report/</guid>
+      <description>这周摸到爆炸！</description>
+    </item>
     
     <item>
       <title>2nd SEUITE 沙龙：初入 Node.js 到 Typescript</title>

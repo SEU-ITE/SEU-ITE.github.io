@@ -6,10 +6,28 @@
     <description>Recent content in Tags on SEUITE 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Thu, 25 Apr 2019 09:32:15 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2019 21:03:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seuite.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SEUITE</title>
+      <link>https://seuite.github.io/tags/seuite/</link>
+      <pubDate>Fri, 26 Apr 2019 21:03:00 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/tags/seuite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>周报</title>
+      <link>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</link>
+      <pubDate>Fri, 26 Apr 2019 21:03:00 +0800</pubDate>
+      
+      <guid>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blog</title>
@@ -39,15 +57,6 @@
     </item>
     
     <item>
-      <title>SEUITE</title>
-      <link>https://seuite.github.io/tags/seuite/</link>
-      <pubDate>Mon, 22 Apr 2019 19:30:00 +0800</pubDate>
-      
-      <guid>https://seuite.github.io/tags/seuite/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Seulon</title>
       <link>https://seuite.github.io/tags/seulon/</link>
       <pubDate>Mon, 22 Apr 2019 19:30:00 +0800</pubDate>
@@ -62,15 +71,6 @@
       <pubDate>Sun, 21 Apr 2019 23:47:25 +0800</pubDate>
       
       <guid>https://seuite.github.io/tags/%E6%9D%A5%E7%82%B9%E8%BD%BB%E6%9D%BE%E7%9A%84/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>周报</title>
-      <link>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</link>
-      <pubDate>Fri, 19 Apr 2019 08:16:34 +0800</pubDate>
-      
-      <guid>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</guid>
       <description></description>
     </item>
     
