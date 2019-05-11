@@ -3,20 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://seuite.github.io/events/week_11th_seulon/</loc>
+    <lastmod>2019-05-11T19:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seuite.github.io/categories/</loc>
-    <lastmod>2019-04-26T21:03:00+08:00</lastmod>
+    <lastmod>2019-05-11T19:30:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seuite.github.io/tags/seuite/</loc>
-    <lastmod>2019-04-26T21:03:00+08:00</lastmod>
+    <lastmod>2019-05-11T19:30:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seuite.github.io/</loc>
-    <lastmod>2019-04-26T21:03:00+08:00</lastmod>
+    <lastmod>2019-05-11T19:30:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/events/</loc>
+    <lastmod>2019-05-11T19:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/tags/seulon/</loc>
+    <lastmod>2019-05-11T19:30:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/categories/seulon/</loc>
+    <lastmod>2019-05-11T19:30:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seuite.github.io/tags/</loc>
+    <lastmod>2019-05-11T19:30:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -31,19 +59,13 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/tags/</loc>
+    <loc>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</loc>
     <lastmod>2019-04-26T21:03:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seuite.github.io/categories/%E5%91%A8%E6%8A%A5/</loc>
-    <lastmod>2019-04-26T21:03:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/tags/%E5%91%A8%E6%8A%A5/</loc>
     <lastmod>2019-04-26T21:03:00+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -66,13 +88,13 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper/</loc>
+    <loc>https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper/</loc>
     <lastmod>2019-04-25T09:32:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/tags/%E6%AF%8F%E6%97%A5-paper/</loc>
+    <loc>https://seuite.github.io/categories/%E6%AF%8F%E6%97%A5-paper/</loc>
     <lastmod>2019-04-25T09:32:15+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -110,35 +132,18 @@
   </url>
   
   <url>
-    <loc>https://seuite.github.io/events/</loc>
-    <lastmod>2019-04-22T19:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/categories/seulon/</loc>
-    <lastmod>2019-04-22T19:30:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://seuite.github.io/tags/seulon/</loc>
-    <lastmod>2019-04-22T19:30:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://seuite.github.io/blog/2019-04/%E4%B8%80%E4%B8%AA%E7%94%A8%E4%BA%8E%E5%A4%A7%E5%9E%8B%E5%85%B1%E4%BA%AB%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%95%B0%E6%8D%AE%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B/</loc>
     <lastmod>2019-04-22T19:07:30+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/categories/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
+    <loc>https://seuite.github.io/series/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
     <lastmod>2019-04-21T23:47:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seuite.github.io/series/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
+    <loc>https://seuite.github.io/categories/%E5%91%A8%E6%9C%AB%E9%97%B2%E8%B0%88/</loc>
     <lastmod>2019-04-21T23:47:25+08:00</lastmod>
     <priority>0</priority>
   </url>
