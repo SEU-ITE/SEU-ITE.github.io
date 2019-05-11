@@ -1,0 +1,38 @@
++++
+date = "2019-05-11T19:30:00+08:00"
+draft = false
+title = "4nd SEUITE 沙龙：校史竞赛系统从前到后"
+categories = ["Seulon"]
+tags = ["SEUITE", "Seulon"]
+summary= "第4次的 Seulon"
++++
+
+> [讲稿地址](https://ftp.seu.services/Seulon/)
+> [直播地址](https://live.bilibili.com/61306)
+> [录像地址](https://ftp.seu.services/Seulon/)
+
+本周的 Seulon 由微软学生俱乐部的叶志浩同学带来 校史竞赛系统往届优秀作品的讲解，主要技术栈分别为 .net core + vue 和 python + react。
+
+- 地点：梅四西辅楼二楼 微软学生俱乐部
+- 时间：第十一周周日（5/12）20:00
+- 主讲人：叶志浩
+
+### 其它事务
+
+- 这次真的有直播和录像
+- 第四次办 Seulon 问题已经少了很多啦，谢谢大家的建议，欢迎大家来玩~
+
+### 关于Seulon
+
+每周五举办，我们会邀请开源相关的各类人士分享一些有趣的东西
+主题包括：
+
+- SEUITE 每周新闻
+- 计算机相关应用
+- 软件架构
+- 算法分析
+- ~~摸鱼心得~~
+
+欢迎大家来玩！
+
+## 祝大家能够享受快乐的校园生活
