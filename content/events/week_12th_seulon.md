@@ -1,7 +1,7 @@
 +++
-date = "2019-05-11T19:30:00+08:00"
+date = "2019-05-15"
 draft = false
-title = "4nd SEUITE 沙龙：校史竞赛系统从前到后"
+title = "5nd SEUITE 沙龙：各类开发环境配置和工具使用"
 categories = ["Seulon"]
 tags = ["SEUITE", "Seulon"]
 summary= "第4次的 Seulon"
@@ -11,16 +11,16 @@ summary= "第4次的 Seulon"
 > [直播地址](https://live.bilibili.com/61306)
 > [录像地址](https://mirrors.seu.services/seulon/)
 
-本周的 Seulon 由微软学生俱乐部的叶志浩同学带来 校史竞赛系统往届优秀作品的讲解，主要技术栈分别为 .net core + vue 和 python + react。
+本周的 Seulon 由 SEUITE 的陈思源同学带来 配置各类基础开发环境，提高开发效率的各种轮子，主要技术栈分别为 Windows10 使用，轮子介绍和血统检测。
 
 - 地点：梅四西辅楼二楼 微软学生俱乐部
-- 时间：第十一周周日（5/12）20:00
-- 主讲人：叶志浩
+- 时间：第十二周周日（5/19）20:00
+- 主讲人：陈思源
 
 ### 其它事务
 
 - 这次真的有直播和录像
-- 第四次办 Seulon 问题已经少了很多啦，谢谢大家的建议，欢迎大家来玩~
+- 第五次办 Seulon 问题已经少了很多啦，谢谢大家的建议，欢迎大家来玩~
 
 ### 关于Seulon
 
