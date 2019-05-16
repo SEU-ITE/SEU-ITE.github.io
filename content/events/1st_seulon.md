@@ -7,7 +7,7 @@ tags = ["SEUITE", "Seulon"]
 summary= "第1次的 Seulon"
 +++
 
-> [讲稿地址](https://ftp.seu.services/Seulon/1st_2019_04_19/)
+> [讲稿地址](https://mirrors.seu.services/seulon/)
 > [直播地址](https://live.bilibili.com/61306)
 
 本周的 Seulon 由陈思源同学带来关于 Markdown 使用及静态网站生成器的相关原理，使用和制作，顺便讲讲一周新闻和问题以及 SEUITE 的硬广。同时感谢微软学生俱乐部的热情邀请和大力协助！

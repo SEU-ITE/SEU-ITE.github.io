@@ -7,9 +7,9 @@ tags = ["SEUITE", "Seulon"]
 summary= "第2次的 Seulon"
 +++
 
-> [讲稿地址](https://ftp.seu.services/Seulon/)
+> [讲稿地址](https://mirrors.seu.services/seulon/)
 > [直播地址](https://live.bilibili.com/61306)
-> [录像地址](https://ftp.seu.services/Seulon/)
+> [录像地址](https://mirrors.seu.services/seulon/)
 
 本周的 Seulon 由微软学生俱乐部的叶志浩同学带来 JavaScript -> Node.js -> NPM -> TypeScript 初步的，概念性的，大一也听得懂的，介绍。
 
