@@ -4,7 +4,7 @@ draft = false
 title = "5nd SEUITE 沙龙：各类开发环境配置和工具使用"
 categories = ["Seulon"]
 tags = ["SEUITE", "Seulon"]
-summary= "第4次的 Seulon"
+summary= "第5次的 Seulon"
 +++
 
 > [讲稿地址](https://mirrors.seu.services/seulon/)
@@ -19,6 +19,7 @@ summary= "第4次的 Seulon"
 
 ### 其它事务
 
+- 我们这次有交流群啦，QQ 群号：223907247
 - 这次真的有直播和录像
 - 第五次办 Seulon 问题已经少了很多啦，谢谢大家的建议，欢迎大家来玩~
 
