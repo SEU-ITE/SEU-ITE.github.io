@@ -13,19 +13,19 @@
     
     <item>
       <title>5nd SEUITE 沙龙：各类开发环境配置和工具使用</title>
-      <link>https://seuite.github.io/events/week_12th_seulon/</link>
+      <link>https://seuite.github.io/events/5th_seulon/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://seuite.github.io/events/week_12th_seulon/</guid>
+      <guid>https://seuite.github.io/events/5th_seulon/</guid>
       <description>第5次的 Seulon</description>
     </item>
     
     <item>
       <title>4nd SEUITE 沙龙：校史竞赛系统从前到后</title>
-      <link>https://seuite.github.io/events/week_11th_seulon/</link>
+      <link>https://seuite.github.io/events/4th_seulon/</link>
       <pubDate>Sat, 11 May 2019 19:30:00 +0800</pubDate>
       
-      <guid>https://seuite.github.io/events/week_11th_seulon/</guid>
+      <guid>https://seuite.github.io/events/4th_seulon/</guid>
       <description>第4次的 Seulon</description>
     </item>
     
@@ -40,19 +40,19 @@
     
     <item>
       <title>2nd SEUITE 沙龙：初入 Node.js 到 Typescript</title>
-      <link>https://seuite.github.io/events/week_9th_seulon/</link>
+      <link>https://seuite.github.io/events/2nd_seulon/</link>
       <pubDate>Mon, 22 Apr 2019 19:30:00 +0800</pubDate>
       
-      <guid>https://seuite.github.io/events/week_9th_seulon/</guid>
+      <guid>https://seuite.github.io/events/2nd_seulon/</guid>
       <description>第2次的 Seulon</description>
     </item>
     
     <item>
       <title>1st SEUITE 沙龙：从 Markdown 到静态网站生成器</title>
-      <link>https://seuite.github.io/events/week_8th_seulon/</link>
+      <link>https://seuite.github.io/events/1st_seulon/</link>
       <pubDate>Fri, 19 Apr 2019 08:23:00 +0800</pubDate>
       
-      <guid>https://seuite.github.io/events/week_8th_seulon/</guid>
+      <guid>https://seuite.github.io/events/1st_seulon/</guid>
       <description>第1次的 Seulon</description>
     </item>
     
@@ -81,6 +81,15 @@
       
       <guid>https://seuite.github.io/report/2018-2019-03/week_6th_report/</guid>
       <description>这周没有摸鱼！</description>
+    </item>
+    
+    <item>
+      <title>3rd SEUITE 沙龙：从 GitHub 到团队协作</title>
+      <link>https://seuite.github.io/events/3rd_seulon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://seuite.github.io/events/3rd_seulon/</guid>
+      <description>第3次的 Seulon</description>
     </item>
     
   </channel>
