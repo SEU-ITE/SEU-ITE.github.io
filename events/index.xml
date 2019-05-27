@@ -6,10 +6,19 @@
     <description>Recent content in SEUITE 活动 on SEUITE 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://seuite.github.io/events/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>6th SEUITE 沙龙：校史竞赛系统从前到后（续）</title>
+      <link>https://seuite.github.io/events/week_13th_seulon/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://seuite.github.io/events/week_13th_seulon/</guid>
+      <description>第6次的 Seulon</description>
+    </item>
     
     <item>
       <title>5nd SEUITE 沙龙：各类开发环境配置和工具使用</title>
